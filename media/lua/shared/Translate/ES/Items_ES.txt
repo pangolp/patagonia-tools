@@ -1,0 +1,4 @@
+Items_ES = {
+  DisplayName_TheMachinist = "Revista del mecánico 1: Motores",
+  DisplayName_TheMachinistGenerator = "Revista del electricista: Generadores"
+}

@@ -1,0 +1,44 @@
+module CraftGenerator
+{
+    imports
+    {
+        Base
+    }
+
+    item TheMachinistGenerator
+    {
+        Weight = 0.1,
+        Type = Literature,
+        DisplayName = TheMachinistGenerator,
+        Icon = TheMachinistGenerator,
+        TeachedRecipes = Generator,
+        ReplaceOnUse = TheMachinistGenerator,
+        StaticModel = Magazine,
+        Tooltip = Tooltip_TheMachinistGenerator
+    }
+
+    recipe Generator
+    {
+        keep WeldingMask,
+        keep Hammer/BallPeenHammer,
+        keep Screwdriver,
+        keep Saw,
+        keep Wrench,
+        keep PipeWrench,
+
+        ElectricWire=6,
+        Wire=6,
+        Aluminum=10,
+        SheetMetal=10,
+        Screws=50,
+        ElectronicsScrap=100,
+        MetalBar=6,
+        PaintRed,
+
+        Result: Generator,
+        SkillRequired: Woodwork=5;Electricity=3;MetalWelding=2;,
+        Time: 240.0,
+        Sound: BlowTorch,
+        NeedToBeLearn: True
+    }
+}

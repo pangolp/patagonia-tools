@@ -1,0 +1,4 @@
+Recipe_ES = {
+  Recipe_MakeEnginePart = "Crear piezas de motor",
+  Recipe_Generator = "Crear un generador"
+}
