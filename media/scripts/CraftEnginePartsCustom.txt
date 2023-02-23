@@ -1,23 +1,11 @@
-module CraftEngineParts
+module CraftEnginePartsCustom
 {
     imports
     {
         Base
     }
 
-    item TheMachinist
-    {
-        Weight = 0.1,
-        Type = Literature,
-        DisplayName = TheMachinist,
-        Icon = TheMachinist,
-        TeachedRecipes = MakeEnginePart,
-        ReplaceOnUse = TheMachinist,
-        StaticModel = Magazine,
-        Tooltip = Tooltip_TheMachinist
-    }
-
-    recipe MakeEnginePart
+    recipe MakeEnginePartCustom
     {
         BlowTorch=1,
         keep WeldingMask,

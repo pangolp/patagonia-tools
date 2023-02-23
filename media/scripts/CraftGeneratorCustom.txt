@@ -1,23 +1,11 @@
-module CraftGenerator
+module CraftGeneratorCustom
 {
     imports
     {
         Base
     }
 
-    item TheMachinistGenerator
-    {
-        Weight = 0.1,
-        Type = Literature,
-        DisplayName = TheMachinistGenerator,
-        Icon = TheMachinistGenerator,
-        TeachedRecipes = Generator,
-        ReplaceOnUse = TheMachinistGenerator,
-        StaticModel = Magazine,
-        Tooltip = Tooltip_TheMachinistGenerator
-    }
-
-    recipe Generator
+    recipe GeneratorCustom
     {
         keep WeldingMask,
         keep Hammer/BallPeenHammer,

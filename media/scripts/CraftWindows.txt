@@ -5,7 +5,7 @@ module CraftWindows
       Base
   }
 
-  recipe WindowsCustom1
+  recipe WindowsCustom
   {
     keep Hammer/BallPeenHammer,
     keep Screwdriver,

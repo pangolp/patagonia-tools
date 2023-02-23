@@ -1,4 +1,0 @@
-Tooltip_ES = {
-  Tooltip_TheMachinist = "Todo lo que alguien necesita saber para crear sus propias piezas de motor.",
-  Tooltip_TheMachinistGenerator = "Crear tu propio generador para cuando no exista la luz electrica"
-}
