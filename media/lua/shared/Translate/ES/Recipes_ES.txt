@@ -5,4 +5,5 @@ Recipe_ES = {
   Recipe_EngineDoorCustom2 = "Crear capot industrial",
   Recipe_EngineDoorCustom3 = "Crear capot deportivo",
   Recipe_UnusableWoodCustom = "Crear tabla",
+  Recipe_WindowsCustom1 = "Ventana"
 }
