@@ -1,0 +1,32 @@
+module CraftGenerator
+{
+    imports
+    {
+        Base
+    }
+
+    recipe Generator
+    {
+        keep WeldingMask,
+        keep Hammer/BallPeenHammer,
+        keep Screwdriver,
+        keep Saw,
+        keep Wrench,
+        keep PipeWrench,
+
+        ElectricWire=6,
+        Wire=6,
+        Aluminum=10,
+        SheetMetal=10,
+        Screws=50,
+        ElectronicsScrap=100,
+        MetalBar=6,
+        PaintRed,
+
+        Result: Generator,
+        SkillRequired: Woodwork=5;Electricity=3;MetalWelding=2;,
+        Time: 240.0,
+        Sound: BlowTorch,
+        Category: Patagonia
+    }
+}

@@ -1,0 +1,31 @@
+module CraftEngineParts
+{
+    imports
+    {
+        Base
+    }
+
+    recipe MakeEnginePart
+    {
+        BlowTorch=1,
+        keep WeldingMask,
+        keep Hammer/BallPeenHammer,
+        keep Screwdriver,
+        keep Saw,
+        keep Wrench,
+        keep PipeWrench,
+        WeldingRods=1,
+
+        ScrapMetal,
+        MetalPipe=2,
+        SheetMetal=2,
+        MetalBar,
+        Screws=10,
+
+        Result: EngineParts=10,
+        SkillRequired: Mechanics=6;MetalWelding=1;,
+        Time: 120.0,
+        Sound: BlowTorch,
+        Category: Patagonia
+    }
+}
