@@ -5,7 +5,7 @@ module CraftEngineParts
         Base
     }
 
-    recipe MakeEnginePart
+    recipe MakeEnginePartCustom
     {
         BlowTorch=1,
         keep WeldingMask,

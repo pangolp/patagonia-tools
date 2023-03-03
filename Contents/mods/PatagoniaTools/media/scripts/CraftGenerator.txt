@@ -5,7 +5,7 @@ module CraftGenerator
         Base
     }
 
-    recipe Generator
+    recipe GeneratorCustom
     {
         keep WeldingMask,
         keep Hammer/BallPeenHammer,

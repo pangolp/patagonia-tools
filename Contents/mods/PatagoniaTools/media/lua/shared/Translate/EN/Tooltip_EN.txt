@@ -1,3 +1,0 @@
-Tooltip_EN = {
-  Tooltip_TheMachinist = "Everything someone would need to know to create his own machined parts. For example for DIY engine repairs!",
-}

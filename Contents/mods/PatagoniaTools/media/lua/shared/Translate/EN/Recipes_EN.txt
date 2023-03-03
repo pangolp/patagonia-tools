@@ -1,3 +1,5 @@
 Recipe_EN = {
-  Recipe_MakeEnginePart = "Make Spare Engine Parts",
+  Recipe_MakeEnginePartCustom = "Create engine parts",
+  Recipe_GeneratorCustom = "Create a generator",
+  Recipe_WindowsCustom = "Windows"
 }
