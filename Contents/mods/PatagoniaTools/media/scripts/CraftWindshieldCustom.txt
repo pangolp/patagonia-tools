@@ -1,0 +1,46 @@
+module CraftWindshieldCustom
+{
+  imports
+  {
+      Base
+  }
+
+  recipe Windshield1Custom
+  {
+    keep Screwdriver,
+    [Recipe.GetItemTypes.BrokenGlass]=8,
+    Glue=5,
+
+    Result: Windshield1,
+    SkillRequired: Mechanics=10,
+    Time: 240.0,
+    Sound: BlowTorch,
+    Category: Taller
+  }
+
+  recipe Windshield2Custom
+  {
+    keep Screwdriver,
+    [Recipe.GetItemTypes.BrokenGlass]=8,
+    Glue=5,
+
+    Result: Windshield2,
+    SkillRequired: Mechanics=10,
+    Time: 240.0,
+    Sound: BlowTorch,
+    Category: Taller
+  }
+
+  recipe Windshield3Custom
+  {
+    keep Screwdriver,
+    [Recipe.GetItemTypes.BrokenGlass]=8,
+    Glue=5,
+
+    Result: Windshield3,
+    SkillRequired: Mechanics=10,
+    Time: 240.0,
+    Sound: BlowTorch,
+    Category: Taller
+  }
+}

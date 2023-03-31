@@ -11,4 +11,7 @@ Recipe_ES = {
   Recipe_RearWindow1Custom = "Ventana trasera (Estandar)",
   Recipe_RearWindow2Custom = "Ventana trasera (Industrial)",
   Recipe_RearWindow3Custom = "Ventana trasera (Deportivo)",
+  Recipe_Windshield1Custom = "Parabrisas (Estandar)",
+  Recipe_Windshield2Custom = "Parabrisas (Industrial)",
+  Recipe_Windshield3Custom = "Parabrisas (Deportivo)",
 }
