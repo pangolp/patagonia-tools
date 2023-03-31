@@ -13,10 +13,29 @@ module CraftWindows
 
     Plank=4,
     Screws=4,
+    SmashedBottle=4,
 
     Result: Moveables.fixtures_windows_01_0,
     SkillRequired: Woodwork=5,
     Time: 240.0,
+    Sound:Hammering,
+    Category: Patagonia
+  }
+
+  recipe WindowsCustom
+  {
+    keep [Recipe.GetItemTypes.Hammer],
+    keep Screwdriver,
+    keep Saw,
+
+    Plank=4,
+    Screws=4,
+    brokenglass_1_2,
+
+    Result: Moveables.fixtures_windows_01_0,
+    SkillRequired: Woodwork=5,
+    Time: 240.0,
+    Sound:Hammering,
     Category: Patagonia
   }
 }
