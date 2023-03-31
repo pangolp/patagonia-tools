@@ -24,7 +24,7 @@ module CraftEngineParts
 
         Result: EngineParts=5,
         SkillRequired: Mechanics=6;MetalWelding=1;,
-        Time: 120.0,
+        Time: 240.0,
         Sound: BlowTorch,
         Category: Patagonia
     }
