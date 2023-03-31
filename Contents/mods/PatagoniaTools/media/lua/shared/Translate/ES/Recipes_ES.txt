@@ -8,4 +8,7 @@ Recipe_ES = {
   Recipe_FrontWindow1Custom = "Ventana delantera (Estandar)",
   Recipe_FrontWindow2Custom = "Ventana delantera (Industrial)",
   Recipe_FrontWindow3Custom = "Ventana delantera (Deportivo)",
+  Recipe_RearWindow1Custom = "Ventana trasera (Estandar)",
+  Recipe_RearWindow2Custom = "Ventana trasera (Industrial)",
+  Recipe_RearWindow3Custom = "Ventana trasera (Deportivo)",
 }

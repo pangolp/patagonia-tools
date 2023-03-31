@@ -1,0 +1,46 @@
+module CraftRearWindowCustom
+{
+  imports
+  {
+      Base
+  }
+
+  recipe RearWindow1Custom
+  {
+    keep Screwdriver,
+    SmashedBottle=4,
+    Glue=3,
+
+    Result: RearWindow1,
+    SkillRequired: Mechanics=10,
+    Time: 240.0,
+    Sound: BlowTorch,
+    Category: Taller
+  }
+
+  recipe RearWindow2Custom
+  {
+    keep Screwdriver,
+    SmashedBottle=4,
+    Glue=3,
+
+    Result: RearWindow2,
+    SkillRequired: Mechanics=10,
+    Time: 240.0,
+    Sound: BlowTorch,
+    Category: Taller
+  }
+
+  recipe RearWindow3Custom
+  {
+    keep Screwdriver,
+    SmashedBottle=4,
+    Glue=3,
+
+    Result: RearWindow3,
+    SkillRequired: Mechanics=10,
+    Time: 240.0,
+    Sound: BlowTorch,
+    Category: Taller
+  }
+}
