@@ -5,4 +5,7 @@ Recipe_ES = {
   Recipe_EngineDoorCustom1 = "Capot (Estandar)",
   Recipe_EngineDoorCustom2 = "Capot (Industrial)",
   Recipe_EngineDoorCustom3 = "Capot (Deportivo)",
+  Recipe_FrontWindow1Custom = "Ventana delantera (Estandar)",
+  Recipe_FrontWindow2Custom = "Ventana delantera (Industrial)",
+  Recipe_FrontWindow3Custom = "Ventana delantera (Deportivo)",
 }

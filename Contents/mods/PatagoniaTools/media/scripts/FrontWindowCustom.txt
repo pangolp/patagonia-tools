@@ -1,0 +1,46 @@
+module FrontWindowCustom
+{
+  imports
+  {
+      Base
+  }
+
+  recipe FrontWindow1Custom
+  {
+    keep Screwdriver,
+    SmashedBottle=8,
+    Glue=3,
+
+    Result: FrontWindow1,
+    SkillRequired: Mechanics=10,
+    Time: 240.0,
+    Sound: BlowTorch,
+    Category: Taller
+  }
+
+  recipe FrontWindow2Custom
+  {
+    keep Screwdriver,
+    SmashedBottle=8,
+    Glue=3,
+
+    Result: FrontWindow2,
+    SkillRequired: Mechanics=10,
+    Time: 240.0,
+    Sound: BlowTorch,
+    Category: Taller
+  }
+
+  recipe FrontWindow3Custom
+  {
+    keep Screwdriver,
+    SmashedBottle=8,
+    Glue=3,
+
+    Result: FrontWindow3,
+    SkillRequired: Mechanics=10,
+    Time: 240.0,
+    Sound: BlowTorch,
+    Category: Taller
+  }
+}
