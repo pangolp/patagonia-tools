@@ -8,7 +8,7 @@ module FrontWindowCustom
   recipe FrontWindow1Custom
   {
     keep Screwdriver,
-    SmashedBottle=8,
+    SmashedBottle=4,
     Glue=3,
 
     Result: FrontWindow1,
@@ -21,7 +21,7 @@ module FrontWindowCustom
   recipe FrontWindow2Custom
   {
     keep Screwdriver,
-    SmashedBottle=8,
+    SmashedBottle=4,
     Glue=3,
 
     Result: FrontWindow2,
@@ -34,7 +34,7 @@ module FrontWindowCustom
   recipe FrontWindow3Custom
   {
     keep Screwdriver,
-    SmashedBottle=8,
+    SmashedBottle=4,
     Glue=3,
 
     Result: FrontWindow3,
