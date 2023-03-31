@@ -1,5 +1,8 @@
 Recipe_ES = {
   Recipe_MakeEnginePartCustom = "Crear piezas de motor",
   Recipe_GeneratorCustom = "Crear un generador",
-  Recipe_WindowsCustom = "Ventana"
+  Recipe_WindowsCustom = "Ventana",
+  Recipe_EngineDoorCustom1 = "Capot (Estandar)",
+  Recipe_EngineDoorCustom2 = "Capot (Industrial)",
+  Recipe_EngineDoorCustom3 = "Capot (Deportivo)",
 }
