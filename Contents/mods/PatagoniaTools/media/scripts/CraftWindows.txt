@@ -7,7 +7,7 @@ module CraftWindows
 
   recipe WindowsCustom
   {
-    keep Hammer/BallPeenHammer,
+    keep [Recipe.GetItemTypes.Hammer],
     keep Screwdriver,
     keep Saw,
 

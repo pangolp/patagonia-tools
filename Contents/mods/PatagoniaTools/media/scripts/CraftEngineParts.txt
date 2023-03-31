@@ -9,7 +9,7 @@ module CraftEngineParts
     {
         BlowTorch=1,
         keep WeldingMask,
-        keep Hammer/BallPeenHammer,
+        keep [Recipe.GetItemTypes.Hammer],
         keep Screwdriver,
         keep Saw,
         keep Wrench,
