@@ -21,7 +21,6 @@ module CraftGenerator
         Screws=50,
         ElectronicsScrap=100,
         MetalBar=6,
-        PaintRed,
 
         Result: Generator,
         SkillRequired: Woodwork=5;Electricity=3;MetalWelding=2;,
