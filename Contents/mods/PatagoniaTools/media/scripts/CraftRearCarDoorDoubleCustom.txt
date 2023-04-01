@@ -1,0 +1,49 @@
+module CraftRearCarDoorDoubleCustom
+{
+    imports
+    {
+        Base
+    }
+
+    recipe RearCarDoorDoubleCustom1
+    {
+        keep WeldingMask,
+        SheetMetal=10,
+        BlowTorch=1,
+        WeldingRods=1,
+
+        Result: RearCarDoorDouble1,
+        SkillRequired: Mechanics=10;MetalWelding=2;,
+        Time: 480.0,
+        Sound: BlowTorch,
+        Category: Taller
+    }
+
+    recipe RearCarDoorDoubleCustom2
+    {
+        keep WeldingMask,
+        SheetMetal=10,
+        BlowTorch=1,
+        WeldingRods=1,
+
+        Result: RearCarDoorDouble2,
+        SkillRequired: Mechanics=10;MetalWelding=2;,
+        Time: 480.0,
+        Sound: BlowTorch,
+        Category: Taller
+    }
+
+    recipe RearCarDoorDoubleCustom3
+    {
+        keep WeldingMask,
+        SheetMetal=10,
+        BlowTorch=1,
+        WeldingRods=1,
+
+        Result: RearCarDoorDouble3,
+        SkillRequired: Mechanics=10;MetalWelding=2;,
+        Time: 480.0,
+        Sound: BlowTorch,
+        Category: Taller
+    }
+}

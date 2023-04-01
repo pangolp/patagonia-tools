@@ -23,4 +23,7 @@ Recipe_ES = {
   Recipe_RearCarDoorCustom1 = "Puerta trasera (Estandar)",
   Recipe_RearCarDoorCustom2 = "Puerta trasera (Industrial)",
   Recipe_RearCarDoorCustom3 = "Puerta trasera (Deportivo)",
+  Recipe_RearCarDoorDoubleCustom1 = "Puerta doble trasera (Estandar)",
+  Recipe_RearCarDoorDoubleCustom2 = "Puerta doble trasera (Industrial)",
+  Recipe_RearCarDoorDoubleCustom3 = "Puerta doble trasera (Deportivo)",
 }
