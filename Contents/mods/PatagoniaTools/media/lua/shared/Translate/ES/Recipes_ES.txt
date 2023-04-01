@@ -14,4 +14,7 @@ Recipe_ES = {
   Recipe_Windshield1Custom = "Parabrisas (Estandar)",
   Recipe_Windshield2Custom = "Parabrisas (Industrial)",
   Recipe_Windshield3Custom = "Parabrisas (Deportivo)",
+  Recipe_RearWindshield1Custom = "Parabrisas (Estandar)",
+  Recipe_RearWindshield2Custom = "Parabrisas (Industrial)",
+  Recipe_RearWindshield3Custom = "Parabrisas (Deportivo)",
 }

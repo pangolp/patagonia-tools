@@ -1,0 +1,46 @@
+module CraftRearWindshieldCustom
+{
+  imports
+  {
+      Base
+  }
+
+  recipe RearWindshield1Custom
+  {
+    keep Screwdriver,
+    [Recipe.GetItemTypes.BrokenGlass]=8,
+    Glue=5,
+
+    Result: RearWindshield1,
+    SkillRequired: Mechanics=10,
+    Time: 240.0,
+    Sound: BlowTorch,
+    Category: Taller
+  }
+
+  recipe RearWindshield2Custom
+  {
+    keep Screwdriver,
+    [Recipe.GetItemTypes.BrokenGlass]=8,
+    Glue=5,
+
+    Result: RearWindshield2,
+    SkillRequired: Mechanics=10,
+    Time: 240.0,
+    Sound: BlowTorch,
+    Category: Taller
+  }
+
+  recipe RearWindshield3Custom
+  {
+    keep Screwdriver,
+    [Recipe.GetItemTypes.BrokenGlass]=8,
+    Glue=5,
+
+    Result: RearWindshield3,
+    SkillRequired: Mechanics=10,
+    Time: 240.0,
+    Sound: BlowTorch,
+    Category: Taller
+  }
+}
