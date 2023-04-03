@@ -13,6 +13,7 @@ module CraftGenerator
         keep Saw,
         keep Wrench,
         keep PipeWrench,
+        BlowTorch,
 
         ElectricWire=6,
         Wire=6,
@@ -27,6 +28,8 @@ module CraftGenerator
         Time: 240.0,
         Sound: BlowTorch,
         Category: Patagonia,
-        CanBeDoneFromFloor:true
+        CanBeDoneFromFloor: true,
+        AnimNode: blowtorch,
+        Prop1:BlowTorch
     }
 }
