@@ -16,7 +16,8 @@ module CraftHood
         SkillRequired: Mechanics=10;MetalWelding=2;,
         Time: 480.0,
         Sound: BlowTorch,
-        Category: Taller
+        Category: Taller,
+        CanBeDoneFromFloor:true
     }
 
     recipe EngineDoorCustom2
@@ -30,7 +31,8 @@ module CraftHood
         SkillRequired: Mechanics=10;MetalWelding=2;,
         Time: 480.0,
         Sound: BlowTorch,
-        Category: Taller
+        Category: Taller,
+        CanBeDoneFromFloor:true
     }
 
     recipe EngineDoorCustom3
@@ -44,6 +46,7 @@ module CraftHood
         SkillRequired: Mechanics=10;MetalWelding=2;,
         Time: 480.0,
         Sound: BlowTorch,
-        Category: Taller
+        Category: Taller,
+        CanBeDoneFromFloor:true
     }
 }

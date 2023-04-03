@@ -26,6 +26,7 @@ module CraftGenerator
         SkillRequired: Woodwork=5;Electricity=3;MetalWelding=2;,
         Time: 240.0,
         Sound: BlowTorch,
-        Category: Patagonia
+        Category: Patagonia,
+        CanBeDoneFromFloor:true
     }
 }

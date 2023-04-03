@@ -15,7 +15,8 @@ module CraftWindshieldCustom
     SkillRequired: Mechanics=10,
     Time: 240.0,
     Sound: BlowTorch,
-    Category: Taller
+    Category: Taller,
+    CanBeDoneFromFloor:true
   }
 
   recipe Windshield2Custom
@@ -28,7 +29,8 @@ module CraftWindshieldCustom
     SkillRequired: Mechanics=10,
     Time: 240.0,
     Sound: BlowTorch,
-    Category: Taller
+    Category: Taller,
+    CanBeDoneFromFloor:true
   }
 
   recipe Windshield3Custom
@@ -41,6 +43,7 @@ module CraftWindshieldCustom
     SkillRequired: Mechanics=10,
     Time: 240.0,
     Sound: BlowTorch,
-    Category: Taller
+    Category: Taller,
+    CanBeDoneFromFloor:true
   }
 }

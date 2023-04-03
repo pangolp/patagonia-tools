@@ -15,7 +15,8 @@ module CraftRearWindowCustom
     SkillRequired: Mechanics=10,
     Time: 240.0,
     Sound: BlowTorch,
-    Category: Taller
+    Category: Taller,
+    CanBeDoneFromFloor:true
   }
 
   recipe RearWindow2Custom
@@ -28,7 +29,8 @@ module CraftRearWindowCustom
     SkillRequired: Mechanics=10,
     Time: 240.0,
     Sound: BlowTorch,
-    Category: Taller
+    Category: Taller,
+    CanBeDoneFromFloor:true
   }
 
   recipe RearWindow3Custom
@@ -41,6 +43,7 @@ module CraftRearWindowCustom
     SkillRequired: Mechanics=10,
     Time: 240.0,
     Sound: BlowTorch,
-    Category: Taller
+    Category: Taller,
+    CanBeDoneFromFloor:true
   }
 }

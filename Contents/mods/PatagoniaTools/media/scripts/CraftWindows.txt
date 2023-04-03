@@ -19,6 +19,7 @@ module CraftWindows
     SkillRequired: Woodwork=5,
     Time: 240.0,
     Sound:Hammering,
-    Category: Patagonia
+    Category: Patagonia,
+    CanBeDoneFromFloor:true
   }
 }

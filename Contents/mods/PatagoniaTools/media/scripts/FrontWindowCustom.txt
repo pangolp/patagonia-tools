@@ -15,7 +15,8 @@ module FrontWindowCustom
     SkillRequired: Mechanics=10,
     Time: 240.0,
     Sound: BlowTorch,
-    Category: Taller
+    Category: Taller,
+    CanBeDoneFromFloor:true
   }
 
   recipe FrontWindow2Custom
@@ -28,7 +29,8 @@ module FrontWindowCustom
     SkillRequired: Mechanics=10,
     Time: 240.0,
     Sound: BlowTorch,
-    Category: Taller
+    Category: Taller,
+    CanBeDoneFromFloor:true
   }
 
   recipe FrontWindow3Custom
@@ -41,6 +43,7 @@ module FrontWindowCustom
     SkillRequired: Mechanics=10,
     Time: 240.0,
     Sound: BlowTorch,
-    Category: Taller
+    Category: Taller,
+    CanBeDoneFromFloor:true
   }
 }
