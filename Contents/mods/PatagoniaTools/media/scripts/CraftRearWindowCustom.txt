@@ -16,7 +16,7 @@ module CraftRearWindowCustom
     Time: 240.0,
     Sound: BlowTorch,
     Category: Taller,
-    CanBeDoneFromFloor:true
+    CanBeDoneFromFloor: true
   }
 
   recipe RearWindow2Custom
@@ -30,7 +30,7 @@ module CraftRearWindowCustom
     Time: 240.0,
     Sound: BlowTorch,
     Category: Taller,
-    CanBeDoneFromFloor:true
+    CanBeDoneFromFloor: true
   }
 
   recipe RearWindow3Custom
@@ -44,6 +44,6 @@ module CraftRearWindowCustom
     Time: 240.0,
     Sound: BlowTorch,
     Category: Taller,
-    CanBeDoneFromFloor:true
+    CanBeDoneFromFloor: true
   }
 }

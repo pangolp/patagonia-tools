@@ -16,7 +16,7 @@ module CraftRearWindshieldCustom
     Time: 240.0,
     Sound: BlowTorch,
     Category: Taller,
-    CanBeDoneFromFloor:true
+    CanBeDoneFromFloor: true
   }
 
   recipe RearWindshield2Custom
@@ -30,7 +30,7 @@ module CraftRearWindshieldCustom
     Time: 240.0,
     Sound: BlowTorch,
     Category: Taller,
-    CanBeDoneFromFloor:true
+    CanBeDoneFromFloor: true
   }
 
   recipe RearWindshield3Custom
@@ -44,6 +44,6 @@ module CraftRearWindshieldCustom
     Time: 240.0,
     Sound: BlowTorch,
     Category: Taller,
-    CanBeDoneFromFloor:true
+    CanBeDoneFromFloor: true
   }
 }

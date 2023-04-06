@@ -16,7 +16,7 @@ module CraftWindshieldCustom
     Time: 240.0,
     Sound: BlowTorch,
     Category: Taller,
-    CanBeDoneFromFloor:true
+    CanBeDoneFromFloor: true
   }
 
   recipe Windshield2Custom
@@ -30,7 +30,7 @@ module CraftWindshieldCustom
     Time: 240.0,
     Sound: BlowTorch,
     Category: Taller,
-    CanBeDoneFromFloor:true
+    CanBeDoneFromFloor: true
   }
 
   recipe Windshield3Custom
@@ -44,6 +44,6 @@ module CraftWindshieldCustom
     Time: 240.0,
     Sound: BlowTorch,
     Category: Taller,
-    CanBeDoneFromFloor:true
+    CanBeDoneFromFloor: true
   }
 }

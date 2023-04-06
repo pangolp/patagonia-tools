@@ -17,7 +17,7 @@ module CraftHood
         Time: 480.0,
         Sound: BlowTorch,
         Category: Taller,
-        CanBeDoneFromFloor:true
+        CanBeDoneFromFloor: true
     }
 
     recipe EngineDoorCustom2
@@ -32,7 +32,7 @@ module CraftHood
         Time: 480.0,
         Sound: BlowTorch,
         Category: Taller,
-        CanBeDoneFromFloor:true
+        CanBeDoneFromFloor: true
     }
 
     recipe EngineDoorCustom3
@@ -47,6 +47,6 @@ module CraftHood
         Time: 480.0,
         Sound: BlowTorch,
         Category: Taller,
-        CanBeDoneFromFloor:true
+        CanBeDoneFromFloor: true
     }
 }

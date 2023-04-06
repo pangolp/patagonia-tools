@@ -27,6 +27,6 @@ module CraftEngineParts
         Time: 240.0,
         Sound: BlowTorch,
         Category: Patagonia,
-        CanBeDoneFromFloor:true
+        CanBeDoneFromFloor: true
     }
 }

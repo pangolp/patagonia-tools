@@ -16,7 +16,7 @@ module FrontWindowCustom
     Time: 240.0,
     Sound: BlowTorch,
     Category: Taller,
-    CanBeDoneFromFloor:true
+    CanBeDoneFromFloor: true
   }
 
   recipe FrontWindow2Custom
@@ -30,7 +30,7 @@ module FrontWindowCustom
     Time: 240.0,
     Sound: BlowTorch,
     Category: Taller,
-    CanBeDoneFromFloor:true
+    CanBeDoneFromFloor: true
   }
 
   recipe FrontWindow3Custom
@@ -44,6 +44,6 @@ module FrontWindowCustom
     Time: 240.0,
     Sound: BlowTorch,
     Category: Taller,
-    CanBeDoneFromFloor:true
+    CanBeDoneFromFloor: true
   }
 }

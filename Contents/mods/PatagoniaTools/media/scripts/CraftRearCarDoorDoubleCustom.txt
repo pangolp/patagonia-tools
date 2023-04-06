@@ -17,7 +17,7 @@ module CraftRearCarDoorDoubleCustom
         Time: 480.0,
         Sound: BlowTorch,
         Category: Taller,
-        CanBeDoneFromFloor:true
+        CanBeDoneFromFloor: true
     }
 
     recipe RearCarDoorDoubleCustom2
@@ -32,7 +32,7 @@ module CraftRearCarDoorDoubleCustom
         Time: 480.0,
         Sound: BlowTorch,
         Category: Taller,
-        CanBeDoneFromFloor:true
+        CanBeDoneFromFloor: true
     }
 
     recipe RearCarDoorDoubleCustom3
@@ -47,6 +47,6 @@ module CraftRearCarDoorDoubleCustom
         Time: 480.0,
         Sound: BlowTorch,
         Category: Taller,
-        CanBeDoneFromFloor:true
+        CanBeDoneFromFloor: true
     }
 }

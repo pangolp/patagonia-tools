@@ -30,6 +30,6 @@ module CraftGenerator
         Category: Patagonia,
         CanBeDoneFromFloor: true,
         AnimNode: blowtorch,
-        Prop1:BlowTorch
+        Prop1: BlowTorch
     }
 }

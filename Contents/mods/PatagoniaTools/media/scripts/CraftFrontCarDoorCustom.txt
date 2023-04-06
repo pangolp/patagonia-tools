@@ -17,7 +17,7 @@ module CraftFrontCarDoorCustom
         Time: 480.0,
         Sound: BlowTorch,
         Category: Taller,
-        CanBeDoneFromFloor:true
+        CanBeDoneFromFloor: true
     }
 
     recipe FrontCarDoorCustom2
@@ -32,7 +32,7 @@ module CraftFrontCarDoorCustom
         Time: 480.0,
         Sound: BlowTorch,
         Category: Taller,
-        CanBeDoneFromFloor:true
+        CanBeDoneFromFloor: true
     }
 
     recipe FrontCarDoorCustom3
@@ -47,6 +47,6 @@ module CraftFrontCarDoorCustom
         Time: 480.0,
         Sound: BlowTorch,
         Category: Taller,
-        CanBeDoneFromFloor:true
+        CanBeDoneFromFloor: true
     }
 }

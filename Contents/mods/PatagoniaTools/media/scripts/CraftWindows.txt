@@ -20,6 +20,6 @@ module CraftWindows
     Time: 240.0,
     Sound:Hammering,
     Category: Patagonia,
-    CanBeDoneFromFloor:true
+    CanBeDoneFromFloor: true
   }
 }
