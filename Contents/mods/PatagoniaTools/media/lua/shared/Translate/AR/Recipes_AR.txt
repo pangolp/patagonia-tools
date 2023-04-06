@@ -1,4 +1,4 @@
-Recipe_ES = {
+Recipes_AR = {
   Recipe_MakeEnginePartCustom = "Crear piezas de motor",
   Recipe_GeneratorCustom = "Crear un generador",
   Recipe_WindowsCustom = "Ventana",
@@ -23,7 +23,7 @@ Recipe_ES = {
   Recipe_RearCarDoorCustom1 = "Puerta trasera (Est·ndar)",
   Recipe_RearCarDoorCustom2 = "Puerta trasera (Industrial)",
   Recipe_RearCarDoorCustom3 = "Puerta trasera (Deportivo)",
-  Recipe_RearCarDoorDoubleCustom1 = "Puerta doble trasera (Est·ndar)",
+  Recipe_RearCarDoorDoubleCustom1 = "Puerta doble trasera (Estùndar)",
   Recipe_RearCarDoorDoubleCustom2 = "Puerta doble trasera (Industrial)",
   Recipe_RearCarDoorDoubleCustom3 = "Puerta doble trasera (Deportivo)",
 }
