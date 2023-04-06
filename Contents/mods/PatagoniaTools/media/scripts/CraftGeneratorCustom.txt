@@ -1,0 +1,35 @@
+module CraftGeneratorCustom
+{
+  imports
+  {
+    Base
+  }
+
+  recipe GeneratorCustom
+  {
+    keep WeldingMask,
+    keep [Recipe.GetItemTypes.Hammer],
+    keep Screwdriver,
+    keep Saw,
+    keep Wrench,
+    keep PipeWrench,
+    BlowTorch,
+
+    ElectricWire=6,
+    Wire=6,
+    Aluminum=10,
+    SheetMetal=10,
+    Screws=50,
+    ElectronicsScrap=100,
+    MetalBar=6,
+
+    Result: Generator,
+    SkillRequired: Woodwork=5;Electricity=3;MetalWelding=2;,
+    Time: 240.0,
+    Sound: BlowTorch,
+    Category: Patagonia,
+    CanBeDoneFromFloor: true,
+    AnimNode: blowtorch,
+    Prop1: BlowTorch
+  }
+}

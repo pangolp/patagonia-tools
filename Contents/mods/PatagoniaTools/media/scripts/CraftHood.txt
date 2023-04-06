@@ -1,52 +1,52 @@
 module CraftHood
 {
-    imports
-    {
-        Base
-    }
+  imports
+  {
+    Base
+  }
 
-    recipe EngineDoorCustom1
-    {
-        keep WeldingMask,
-        SheetMetal=10,
-        BlowTorch=1,
-        WeldingRods=1,
+  recipe EngineDoorCustom1
+  {
+    keep WeldingMask,
+    SheetMetal=10,
+    BlowTorch=1,
+    WeldingRods=1,
 
-        Result: EngineDoor1,
-        SkillRequired: Mechanics=10;MetalWelding=2;,
-        Time: 480.0,
-        Sound: BlowTorch,
-        Category: Taller,
-        CanBeDoneFromFloor: true
-    }
+    Result: EngineDoor1,
+    SkillRequired: Mechanics=10;MetalWelding=2;,
+    Time: 480.0,
+    Sound: BlowTorch,
+    Category: Taller,
+    CanBeDoneFromFloor: true
+  }
 
-    recipe EngineDoorCustom2
-    {
-        keep WeldingMask,
-        SheetMetal=10,
-        BlowTorch=1,
-        WeldingRods=1,
+  recipe EngineDoorCustom2
+  {
+    keep WeldingMask,
+    SheetMetal=10,
+    BlowTorch=1,
+    WeldingRods=1,
 
-        Result: EngineDoor2,
-        SkillRequired: Mechanics=10;MetalWelding=2;,
-        Time: 480.0,
-        Sound: BlowTorch,
-        Category: Taller,
-        CanBeDoneFromFloor: true
-    }
+    Result: EngineDoor2,
+    SkillRequired: Mechanics=10;MetalWelding=2;,
+    Time: 480.0,
+    Sound: BlowTorch,
+    Category: Taller,
+    CanBeDoneFromFloor: true
+  }
 
-    recipe EngineDoorCustom3
-    {
-        keep WeldingMask,
-        SheetMetal=10,
-        BlowTorch=1,
-        WeldingRods=1,
+  recipe EngineDoorCustom3
+  {
+    keep WeldingMask,
+    SheetMetal=10,
+    BlowTorch=1,
+    WeldingRods=1,
 
-        Result: EngineDoor3,
-        SkillRequired: Mechanics=10;MetalWelding=2;,
-        Time: 480.0,
-        Sound: BlowTorch,
-        Category: Taller,
-        CanBeDoneFromFloor: true
-    }
+    Result: EngineDoor3,
+    SkillRequired: Mechanics=10;MetalWelding=2;,
+    Time: 480.0,
+    Sound: BlowTorch,
+    Category: Taller,
+    CanBeDoneFromFloor: true
+  }
 }

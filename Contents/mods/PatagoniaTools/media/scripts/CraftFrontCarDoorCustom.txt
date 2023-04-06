@@ -1,52 +1,52 @@
 module CraftFrontCarDoorCustom
 {
-    imports
-    {
-        Base
-    }
+  imports
+  {
+    Base
+  }
 
-    recipe FrontCarDoorCustom1
-    {
-        keep WeldingMask,
-        SheetMetal=5,
-        BlowTorch=1,
-        WeldingRods=1,
+  recipe FrontCarDoorCustom1
+  {
+    keep WeldingMask,
+    SheetMetal=5,
+    BlowTorch=1,
+    WeldingRods=1,
 
-        Result: FrontCarDoor1,
-        SkillRequired: Mechanics=10;MetalWelding=2;,
-        Time: 480.0,
-        Sound: BlowTorch,
-        Category: Taller,
-        CanBeDoneFromFloor: true
-    }
+    Result: FrontCarDoor1,
+    SkillRequired: Mechanics=10;MetalWelding=2;,
+    Time: 480.0,
+    Sound: BlowTorch,
+    Category: Taller,
+    CanBeDoneFromFloor: true
+  }
 
-    recipe FrontCarDoorCustom2
-    {
-        keep WeldingMask,
-        SheetMetal=5,
-        BlowTorch=1,
-        WeldingRods=1,
+  recipe FrontCarDoorCustom2
+  {
+    keep WeldingMask,
+    SheetMetal=5,
+    BlowTorch=1,
+    WeldingRods=1,
 
-        Result: FrontCarDoor2,
-        SkillRequired: Mechanics=10;MetalWelding=2;,
-        Time: 480.0,
-        Sound: BlowTorch,
-        Category: Taller,
-        CanBeDoneFromFloor: true
-    }
+    Result: FrontCarDoor2,
+    SkillRequired: Mechanics=10;MetalWelding=2;,
+    Time: 480.0,
+    Sound: BlowTorch,
+    Category: Taller,
+    CanBeDoneFromFloor: true
+  }
 
-    recipe FrontCarDoorCustom3
-    {
-        keep WeldingMask,
-        SheetMetal=5,
-        BlowTorch=1,
-        WeldingRods=1,
+  recipe FrontCarDoorCustom3
+  {
+    keep WeldingMask,
+    SheetMetal=5,
+    BlowTorch=1,
+    WeldingRods=1,
 
-        Result: FrontCarDoor3,
-        SkillRequired: Mechanics=10;MetalWelding=2;,
-        Time: 480.0,
-        Sound: BlowTorch,
-        Category: Taller,
-        CanBeDoneFromFloor: true
-    }
+    Result: FrontCarDoor3,
+    SkillRequired: Mechanics=10;MetalWelding=2;,
+    Time: 480.0,
+    Sound: BlowTorch,
+    Category: Taller,
+    CanBeDoneFromFloor: true
+  }
 }

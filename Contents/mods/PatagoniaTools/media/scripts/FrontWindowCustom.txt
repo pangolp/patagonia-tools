@@ -2,7 +2,7 @@ module FrontWindowCustom
 {
   imports
   {
-      Base
+    Base
   }
 
   recipe FrontWindow1Custom
