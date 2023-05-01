@@ -13,7 +13,7 @@ module CraftHood
     WeldingRods=1,
 
     Result: EngineDoor1,
-    SkillRequired: Mechanics=10;MetalWelding=2;,
+    SkillRequired: Mechanics=8;MetalWelding=2;,
     Time: 480.0,
     Sound: BlowTorch,
     Category: Taller,
@@ -28,7 +28,7 @@ module CraftHood
     WeldingRods=1,
 
     Result: EngineDoor2,
-    SkillRequired: Mechanics=10;MetalWelding=2;,
+    SkillRequired: Mechanics=8;MetalWelding=2;,
     Time: 480.0,
     Sound: BlowTorch,
     Category: Taller,
@@ -43,7 +43,7 @@ module CraftHood
     WeldingRods=1,
 
     Result: EngineDoor3,
-    SkillRequired: Mechanics=10;MetalWelding=2;,
+    SkillRequired: Mechanics=8;MetalWelding=2;,
     Time: 480.0,
     Sound: BlowTorch,
     Category: Taller,

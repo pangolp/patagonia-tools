@@ -17,10 +17,10 @@ module CraftGeneratorCustom
 
     ElectricWire=6,
     Wire=6,
-    Aluminum=10,
-    SheetMetal=10,
+    Aluminum=4,
+    SheetMetal=4,
     Screws=50,
-    ElectronicsScrap=100,
+    ElectronicsScrap=50,
     MetalBar=6,
 
     Result: Generator,

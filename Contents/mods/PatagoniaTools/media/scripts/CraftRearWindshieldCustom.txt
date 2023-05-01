@@ -12,7 +12,7 @@ module CraftRearWindshieldCustom
     Glue=5,
 
     Result: RearWindshield1,
-    SkillRequired: Mechanics=10,
+    SkillRequired: Mechanics=6,
     Time: 240.0,
     Sound: BlowTorch,
     Category: Taller,
@@ -26,7 +26,7 @@ module CraftRearWindshieldCustom
     Glue=5,
 
     Result: RearWindshield2,
-    SkillRequired: Mechanics=10,
+    SkillRequired: Mechanics=6,
     Time: 240.0,
     Sound: BlowTorch,
     Category: Taller,
@@ -40,7 +40,7 @@ module CraftRearWindshieldCustom
     Glue=5,
 
     Result: RearWindshield3,
-    SkillRequired: Mechanics=10,
+    SkillRequired: Mechanics=6,
     Time: 240.0,
     Sound: BlowTorch,
     Category: Taller,

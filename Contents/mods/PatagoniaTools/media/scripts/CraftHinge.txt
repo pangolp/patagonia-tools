@@ -1,24 +1,23 @@
-module CraftWindows
+module CraftHinge
 {
   imports
   {
       Base
   }
 
-  recipe WindowsCustom
+  recipe HingeCustom
   {
     keep [Recipe.GetItemTypes.Hammer],
     keep Screwdriver,
     keep Saw,
 
-    Plank=4,
+    SheetMetal,
     Screws=4,
-    [Recipe.GetItemTypes.BrokenGlass]=4,
 
-    Result: Moveables.fixtures_windows_01_0,
-    SkillRequired: Woodwork=4,
+    Result: Hinge,
+    SkillRequired: MetalWelding=2,
     Time: 240.0,
-    Sound:Hammering,
+    Sound: Hammering,
     Category: Patagonia,
     CanBeDoneFromFloor: true
   }

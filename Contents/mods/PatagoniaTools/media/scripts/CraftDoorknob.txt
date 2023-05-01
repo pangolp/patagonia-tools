@@ -1,24 +1,25 @@
-module CraftWindows
+module CraftDoorknob
 {
   imports
   {
       Base
   }
 
-  recipe WindowsCustom
+  recipe DoorknobCustom
   {
     keep [Recipe.GetItemTypes.Hammer],
     keep Screwdriver,
     keep Saw,
 
-    Plank=4,
+    SheetMetal,
     Screws=4,
-    [Recipe.GetItemTypes.BrokenGlass]=4,
+    Aluminum,
+    TinCanEmpty,
 
-    Result: Moveables.fixtures_windows_01_0,
-    SkillRequired: Woodwork=4,
+    Result: Doorknob,
+    SkillRequired: MetalWelding=2,
     Time: 240.0,
-    Sound:Hammering,
+    Sound: Hammering,
     Category: Patagonia,
     CanBeDoneFromFloor: true
   }
