@@ -26,4 +26,6 @@ Recipe_ES = {
   Recipe_RearCarDoorDoubleCustom1 = "Puerta doble trasera (Estándar)",
   Recipe_RearCarDoorDoubleCustom2 = "Puerta doble trasera (Industrial)",
   Recipe_RearCarDoorDoubleCustom3 = "Puerta doble trasera (Deportivo)",
+  Recipe_HingeCustom = "Bisagra",
+  Recipe_DoorknobCustom = "Picaporte",
 }
