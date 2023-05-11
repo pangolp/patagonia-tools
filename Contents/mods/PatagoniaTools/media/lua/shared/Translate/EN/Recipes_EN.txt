@@ -28,4 +28,12 @@ Recipes_EN = {
   Recipe_RearCarDoorDoubleCustom3 = "Double rear door (Sport)",
   Recipe_HingeCustom = "Door Hinge",
   Recipe_DoorknobCustom = "Doorknob",
+  Recipe_ShotgunShellsBoxCustom = "Box of Shotgun Shells",
+  Recipe_Boxof223Rounds = "Box of .223 Rounds",
+  Recipe_Boxof308Rounds = "Box of .308 Rounds",
+  Recipe_Boxof556Rounds = "Box of 5.56 Rounds",
+  Recipe_Boxof44MagnumRounds = "Box of .44 Magnum Rounds",
+  Recipe_Boxof45AutoRounds = "Box of .45 Auto Rounds",
+  Recipe_Boxof38SpecialRounds = "Box of .38 Special Rounds",
+  Recipe_Boxof9mmRounds = "Box of 9mm Rounds"
 }

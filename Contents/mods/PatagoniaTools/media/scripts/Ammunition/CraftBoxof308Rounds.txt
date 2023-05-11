@@ -1,0 +1,19 @@
+module CraftBoxof308Rounds
+{
+  imports
+  {
+      Base
+  }
+
+  recipe Boxof308Rounds
+  {
+    GunPowder=1200,
+
+    Result: 308Box,
+    Time: 240.0,
+    SkillRequired: Aiming=5;Reloading=5,
+    Sound: Hammering,
+    Category: Armería,
+    CanBeDoneFromFloor: true
+  }
+}

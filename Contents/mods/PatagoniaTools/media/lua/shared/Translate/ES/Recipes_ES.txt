@@ -28,4 +28,12 @@ Recipe_ES = {
   Recipe_RearCarDoorDoubleCustom3 = "Puerta doble trasera (Deportivo)",
   Recipe_HingeCustom = "Bisagra",
   Recipe_DoorknobCustom = "Picaporte",
+  Recipe_ShotgunShellsBoxCustom = "Caja de cartuchos de escopeta",
+  Recipe_Boxof223Rounds = "Caja de cartuchos .223",
+  Recipe_Boxof308Rounds = "Caja de cartuchos .308",
+  Recipe_Boxof556Rounds = "Caja de cartuchos 5.56mm",
+  Recipe_Boxof44MagnumRounds = "Caja de cartuchos .44 Magnum",
+  Recipe_Boxof45AutoRounds = "Caja de cartuchos .45 Auto",
+  Recipe_Boxof38SpecialRounds = "Caja de cartuchos .38 Special",
+  Recipe_Boxof9mmRounds = "Caja de cartuchos 9mm"
 }

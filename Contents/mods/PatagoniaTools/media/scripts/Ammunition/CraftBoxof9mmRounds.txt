@@ -1,0 +1,19 @@
+module CraftBoxof9mmRounds
+{
+  imports
+  {
+      Base
+  }
+
+  recipe Boxof9mmRounds
+  {
+    GunPowder=900,
+
+    Result: Bullets9mmBox,
+    Time: 240.0,
+    SkillRequired: Aiming=5;Reloading=5,
+    Sound: Hammering,
+    Category: Armería,
+    CanBeDoneFromFloor: true
+  }
+}

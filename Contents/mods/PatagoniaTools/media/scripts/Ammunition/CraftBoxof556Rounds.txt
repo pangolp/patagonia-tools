@@ -1,0 +1,19 @@
+module CraftBoxof556Rounds
+{
+  imports
+  {
+      Base
+  }
+
+  recipe Boxof556Rounds
+  {
+    GunPowder=1800,
+
+    Result: 556Box,
+    Time: 240.0,
+    SkillRequired: Aiming=5;Reloading=5,
+    Sound: Hammering,
+    Category: Armería,
+    CanBeDoneFromFloor: true
+  }
+}

@@ -1,0 +1,19 @@
+module CraftBoxof38SpecialRounds
+{
+  imports
+  {
+      Base
+  }
+
+  recipe Boxof38SpecialRounds
+  {
+    GunPowder=900,
+
+    Result: Bullets38Box,
+    Time: 240.0,
+    SkillRequired: Aiming=5;Reloading=5,
+    Sound: Hammering,
+    Category: Armería,
+    CanBeDoneFromFloor: true
+  }
+}
