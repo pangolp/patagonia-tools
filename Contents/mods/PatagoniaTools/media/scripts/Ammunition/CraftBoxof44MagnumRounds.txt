@@ -7,7 +7,7 @@ module CraftBoxof44MagnumRounds
 
   recipe Boxof44MagnumRounds
   {
-    GunPowder=360,
+    GunPowder=720,
 
     Result: Bullets44Box,
     Time: 240.0,

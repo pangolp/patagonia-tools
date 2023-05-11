@@ -7,7 +7,7 @@ module CraftBoxof45AutoRounds
 
   recipe Boxof45AutoRounds
   {
-    GunPowder=900,
+    GunPowder=1800,
 
     Result: Bullets45Box,
     Time: 240.0,

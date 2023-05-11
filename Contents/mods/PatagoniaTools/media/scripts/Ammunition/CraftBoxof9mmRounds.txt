@@ -7,7 +7,7 @@ module CraftBoxof9mmRounds
 
   recipe Boxof9mmRounds
   {
-    GunPowder=900,
+    GunPowder=1800,
 
     Result: Bullets9mmBox,
     Time: 240.0,

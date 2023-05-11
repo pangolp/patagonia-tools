@@ -7,7 +7,7 @@ module CraftBoxof556Rounds
 
   recipe Boxof556Rounds
   {
-    GunPowder=1800,
+    GunPowder=3600,
 
     Result: 556Box,
     Time: 240.0,

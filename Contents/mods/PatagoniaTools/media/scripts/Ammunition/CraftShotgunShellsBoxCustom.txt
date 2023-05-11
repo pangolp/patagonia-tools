@@ -7,7 +7,7 @@ module CraftShotgunShellsBoxCustom
 
   recipe ShotgunShellsBoxCustom
   {
-    GunPowder=720,
+    GunPowder=1440,
 
     Result: ShotgunShellsBox,
     Time: 240.0,
