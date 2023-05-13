@@ -35,5 +35,10 @@ Recipes_EN = {
   Recipe_Boxof44MagnumRounds = "Box of .44 Magnum Rounds",
   Recipe_Boxof45AutoRounds = "Box of .45 Auto Rounds",
   Recipe_Boxof38SpecialRounds = "Box of .38 Special Rounds",
-  Recipe_Boxof9mmRounds = "Box of 9mm Rounds"
+  Recipe_Boxof9mmRounds = "Box of 9mm Rounds",
+  Recipe_TvWideScreenCustom = "Premium Technologies Television",
+  Recipe_WashingMachineCustom = "Blue Combo Washer/Dryer",
+  Recipe_GrayOvenCustom = "Gray Oven",
+  Recipe_RegriferationCustom = "Chrome Refrigerator",
+  Recipe_ChromedMicrowaveOvenCustom = "Chromed microwave oven",
 }

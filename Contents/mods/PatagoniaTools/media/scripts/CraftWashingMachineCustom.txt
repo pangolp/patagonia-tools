@@ -1,0 +1,25 @@
+module CraftWashingMachineCustom
+{
+  imports
+  {
+    Base, Radio
+  }
+
+recipe WashingMachineCustom
+  {
+    SheetMetal=4,
+    ElectronicsScrap=6,
+    ElectricWire=4,
+    RadioReceiver=2,
+    RadioTransmitter=2,
+    Aluminum=6,
+    keep [Recipe.GetItemTypes.Screwdriver],
+
+    Result: Moveables.appliances_laundry_01_0,
+    SkillRequired: Electricity=5,
+    Time: 240.0,
+    Sound: BlowTorch,
+    Category: Patagonia,
+    CanBeDoneFromFloor: true
+  }
+}

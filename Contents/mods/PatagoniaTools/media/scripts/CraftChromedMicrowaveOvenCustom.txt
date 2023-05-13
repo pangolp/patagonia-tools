@@ -1,0 +1,25 @@
+module CraftChromedMicrowaveOvenCustom
+{
+  imports
+  {
+    Base, Radio
+  }
+
+recipe ChromedMicrowaveOvenCustom
+  {
+    SheetMetal=4,
+    ElectronicsScrap=6,
+    ElectricWire=4,
+    RadioReceiver=2,
+    RadioTransmitter=2,
+    Aluminum=6,
+    keep [Recipe.GetItemTypes.Screwdriver],
+
+    Result: Moveables.appliances_cooking_01_28,
+    SkillRequired: Electricity=5,
+    Time: 240.0,
+    Sound: BlowTorch,
+    Category: Patagonia,
+    CanBeDoneFromFloor: true
+  }
+}

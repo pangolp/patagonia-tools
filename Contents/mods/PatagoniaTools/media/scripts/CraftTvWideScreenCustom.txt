@@ -1,0 +1,27 @@
+module CraftTvWideScreenCustom
+{
+  imports
+  {
+    Base, Radio
+  }
+
+recipe TvWideScreenCustom
+  {
+    SheetMetal=4,
+    ElectronicsScrap=6,
+    Amplifier=2,
+    LightBulb=4,
+    ElectricWire=4,
+    RadioReceiver=2,
+    RadioTransmitter=2,
+    Aluminum=6,
+    keep [Recipe.GetItemTypes.Screwdriver],
+
+    Result: TvWideScreen,
+    SkillRequired: Electricity=5,
+    Time: 240.0,
+    Sound: BlowTorch,
+    Category: Patagonia,
+    CanBeDoneFromFloor: true
+  }
+}
