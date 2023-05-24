@@ -41,4 +41,7 @@ Recipe_ES = {
   Recipe_GrayOvenCustom = "Horno Gris",
   Recipe_RegriferationCustom = "Nevera Cromada",
   Recipe_ChromedMicrowaveOvenCustom = "Microondas cromado",
+  Recipe_BigCarSeatCustom1 = "Asiento estándar",
+  Recipe_BigCarSeatCustom2 = "Asiento industrial",
+  Recipe_BigCarSeatCustom3 = "Asiento deportivo",
 }

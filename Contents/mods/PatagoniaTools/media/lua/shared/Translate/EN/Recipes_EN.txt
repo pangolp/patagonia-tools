@@ -41,4 +41,7 @@ Recipes_EN = {
   Recipe_GrayOvenCustom = "Gray Oven",
   Recipe_RegriferationCustom = "Chrome Refrigerator",
   Recipe_ChromedMicrowaveOvenCustom = "Chromed microwave oven",
+  Recipe_BigCarSeatCustom1 = "Standard Seat",
+  Recipe_BigCarSeatCustom2 = "Heavy-Duty Seat",
+  Recipe_BigCarSeatCustom3 = "Sports Seat",
 }

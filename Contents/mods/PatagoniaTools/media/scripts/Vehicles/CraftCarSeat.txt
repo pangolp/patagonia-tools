@@ -1,0 +1,70 @@
+module Patagonia
+{
+  imports
+  {
+    Base
+  }
+
+  recipe BigCarSeatCustom1
+  {
+    keep Needle,
+    keep [Recipe.GetItemTypes.Hammer],
+
+    Plank=4,
+    RippedSheets=4,
+    DenimStrips=4,
+    LeatherStrips=4,
+    Pillow=2,
+    Nails=50,
+    Thread=5,
+
+    Result: NormalCarSeat1,
+    SkillRequired: Mechanics=5;Tailoring=5,
+    Time: 480.0,
+    Sound: Hammering,
+    Category: Taller,
+    CanBeDoneFromFloor: true
+  }
+
+  recipe BigCarSeatCustom2
+  {
+    keep Needle,
+    keep [Recipe.GetItemTypes.Hammer],
+
+    Plank=4,
+    RippedSheets=4,
+    DenimStrips=4,
+    LeatherStrips=4,
+    Pillow=2,
+    Nails=50,
+    Thread=5,
+
+    Result: NormalCarSeat2,
+    SkillRequired: Mechanics=5;Tailoring=5,
+    Time: 480.0,
+    Sound: Hammering,
+    Category: Taller,
+    CanBeDoneFromFloor: true
+  }
+
+  recipe BigCarSeatCustom3
+  {
+    keep Needle,
+    keep [Recipe.GetItemTypes.Hammer],
+
+    Plank=4,
+    RippedSheets=4,
+    DenimStrips=4,
+    LeatherStrips=4,
+    Pillow=2,
+    Nails=50,
+    Thread=5,
+
+    Result: NormalCarSeat3,
+    SkillRequired: Mechanics=5;Tailoring=5,
+    Time: 480.0,
+    Sound: Hammering,
+    Category: Taller,
+    CanBeDoneFromFloor: true
+  }
+}
