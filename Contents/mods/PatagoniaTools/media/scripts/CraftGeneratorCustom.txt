@@ -23,7 +23,7 @@ module CraftGeneratorCustom
     ElectronicsScrap=50,
     MetalBar=6,
 
-    Result: Generator,
+    Result: Base.Generator,
     SkillRequired: Woodwork=5;Electricity=3;MetalWelding=2;,
     Time: 240.0,
     Sound: BlowTorch,
