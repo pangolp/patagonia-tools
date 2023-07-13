@@ -1,0 +1,24 @@
+module CraftChromeSinkCustom
+{
+  imports
+  {
+      Base
+  }
+
+  recipe ChromeSinkCustom
+  {
+    keep [Recipe.GetItemTypes.Hammer],
+    keep Screwdriver,
+
+    SmallSheetMetal,
+    SmallSheetMetal=2,
+    MetalPipe,
+
+    Result: Mov_ChromeSink,
+    SkillRequired: MetalWelding=2,
+    Time: 240.0,
+    Sound: Hammering,
+    Category: Patagonia,
+    CanBeDoneFromFloor: true
+  }
+}
