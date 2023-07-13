@@ -11,7 +11,7 @@ module CraftHinge
     keep Screwdriver,
     keep Saw,
 
-    SheetMetal,
+    SmallSheetMetal,
     Screws=4,
 
     Result: Hinge,
