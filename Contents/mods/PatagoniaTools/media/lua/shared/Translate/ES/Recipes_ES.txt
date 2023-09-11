@@ -49,4 +49,5 @@ Recipe_ES = {
   Recipe_UnusableWoodCustom = "Tablón",
   Recipe_SheetMetalCustom = "Chapa metálica",
   Recipe_CannedCarrotsCustom = "Zanahorias enlatadas",
+  Recipe_CannedPotatoCustom = "Patata enlatada",
 }

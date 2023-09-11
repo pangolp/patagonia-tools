@@ -1,0 +1,20 @@
+module CraftCannedPotato
+{
+  imports
+  {
+      Base
+  }
+
+  recipe CannedPotatoCustom
+  {
+    farming.Potato=100,
+    TinCanEmpty=2,
+
+    Result: CannedPotato2,
+    Time: 240.0,
+    Sound: Hammering,
+    Category: Patagonia,
+    CanBeDoneFromFloor: true,
+    OnGiveXP:Recipe.OnGiveXP.Cooking3,
+  }
+}
