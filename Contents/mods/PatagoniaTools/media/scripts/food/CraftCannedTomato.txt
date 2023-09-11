@@ -1,0 +1,20 @@
+module CraftCannedTomato
+{
+  imports
+  {
+      Base
+  }
+
+  recipe CannedTomatoCustom
+  {
+    farming.Tomato=100,
+    TinCanEmpty=2,
+
+    Result: CannedTomato2,
+    Time: 240.0,
+    Sound: Hammering,
+    Category: Patagonia,
+    CanBeDoneFromFloor: true,
+    OnGiveXP:Recipe.OnGiveXP.Cooking3,
+  }
+}

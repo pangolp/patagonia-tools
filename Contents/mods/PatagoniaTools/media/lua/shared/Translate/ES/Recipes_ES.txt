@@ -50,4 +50,5 @@ Recipe_ES = {
   Recipe_SheetMetalCustom = "Chapa metálica",
   Recipe_CannedCarrotsCustom = "Zanahorias enlatadas",
   Recipe_CannedPotatoCustom = "Patata enlatada",
+  Recipe_CannedTomatoCustom = "Tomate enlatado",
 }
