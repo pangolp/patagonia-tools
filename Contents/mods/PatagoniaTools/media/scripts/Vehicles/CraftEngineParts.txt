@@ -22,7 +22,7 @@ recipe MakeEnginePartCustom
     MetalBar,
     Screws=10,
 
-    Result: EngineParts=5,
+    Result: EngineParts=10,
     SkillRequired: Mechanics=6;MetalWelding=1;,
     Time: 240.0,
     Sound: BlowTorch,
