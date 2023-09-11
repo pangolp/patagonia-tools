@@ -45,4 +45,5 @@ Recipe_ES = {
   Recipe_BigCarSeatCustom2 = "Asiento industrial",
   Recipe_BigCarSeatCustom3 = "Asiento deportivo",
   Recipe_ChromeSinkCustom = "Fregadero cromado",
+  Recipe_MoneyCustom = "Dinero",
 }
