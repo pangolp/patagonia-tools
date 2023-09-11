@@ -1,0 +1,20 @@
+module CraftUnusableWood
+{
+  imports
+  {
+      Base
+  }
+
+  recipe UnusableWoodCustom
+  {
+    keep [Recipe.GetItemTypes.Hammer],
+    UnusableWood=3,
+
+    Result: Plank,
+    Sound: Hammering,
+    Time: 240.0,
+    Category: Patagonia,
+    CanBeDoneFromFloor: true,
+    OnGiveXP:Recipe.OnGiveXP.WoodWork5,
+  }
+}

@@ -46,4 +46,5 @@ Recipes_EN = {
   Recipe_BigCarSeatCustom3 = "Sports Seat",
   Recipe_ChromeSinkCustom = "Chrome Sink",
   Recipe_MoneyCustom = "Money",
+  Recipe_UnusableWoodCustom = "Plank",
 }
