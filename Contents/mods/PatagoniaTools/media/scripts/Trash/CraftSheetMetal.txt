@@ -1,0 +1,33 @@
+module CraftSheetMetal
+{
+  imports
+  {
+      Base
+  }
+
+  recipe SheetMetalCustom
+  {
+    Mov_SatelliteDish/Base.appliances_com_01_20/Moveables.appliances_com_01_20,
+    keep Screwdriver,
+
+    Result: SheetMetal,
+    Sound: Dismantle,
+    Time: 420.0,
+    Category: Patagonia,
+    CanBeDoneFromFloor: true,
+    OnGiveXP:Recipe.OnGiveXP.MetalWelding25,
+  }
+
+  recipe SheetMetalCustom
+  {
+    Base.Mov_AntiqueStove/Base.appliances_cooking_01_16,
+    keep BlowTorch,
+
+    Result: SheetMetal,
+    Sound: BlowTorch,
+    Time: 420.0,
+    Category: Patagonia,
+    CanBeDoneFromFloor: true,
+    OnGiveXP:Recipe.OnGiveXP.MetalWelding25,
+  }
+}

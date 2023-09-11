@@ -47,4 +47,5 @@ Recipe_ES = {
   Recipe_ChromeSinkCustom = "Fregadero cromado",
   Recipe_MoneyCustom = "Dinero",
   Recipe_UnusableWoodCustom = "Tablón",
+  Recipe_SheetMetalCustom = "Chapa metálica",
 }
