@@ -1,0 +1,20 @@
+module CraftCannedCarrots
+{
+  imports
+  {
+      Base
+  }
+
+  recipe CannedCarrotsCustom
+  {
+    Carrots=100,
+    TinCanEmpty=2,
+
+    Result: CannedCarrots2,
+    Time: 240.0,
+    Sound: Hammering,
+    Category: Patagonia,
+    CanBeDoneFromFloor: true,
+    OnGiveXP:Recipe.OnGiveXP.Cooking3,
+  }
+}
