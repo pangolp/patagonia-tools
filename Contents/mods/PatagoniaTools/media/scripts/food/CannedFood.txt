@@ -1,0 +1,58 @@
+module CannedFood
+{
+  imports
+  {
+      Base
+  }
+
+  recipe CannedCarrotsCustom
+  {
+    Carrots=20,
+    TinCanEmpty=2,
+    keep [Recipe.GetItemTypes.Hammer],
+
+    Result: CannedCarrots2,
+    Time: 240.0,
+    Category: Patagonia,
+    SkillRequired: Cooking=2;Farming=2,
+    AnimNode: Disassemble,
+    Prop1: Screwdriver,
+    Prop2: Source=2,
+    CanBeDoneFromFloor: true,
+    OnGiveXP: Recipe.OnGiveXP.Cooking3,
+  }
+
+  recipe CannedPotatoCustom
+  {
+    farming.Potato=20,
+    TinCanEmpty=2,
+    keep [Recipe.GetItemTypes.Hammer],
+
+    Result: CannedPotato2,
+    Time: 240.0,
+    Category: Patagonia,
+    SkillRequired: Cooking=2;Farming=2,
+    AnimNode: Disassemble,
+    Prop1: Screwdriver,
+    Prop2: Source=2,
+    CanBeDoneFromFloor: true,
+    OnGiveXP: Recipe.OnGiveXP.Cooking3,
+  }
+
+  recipe CannedTomatoCustom
+  {
+    farming.Tomato=20,
+    TinCanEmpty=2,
+    keep [Recipe.GetItemTypes.Hammer],
+
+    Result: CannedTomato2,
+    Time: 240.0,
+    Category: Patagonia,
+    SkillRequired: Cooking=2;Farming=2,
+    AnimNode: Disassemble,
+    Prop1: Screwdriver,
+    Prop2: Source=2,
+    CanBeDoneFromFloor: true,
+    OnGiveXP: Recipe.OnGiveXP.Cooking3,
+  }
+}
