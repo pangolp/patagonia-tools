@@ -2,5 +2,5 @@ version=1
 id=2941436046
 title=Patagonia tools
 description=Crafting used on the server
-tags=Build 41;Building;Language/Translation;Multiplayer
+tags=Build 40;Build 41;Building;Food;Items;Language/Translation;Misc;Multiplayer
 visibility=unlisted
