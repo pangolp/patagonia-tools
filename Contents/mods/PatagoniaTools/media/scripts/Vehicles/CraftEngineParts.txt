@@ -26,7 +26,7 @@ recipe MakeEnginePartCustom
     SkillRequired: Mechanics=6;MetalWelding=1;,
     Time: 240.0,
     Sound: BlowTorch,
-    Category: Patagonia,
+    Category: Taller,
     CanBeDoneFromFloor: true
   }
 }
