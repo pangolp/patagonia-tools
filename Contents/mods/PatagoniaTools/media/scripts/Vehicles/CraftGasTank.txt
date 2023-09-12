@@ -1,0 +1,52 @@
+module CraftGasTank
+{
+  imports
+  {
+    Base
+  }
+
+  recipe GasTankCustom1
+  {
+    keep WeldingMask,
+    SheetMetal=5,
+    BlowTorch=1,
+    WeldingRods=1,
+
+    Result: SmallGasTank1,
+    SkillRequired: Mechanics=6;MetalWelding=2;,
+    Time: 480.0,
+    Sound: BlowTorch,
+    Category: Taller,
+    CanBeDoneFromFloor: true
+  }
+
+  recipe GasTankCustom2
+  {
+    keep WeldingMask,
+    SheetMetal=5,
+    BlowTorch=1,
+    WeldingRods=1,
+
+    Result: SmallGasTank2,
+    SkillRequired: Mechanics=6;MetalWelding=2;,
+    Time: 480.0,
+    Sound: BlowTorch,
+    Category: Taller,
+    CanBeDoneFromFloor: true
+  }
+
+  recipe GasTankCustom3
+  {
+    keep WeldingMask,
+    SheetMetal=5,
+    BlowTorch=1,
+    WeldingRods=1,
+
+    Result: SmallGasTank3,
+    SkillRequired: Mechanics=6;MetalWelding=2;,
+    Time: 480.0,
+    Sound: BlowTorch,
+    Category: Taller,
+    CanBeDoneFromFloor: true
+  }
+}
