@@ -7,7 +7,7 @@ module CraftCannedTomato
 
   recipe CannedTomatoCustom
   {
-    farming.Tomato=100,
+    farming.Tomato=20,
     TinCanEmpty=2,
 
     Result: CannedTomato2,

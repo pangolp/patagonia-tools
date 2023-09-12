@@ -7,7 +7,7 @@ module CraftCannedPotato
 
   recipe CannedPotatoCustom
   {
-    farming.Potato=100,
+    farming.Potato=20,
     TinCanEmpty=2,
 
     Result: CannedPotato2,

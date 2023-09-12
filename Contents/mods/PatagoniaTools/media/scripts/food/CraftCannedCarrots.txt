@@ -7,7 +7,7 @@ module CraftCannedCarrots
 
   recipe CannedCarrotsCustom
   {
-    Carrots=100,
+    Carrots=20,
     TinCanEmpty=2,
 
     Result: CannedCarrots2,
