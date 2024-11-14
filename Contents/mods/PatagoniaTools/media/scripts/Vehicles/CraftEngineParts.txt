@@ -5,26 +5,53 @@ module CraftEngineParts
     Base
   }
 
-recipe MakeEnginePartCustom
+  recipe MakeEnginePartCustom
   {
-    BlowTorch=1,
     keep WeldingMask,
     keep [Recipe.GetItemTypes.Hammer],
     keep Screwdriver,
     keep Saw,
     keep Wrench,
     keep PipeWrench,
-    WeldingRods=1,
 
-    ScrapMetal,
-    MetalPipe=2,
-    SheetMetal=2,
-    MetalBar,
+    BlowTorch=1,
+    ScrapMetal=1,
+    MetalPipe=1,
+    SmallSheetMetal=1,
+    MetalBar=1,
+    Screws=1,
+    WeldingRods=2,
+
+    Result: EngineParts=1,
+    SkillRequired: Mechanics=1,
+    Prop1: BlowTorch,
+    Time: 120.0,
+    Sound: BlowTorch,
+    Category: Taller,
+    CanBeDoneFromFloor: true
+  }
+
+  recipe MakeEnginePartCustom
+  {
+    keep WeldingMask,
+    keep [Recipe.GetItemTypes.Hammer],
+    keep Screwdriver,
+    keep Saw,
+    keep Wrench,
+    keep PipeWrench,
+
+    BlowTorch=10,
+    ScrapMetal=10,
+    MetalPipe=10,
+    SmallSheetMetal=10,
+    MetalBar=10,
     Screws=10,
+    WeldingRods=20,
 
     Result: EngineParts=10,
-    SkillRequired: Mechanics=6;MetalWelding=1;,
-    Time: 240.0,
+    SkillRequired: Mechanics=1,
+    Prop1: BlowTorch,
+    Time: 120.0,
     Sound: BlowTorch,
     Category: Taller,
     CanBeDoneFromFloor: true
