@@ -24,7 +24,9 @@ module CraftEngineParts
 
     Result: EngineParts=1,
     SkillRequired: Mechanics=1,
+    AnimNode: BlowTorch,
     Prop1: BlowTorch,
+    Prop2: Source=1,
     Time: 120.0,
     Sound: BlowTorch,
     Category: Taller,
@@ -50,7 +52,9 @@ module CraftEngineParts
 
     Result: EngineParts=10,
     SkillRequired: Mechanics=1,
+    AnimNode: BlowTorch,
     Prop1: BlowTorch,
+    Prop2: Source=1,
     Time: 120.0,
     Sound: BlowTorch,
     Category: Taller,
