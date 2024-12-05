@@ -19,7 +19,7 @@ module Patagonia
     Thread=5,
 
     Result: NormalCarSeat1,
-    SkillRequired: Mechanics=5;Tailoring=5,
+    SkillRequired: Mechanics=2;Tailoring=2,
     Time: 480.0,
     Sound: Hammering,
     Category: Taller,
@@ -40,7 +40,7 @@ module Patagonia
     Thread=5,
 
     Result: NormalCarSeat2,
-    SkillRequired: Mechanics=5;Tailoring=5,
+    SkillRequired: Mechanics=2;Tailoring=2,
     Time: 480.0,
     Sound: Hammering,
     Category: Taller,
@@ -61,7 +61,7 @@ module Patagonia
     Thread=5,
 
     Result: NormalCarSeat3,
-    SkillRequired: Mechanics=5;Tailoring=5,
+    SkillRequired: Mechanics=2;Tailoring=2,
     Time: 480.0,
     Sound: Hammering,
     Category: Taller,

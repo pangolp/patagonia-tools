@@ -13,7 +13,7 @@ module CraftRearCarDoorCustom
     WeldingRods=1,
 
     Result: RearCarDoor1,
-    SkillRequired: Mechanics=8;MetalWelding=2;,
+    SkillRequired: Mechanics=2;MetalWelding=2;,
     Time: 480.0,
     Sound: BlowTorch,
     Category: Taller,
@@ -28,7 +28,7 @@ module CraftRearCarDoorCustom
     WeldingRods=1,
 
     Result: RearCarDoor2,
-    SkillRequired: Mechanics=8;MetalWelding=2;,
+    SkillRequired: Mechanics=2;MetalWelding=2;,
     Time: 480.0,
     Sound: BlowTorch,
     Category: Taller,
@@ -43,7 +43,7 @@ module CraftRearCarDoorCustom
     WeldingRods=1,
 
     Result: RearCarDoor3,
-    SkillRequired: Mechanics=8;MetalWelding=2;,
+    SkillRequired: Mechanics=2;MetalWelding=2;,
     Time: 480.0,
     Sound: BlowTorch,
     Category: Taller,
