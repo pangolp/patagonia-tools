@@ -24,7 +24,7 @@ module CraftGeneratorCustom
     MetalBar=6,
 
     Result: Base.Generator,
-    SkillRequired: Woodwork=5;Electricity=3;MetalWelding=2;,
+    SkillRequired: Woodwork=2;Electricity=3;MetalWelding=2;,
     Time: 240.0,
     Sound: BlowTorch,
     Category: Patagonia,

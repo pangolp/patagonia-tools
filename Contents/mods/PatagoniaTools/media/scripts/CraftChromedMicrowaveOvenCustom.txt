@@ -16,7 +16,7 @@ recipe ChromedMicrowaveOvenCustom
     keep [Recipe.GetItemTypes.Screwdriver],
 
     Result: Moveables.appliances_cooking_01_28,
-    SkillRequired: Electricity=5,
+    SkillRequired: Electricity=2,
     Time: 240.0,
     Sound: BlowTorch,
     Category: Patagonia,

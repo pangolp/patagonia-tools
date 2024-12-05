@@ -16,7 +16,7 @@ module CraftWindows
     [Recipe.GetItemTypes.BrokenGlass]=4,
 
     Result: Moveables.fixtures_windows_01_0,
-    SkillRequired: Woodwork=4,
+    SkillRequired: Woodwork=2,
     Time: 240.0,
     Sound:Hammering,
     Category: Patagonia,

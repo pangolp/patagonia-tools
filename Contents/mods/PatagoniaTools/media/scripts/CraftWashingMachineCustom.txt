@@ -16,7 +16,7 @@ recipe WashingMachineCustom
     keep [Recipe.GetItemTypes.Screwdriver],
 
     Result: Moveables.appliances_laundry_01_0,
-    SkillRequired: Electricity=5,
+    SkillRequired: Electricity=2,
     Time: 240.0,
     Sound: BlowTorch,
     Category: Patagonia,
