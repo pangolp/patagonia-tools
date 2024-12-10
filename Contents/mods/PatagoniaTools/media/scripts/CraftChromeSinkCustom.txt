@@ -9,12 +9,14 @@ module CraftChromeSinkCustom
   {
     keep [Recipe.GetItemTypes.Hammer],
     keep Screwdriver,
+    keep Wrench,
+    keep PipeWrench,
 
     SmallSheetMetal,
     SmallSheetMetal=2,
     MetalPipe,
 
-    Result: Mov_ChromeSink,
+    Result: Moveables.fixtures_sinks_01_8,
     SkillRequired: MetalWelding=2,
     Time: 240.0,
     Sound: Hammering,
