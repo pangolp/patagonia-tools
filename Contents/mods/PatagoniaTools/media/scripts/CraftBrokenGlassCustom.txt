@@ -1,0 +1,17 @@
+module CraftBrokenGlassCustom
+{
+  imports
+  {
+    Base
+  }
+
+recipe BrokenGlassCustom
+  {
+    Moveables.brokenglass_1_1/Moveables.brokenglass_1_2/Moveables.brokenglass_1_3,
+
+    Result: Moveables.brokenglass_1_0,
+    Time: 240.0,
+    Category: Patagonia,
+    CanBeDoneFromFloor: true
+  }
+}

@@ -54,4 +54,5 @@ Recipe_AR = {
   Recipe_GasTankCustom1 = "[Vehículo] Depósito de gasolina estándar",
   Recipe_GasTankCustom2 = "[Vehículo] Depósito de gasolina industrial",
   Recipe_GasTankCustom3 = "[Vehículo] Depósito de gasolina deportivo",
+  Recipe_BrokenGlassCustom = "[Otros] Cristales rotos",
 }
