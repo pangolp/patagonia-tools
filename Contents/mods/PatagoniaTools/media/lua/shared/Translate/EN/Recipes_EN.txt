@@ -51,7 +51,7 @@ Recipes_EN = {
   Recipe_CannedCarrotsCustom = "[Food] Canned Carrots",
   Recipe_CannedPotatoCustom = "[Food] Canned Potato",
   Recipe_CannedTomatoCustom = "[Food] Canned Tomato",
-  Recipe_GasTankCustom1 = "[Vehículo] Standard Gas Tank",
-  Recipe_GasTankCustom2 = "[Vehículo] Heavy-Duty Gas Tank",
-  Recipe_GasTankCustom3 = "[Vehículo] Sports Tank",
+  Recipe_GasTankCustom1 = "[Vehicle] Standard Gas Tank",
+  Recipe_GasTankCustom2 = "[Vehicle] Heavy-Duty Gas Tank",
+  Recipe_GasTankCustom3 = "[Vehicle] Sports Tank",
 }
