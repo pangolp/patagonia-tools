@@ -13,7 +13,7 @@ module CraftFrontCarDoorCustom
     WeldingRods=1,
 
     Result: FrontCarDoor1,
-    SkillRequired: Mechanics=8;MetalWelding=2;,
+    SkillRequired: Mechanics=2;MetalWelding=2;,
     Time: 480.0,
     Sound: BlowTorch,
     Category: Taller,
