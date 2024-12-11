@@ -8,7 +8,8 @@ module CraftRearWindowCustom
   recipe RearWindow1Custom
   {
     keep Screwdriver,
-    SmashedBottle=4,
+
+    [Recipe.GetItemTypes.RecipeBrokenGlassCustom]=4,
     Glue=3,
 
     Result: RearWindow1,
@@ -22,7 +23,8 @@ module CraftRearWindowCustom
   recipe RearWindow2Custom
   {
     keep Screwdriver,
-    SmashedBottle=4,
+
+    [Recipe.GetItemTypes.RecipeBrokenGlassCustom]=4,
     Glue=3,
 
     Result: RearWindow2,
@@ -36,7 +38,8 @@ module CraftRearWindowCustom
   recipe RearWindow3Custom
   {
     keep Screwdriver,
-    SmashedBottle=4,
+
+    [Recipe.GetItemTypes.RecipeBrokenGlassCustom]=4,
     Glue=3,
 
     Result: RearWindow3,

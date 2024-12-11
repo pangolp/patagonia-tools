@@ -21,3 +21,17 @@ function Recipe.GetItemTypes.BrokenGlassCustom(scriptItems)
         end
     end
 end
+
+function Recipe.GetItemTypes.RecipeBrokenGlassCustom(scriptItems)
+    local itemNames = {
+        "Base.brokenglass_1_0",
+        "SmashedBottle"
+    }
+
+    for _, itemName in ipairs(itemNames) do
+        local item = ScriptManager.instance:getItem(itemName)
+        if item then
+            scriptItems:add(item)
+        end
+    end
+end

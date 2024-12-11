@@ -8,7 +8,8 @@ module CraftWindshieldCustom
   recipe Windshield1Custom
   {
     keep Screwdriver,
-    [Recipe.GetItemTypes.BrokenGlass]=8,
+
+    [Recipe.GetItemTypes.RecipeBrokenGlassCustom]=8,
     Glue=5,
 
     Result: Windshield1,
@@ -22,7 +23,8 @@ module CraftWindshieldCustom
   recipe Windshield2Custom
   {
     keep Screwdriver,
-    [Recipe.GetItemTypes.BrokenGlass]=8,
+
+    [Recipe.GetItemTypes.RecipeBrokenGlassCustom]=8,
     Glue=5,
 
     Result: Windshield2,
@@ -36,7 +38,8 @@ module CraftWindshieldCustom
   recipe Windshield3Custom
   {
     keep Screwdriver,
-    [Recipe.GetItemTypes.BrokenGlass]=8,
+
+    [Recipe.GetItemTypes.RecipeBrokenGlassCustom]=8,
     Glue=5,
 
     Result: Windshield3,

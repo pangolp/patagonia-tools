@@ -2,7 +2,7 @@ module CraftWindows
 {
   imports
   {
-      Base
+    Base
   }
 
   recipe WindowsCustom
@@ -13,7 +13,7 @@ module CraftWindows
 
     Plank=4,
     Screws=4,
-    [Recipe.GetItemTypes.BrokenGlass]=4,
+    [Recipe.GetItemTypes.RecipeBrokenGlassCustom]=4,
 
     Result: Moveables.fixtures_windows_01_0,
     SkillRequired: Woodwork=2,
