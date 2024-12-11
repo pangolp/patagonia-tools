@@ -7,9 +7,9 @@ module CraftBrokenGlassCustom
 
 recipe BrokenGlassCustom
   {
-    Moveables.brokenglass_1_1/Moveables.brokenglass_1_2/Moveables.brokenglass_1_3,
+    [Recipe.GetItemTypes.BrokenGlassCustom]/Moveables.brokenglass_1_0/Moveables.brokenglass_1_1/Moveables.brokenglass_1_2/Moveables.brokenglass_1_3,
 
-    Result: Moveables.brokenglass_1_0,
+    Result: Base.brokenglass_1_0,
     Time: 240.0,
     Category: Patagonia,
     CanBeDoneFromFloor: true
