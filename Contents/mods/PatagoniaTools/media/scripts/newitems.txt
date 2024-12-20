@@ -4352,6 +4352,7 @@ module Base
         primaryAnimMask = HoldingTorchRight,
         secondaryAnimMask = HoldingTorchLeft,
         WorldStaticModel = HandTorchGround,
+        AttachmentType = Knife,
     }
 
     item Hairgel
