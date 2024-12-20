@@ -1269,6 +1269,7 @@ module Base
         primaryAnimMask = HoldingTorchRight,
         secondaryAnimMask = HoldingTorchLeft,
         WorldStaticModel = FlashLightGround,
+        AttachmentType = Knife,
     }
 
     item Fertilizer
