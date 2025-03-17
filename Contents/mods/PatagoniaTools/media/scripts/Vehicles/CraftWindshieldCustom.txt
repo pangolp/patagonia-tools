@@ -17,7 +17,8 @@ module CraftWindshieldCustom
     Time: 240.0,
     Sound: BlowTorch,
     Category: Taller,
-    CanBeDoneFromFloor: true
+    CanBeDoneFromFloor: true,
+    OnGiveXP: Recipe.OnGiveXP.PatagoniaMechanics
   }
 
   recipe Windshield2Custom
@@ -32,7 +33,8 @@ module CraftWindshieldCustom
     Time: 240.0,
     Sound: BlowTorch,
     Category: Taller,
-    CanBeDoneFromFloor: true
+    CanBeDoneFromFloor: true,
+    OnGiveXP: Recipe.OnGiveXP.PatagoniaMechanics
   }
 
   recipe Windshield3Custom
@@ -47,6 +49,7 @@ module CraftWindshieldCustom
     Time: 240.0,
     Sound: BlowTorch,
     Category: Taller,
-    CanBeDoneFromFloor: true
+    CanBeDoneFromFloor: true,
+    OnGiveXP: Recipe.OnGiveXP.PatagoniaMechanics
   }
 }

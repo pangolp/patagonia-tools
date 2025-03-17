@@ -1,10 +1,23 @@
 require "recipecode"
 
-function Recipe.OnGiveXP.Mechanics1(recipe, ingredients, result, player)
-    local xpBefore = player:getXp():getXP(Perks.Mechanics)
-    player:getXp():AddXP(Perks.Mechanics, ((player:getPerkLevel(Perks.Mechanics) * 5)))
-    local xpAfter = player:getXp():getXP(Perks.Mechanics)
-    player:setHaloNote(string.format("Mechanics: %.2f", (xpAfter - xpBefore)))
+function Recipe.OnGiveXP.PatagoniaMechanics(recipe, ingredients, result, player)
+    if player:getPerkLevel(Perks.Mechanics) < 10 then
+        local xpBefore = player:getXp():getXP(Perks.Mechanics)
+        if player:getPerkLevel(Perks.Mechanics) <= 2 then
+            local experienceMultiplier = 3
+        elseif player:getPerkLevel(Perks.Mechanics) <= 4 then
+            local experienceMultiplier = 5
+        elseif player:getPerkLevel(Perks.Mechanics) <= 6 then
+            local experienceMultiplier = 7
+        elseif player:getPerkLevel(Perks.Mechanics) <= 8 then
+            local experienceMultiplier = 9
+        elseif player:getPerkLevel(Perks.Mechanics) < 10 then
+            local experienceMultiplier = 11
+        end
+        player:getXp():AddXP(Perks.Mechanics, ((player:getPerkLevel(Perks.Mechanics) * experienceMultiplier)))
+        local xpAfter = player:getXp():getXP(Perks.Mechanics)
+        player:setHaloNote(string.format(getText("IGUI_Mechanics"), (xpAfter - xpBefore)))
+    end
 end
 
 function Recipe.GetItemTypes.BrokenGlassCustom(scriptItems)

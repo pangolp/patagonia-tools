@@ -30,34 +30,7 @@ module CraftEngineParts
     Time: 120.0,
     Sound: BlowTorch,
     Category: Taller,
-    CanBeDoneFromFloor: true
-  }
-
-  recipe MakeEnginePartCustom
-  {
-    keep WeldingMask,
-    keep [Recipe.GetItemTypes.Hammer],
-    keep Screwdriver,
-    keep Saw,
-    keep Wrench,
-    keep PipeWrench,
-
-    BlowTorch=10,
-    ScrapMetal=10,
-    MetalPipe=10,
-    SmallSheetMetal=10,
-    MetalBar=10,
-    Screws=10,
-    WeldingRods=20,
-
-    Result: EngineParts=10,
-    SkillRequired: Mechanics=1,
-    AnimNode: BlowTorch,
-    Prop1: BlowTorch,
-    Prop2: Source=1,
-    Time: 120.0,
-    Sound: BlowTorch,
-    Category: Taller,
-    CanBeDoneFromFloor: true
+    CanBeDoneFromFloor: true,
+    OnGiveXP: Recipe.OnGiveXP.PatagoniaMechanics
   }
 }
