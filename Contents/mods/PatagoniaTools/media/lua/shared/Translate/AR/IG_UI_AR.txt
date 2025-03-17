@@ -1,0 +1,5 @@
+IGUI_AR = {
+  IGUI_Mechanics = "Mecánica: %.2f",
+  IGUI_MetalWelding = "Metalistería: %.2f",
+  IGUI_Electricity = "Electrónica: %.2f"
+}
