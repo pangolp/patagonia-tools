@@ -3,13 +3,13 @@ require "recipecode"
 function Recipe.OnGiveXP.PatagoniaMechanics(recipe, ingredients, result, player)
     if player:getPerkLevel(Perks.Mechanics) < 10 then
         local xpBefore = player:getXp():getXP(Perks.Mechanics)
-        if player:getPerkLevel(Perks.Mechanics) <= 2 then
+        if player:getPerkLevel(Perks.Mechanics) < 2 then
             local experienceMultiplier = 3
-        elseif player:getPerkLevel(Perks.Mechanics) <= 4 then
+        elseif player:getPerkLevel(Perks.Mechanics) < 4 then
             local experienceMultiplier = 5
-        elseif player:getPerkLevel(Perks.Mechanics) <= 6 then
+        elseif player:getPerkLevel(Perks.Mechanics) < 6 then
             local experienceMultiplier = 7
-        elseif player:getPerkLevel(Perks.Mechanics) <= 8 then
+        elseif player:getPerkLevel(Perks.Mechanics) < 8 then
             local experienceMultiplier = 9
         elseif player:getPerkLevel(Perks.Mechanics) < 10 then
             local experienceMultiplier = 11
@@ -23,13 +23,13 @@ end
 function Recipe.OnGiveXP.PatagoniaMetalWelding(recipe, ingredients, result, player)
     if player:getPerkLevel(Perks.MetalWeldings) < 10 then
         local xpBefore = player:getXp():getXP(Perks.MetalWeldings)
-        if player:getPerkLevel(Perks.MetalWeldings) <= 2 then
+        if player:getPerkLevel(Perks.MetalWeldings) < 2 then
             local experienceMultiplier = 3
-        elseif player:getPerkLevel(Perks.MetalWeldings) <= 4 then
+        elseif player:getPerkLevel(Perks.MetalWeldings) < 4 then
             local experienceMultiplier = 5
-        elseif player:getPerkLevel(Perks.MetalWeldings) <= 6 then
+        elseif player:getPerkLevel(Perks.MetalWeldings) < 6 then
             local experienceMultiplier = 7
-        elseif player:getPerkLevel(Perks.MetalWeldings) <= 8 then
+        elseif player:getPerkLevel(Perks.MetalWeldings) < 8 then
             local experienceMultiplier = 9
         elseif player:getPerkLevel(Perks.MetalWeldings) < 10 then
             local experienceMultiplier = 11
@@ -44,13 +44,13 @@ function Recipe.OnGiveXP.PatagoniaElectricity(recipe, ingredients, result, playe
     if player:getPerkLevel(Perks.Electricity) < 10 then
         local xpBefore = player:getXp():getXP(Perks.Electricity)
 
-        if player:getPerkLevel(Perks.Electricity) <= 2 then
+        if player:getPerkLevel(Perks.Electricity) < 2 then
             local experienceMultiplier = 3
-        elseif player:getPerkLevel(Perks.Electricity) <= 4 then
+        elseif player:getPerkLevel(Perks.Electricity) < 4 then
             local experienceMultiplier = 5
-        elseif player:getPerkLevel(Perks.Electricity) <= 6 then
+        elseif player:getPerkLevel(Perks.Electricity) < 6 then
             local experienceMultiplier = 7
-        elseif player:getPerkLevel(Perks.Electricity) <= 8 then
+        elseif player:getPerkLevel(Perks.Electricity) < 8 then
             local experienceMultiplier = 9
         elseif player:getPerkLevel(Perks.Electricity) < 10 then
             local experienceMultiplier = 11
