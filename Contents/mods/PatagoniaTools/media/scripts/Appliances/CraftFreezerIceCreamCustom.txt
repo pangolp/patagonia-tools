@@ -1,0 +1,27 @@
+module CraftFreezerIceCreamCustom
+{
+  imports
+  {
+    Base, Radio
+  }
+
+recipe CraftFreezerIceCreamCustom
+  {
+    SheetMetal=6,
+    ElectronicsScrap=6,
+    ElectricWire=6,
+    RadioReceiver=4,
+    RadioTransmitter=4,
+    Aluminum=8,
+    keep [Recipe.GetItemTypes.Screwdriver],
+
+    Result: Moveables.appliances_refrigeration_01_20,
+    OnCreate: Recipe.OnCreate.FreezerIceCreamCustom,
+    SkillRequired: Electricity=2,
+    Time: 240.0,
+    Sound: BlowTorch,
+    Category: Patagonia,
+    CanBeDoneFromFloor: true,
+    InSameInventory: false,
+  }
+}

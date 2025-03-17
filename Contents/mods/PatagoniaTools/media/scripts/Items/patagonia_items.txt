@@ -1,0 +1,12 @@
+module Base
+{
+    item mov_appliances_refrigeration_01_21
+    {
+        DisplayCategory = Furniture,
+        Type            = Moveable,
+        Icon            = default,
+        Weight          = 0.5,
+        DisplayName     = Popsicle_Fridge,
+        WorldObjectSprite   = appliances_refrigeration_01_21,
+    }
+}

@@ -35,3 +35,10 @@ function Recipe.GetItemTypes.RecipeBrokenGlassCustom(scriptItems)
         end
     end
 end
+
+-- Como el freezer, tiene 2 partes, añadimos una en el result
+-- Y la otra se añade de esta forma. Asi obtiene las 2 partes.
+-- Tuvimos que crear el item, en server/patagonia_recipecode.lua
+function Recipe.OnCreate.FreezerIceCreamCustom(items, result, player)
+    player:getInventory():AddItem("Base.mov_appliances_refrigeration_01_21")
+end

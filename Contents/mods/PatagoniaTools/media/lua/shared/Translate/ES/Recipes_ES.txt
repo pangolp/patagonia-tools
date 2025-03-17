@@ -45,7 +45,6 @@ Recipe_ES = {
   Recipe_BigCarSeatCustom2 = "[Vehículo] Asiento industrial",
   Recipe_BigCarSeatCustom3 = "[Vehículo] Asiento deportivo",
   Recipe_ChromeSinkCustom = "[Electrodomésticos] Fregadero cromado",
-  Recipe_MoneyCustom = "[Otros] Dinero",
   Recipe_UnusableWoodCustom = "[Carpintería] Tablón",
   Recipe_SheetMetalCustom = "[Metalistería] Chapa metálica",
   Recipe_CannedCarrotsCustom = "[Comida] Zanahorias enlatadas",
@@ -55,4 +54,5 @@ Recipe_ES = {
   Recipe_GasTankCustom2 = "[Vehículo] Depósito de gasolina industrial",
   Recipe_GasTankCustom3 = "[Vehículo] Depósito de gasolina deportivo",
   Recipe_BrokenGlassCustom = "[Otros] Cristales rotos",
+  Recipe_CraftFreezerIceCreamCustom = "[Electrodomésticos] Freezer",
 }
