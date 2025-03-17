@@ -17,7 +17,8 @@ module CraftGasTank
     Time: 480.0,
     Sound: BlowTorch,
     Category: Taller,
-    CanBeDoneFromFloor: true
+    CanBeDoneFromFloor: true,
+    OnGiveXP: Recipe.OnGiveXP.PatagoniaMetalWelding
   }
 
   recipe GasTankCustom2
@@ -32,7 +33,8 @@ module CraftGasTank
     Time: 480.0,
     Sound: BlowTorch,
     Category: Taller,
-    CanBeDoneFromFloor: true
+    CanBeDoneFromFloor: true,
+    OnGiveXP: Recipe.OnGiveXP.PatagoniaMetalWelding
   }
 
   recipe GasTankCustom3
@@ -47,6 +49,7 @@ module CraftGasTank
     Time: 480.0,
     Sound: BlowTorch,
     Category: Taller,
-    CanBeDoneFromFloor: true
+    CanBeDoneFromFloor: true,
+    OnGiveXP: Recipe.OnGiveXP.PatagoniaMetalWelding
   }
 }

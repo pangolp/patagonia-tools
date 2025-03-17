@@ -20,6 +20,26 @@ function Recipe.OnGiveXP.PatagoniaMechanics(recipe, ingredients, result, player)
     end
 end
 
+function Recipe.OnGiveXP.PatagoniaMetalWelding(recipe, ingredients, result, player)
+    if player:getPerkLevel(Perks.MetalWeldings) < 10 then
+        local xpBefore = player:getXp():getXP(Perks.MetalWeldings)
+        if player:getPerkLevel(Perks.MetalWeldings) <= 2 then
+            local experienceMultiplier = 3
+        elseif player:getPerkLevel(Perks.MetalWeldings) <= 4 then
+            local experienceMultiplier = 5
+        elseif player:getPerkLevel(Perks.MetalWeldings) <= 6 then
+            local experienceMultiplier = 7
+        elseif player:getPerkLevel(Perks.MetalWeldings) <= 8 then
+            local experienceMultiplier = 9
+        elseif player:getPerkLevel(Perks.MetalWeldings) < 10 then
+            local experienceMultiplier = 11
+        end
+        player:getXp():AddXP(Perks.MetalWeldings, ((player:getPerkLevel(Perks.MetalWeldings) * experienceMultiplier)))
+        local xpAfter = player:getXp():getXP(Perks.MetalWeldings)
+        player:setHaloNote(string.format(getText("IGUI_MetalWelding"), (xpAfter - xpBefore)))
+    end
+end
+
 function Recipe.GetItemTypes.BrokenGlassCustom(scriptItems)
     local itemNames = {
         "Base.brokenglass_1_1",

@@ -17,7 +17,8 @@ module CraftRearCarDoorDoubleCustom
     Time: 480.0,
     Sound: BlowTorch,
     Category: Taller,
-    CanBeDoneFromFloor: true
+    CanBeDoneFromFloor: true,
+    OnGiveXP: Recipe.OnGiveXP.PatagoniaMetalWelding
   }
 
   recipe RearCarDoorDoubleCustom2
@@ -32,7 +33,8 @@ module CraftRearCarDoorDoubleCustom
     Time: 480.0,
     Sound: BlowTorch,
     Category: Taller,
-    CanBeDoneFromFloor: true
+    CanBeDoneFromFloor: true,
+    OnGiveXP: Recipe.OnGiveXP.PatagoniaMetalWelding
   }
 
   recipe RearCarDoorDoubleCustom3
@@ -47,6 +49,7 @@ module CraftRearCarDoorDoubleCustom
     Time: 480.0,
     Sound: BlowTorch,
     Category: Taller,
-    CanBeDoneFromFloor: true
+    CanBeDoneFromFloor: true,
+    OnGiveXP: Recipe.OnGiveXP.PatagoniaMetalWelding
   }
 }
