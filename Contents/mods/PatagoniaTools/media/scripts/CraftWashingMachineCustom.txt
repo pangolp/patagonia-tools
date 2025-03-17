@@ -20,6 +20,7 @@ recipe WashingMachineCustom
     Time: 240.0,
     Sound: BlowTorch,
     Category: Patagonia,
-    CanBeDoneFromFloor: true
+    CanBeDoneFromFloor: true,
+    OnGiveXP: Recipe.OnGiveXP.PatagoniaElectricity
   }
 }

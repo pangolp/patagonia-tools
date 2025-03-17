@@ -40,6 +40,28 @@ function Recipe.OnGiveXP.PatagoniaMetalWelding(recipe, ingredients, result, play
     end
 end
 
+function Recipe.OnGiveXP.PatagoniaElectricity(recipe, ingredients, result, player)
+    if player:getPerkLevel(Perks.Electricity) < 10 then
+        local xpBefore = player:getXp():getXP(Perks.Electricity)
+
+        if player:getPerkLevel(Perks.Electricity) <= 2 then
+            local experienceMultiplier = 3
+        elseif player:getPerkLevel(Perks.Electricity) <= 4 then
+            local experienceMultiplier = 5
+        elseif player:getPerkLevel(Perks.Electricity) <= 6 then
+            local experienceMultiplier = 7
+        elseif player:getPerkLevel(Perks.Electricity) <= 8 then
+            local experienceMultiplier = 9
+        elseif player:getPerkLevel(Perks.Electricity) < 10 then
+            local experienceMultiplier = 11
+        end
+
+        player:getXp():AddXP(Perks.Electricity, ((player:getPerkLevel(Perks.Electricity) * experienceMultiplier)))
+        local xpAfter = player:getXp():getXP(Perks.Electricity)
+        player:setHaloNote(string.format(getText("IGUI_Electricity"), (xpAfter - xpBefore)))
+    end
+end
+
 function Recipe.GetItemTypes.BrokenGlassCustom(scriptItems)
     local itemNames = {
         "Base.brokenglass_1_1",
