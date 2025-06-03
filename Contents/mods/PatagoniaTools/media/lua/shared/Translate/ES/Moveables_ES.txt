@@ -1,0 +1,13 @@
+Moveables_ES = {
+    WhiteBox = "Caja de madera blanca",
+    YellowBox = "Caja de madera amarilla",
+    RedBox = "Caja de madera roja",
+    PurpleBox = "Caja de madera purpura",
+    BlueBox = "Caja de madera azul",
+    GreenBox = "Caja de madera verde",
+    BlackBox = "Caja de madera negra",
+    CyanBox = "Caja de madera cian",
+    GreyBox = "Caja de madera gris",
+    PinkBox = "Caja de madera rosa",
+    OrangeBox = "Caja de madera naranja",
+}

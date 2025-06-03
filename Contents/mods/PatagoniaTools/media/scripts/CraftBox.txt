@@ -1,0 +1,161 @@
+module CraftBox
+{
+    imports
+    {
+        Base
+    }
+
+    recipe WhiteBox
+    {
+        keep Paintbrush,
+        Moveables.carpentry_01_16=4,
+        PaintWhite=5,
+
+        Result: Moveables.carpentry_03_0,
+        Time: 240.0,
+        Sound: Hammering,
+        Category: Patagonia,
+        SkillRequired: Woodwork=10,
+        CanBeDoneFromFloor: true,
+    }
+
+    recipe YellowBox
+    {
+        keep Paintbrush,
+        Moveables.carpentry_01_16=4,
+        PaintYellow=5,
+
+        Result: Moveables.carpentry_03_1,
+        Time: 240.0,
+        Sound: Hammering,
+        Category: Patagonia,
+        SkillRequired: Woodwork=10,
+        CanBeDoneFromFloor: true,
+    }
+
+    recipe RedBox
+    {
+        keep Paintbrush,
+        Moveables.carpentry_01_16=4,
+        PaintRed=5,
+
+        Result: Moveables.carpentry_03_2,
+        Time: 240.0,
+        Sound: Hammering,
+        Category: Patagonia,
+        SkillRequired: Woodwork=10,
+        CanBeDoneFromFloor: true,
+    }
+
+    recipe PurpleBox
+    {
+        keep Paintbrush,
+        Moveables.carpentry_01_16=4,
+        PaintPurple=5,
+
+        Result: Moveables.carpentry_03_3,
+        Time: 240.0,
+        Sound: Hammering,
+        Category: Patagonia,
+        SkillRequired: Woodwork=10,
+        CanBeDoneFromFloor: true,
+    }
+
+    recipe BlueBox
+    {
+        keep Paintbrush,
+        Moveables.carpentry_01_16=4,
+        PaintBlue=5,
+
+        Result: Moveables.carpentry_03_4,
+        Time: 240.0,
+        Sound: Hammering,
+        Category: Patagonia,
+        SkillRequired: Woodwork=10,
+        CanBeDoneFromFloor: true,
+    }
+
+    recipe GreenBox
+    {
+        keep Paintbrush,
+        Moveables.carpentry_01_16=4,
+        PaintGreen=5,
+
+        Result: Moveables.carpentry_03_5,
+        Time: 240.0,
+        Sound: Hammering,
+        Category: Patagonia,
+        SkillRequired: Woodwork=10,
+        CanBeDoneFromFloor: true,
+    }
+
+    recipe BlackBox
+    {
+        keep Paintbrush,
+        Moveables.carpentry_01_16=4,
+        PaintBlack=5,
+
+        Result: Moveables.carpentry_03_6,
+        Time: 240.0,
+        Sound: Hammering,
+        Category: Patagonia,
+        SkillRequired: Woodwork=10,
+        CanBeDoneFromFloor: true,
+    }
+
+    recipe CyanBox
+    {
+        keep Paintbrush,
+        Moveables.carpentry_01_16=4,
+        PaintCyan=5,
+
+        Result: Moveables.carpentry_03_7,
+        Time: 240.0,
+        Sound: Hammering,
+        Category: Patagonia,
+        SkillRequired: Woodwork=10,
+        CanBeDoneFromFloor: true,
+    }
+
+    recipe GreyBox
+    {
+        keep Paintbrush,
+        Moveables.carpentry_01_16=4,
+        PaintGrey=5,
+
+        Result: Moveables.carpentry_03_8,
+        Time: 240.0,
+        Sound: Hammering,
+        Category: Patagonia,
+        SkillRequired: Woodwork=10,
+        CanBeDoneFromFloor: true,
+    }
+
+    recipe PinkBox
+    {
+        keep Paintbrush,
+        Moveables.carpentry_01_16=4,
+        PaintPink=5,
+
+        Result: Moveables.carpentry_03_9,
+        Time: 240.0,
+        Sound: Hammering,
+        Category: Patagonia,
+        SkillRequired: Woodwork=10,
+        CanBeDoneFromFloor: true,
+    }
+
+    recipe OrangeBox
+    {
+        keep Paintbrush,
+        Moveables.carpentry_01_16=4,
+        PaintOrange=5,
+
+        Result: Moveables.carpentry_03_10,
+        Time: 240.0,
+        Sound: Hammering,
+        Category: Patagonia,
+        SkillRequired: Woodwork=10,
+        CanBeDoneFromFloor: true,
+    }
+}

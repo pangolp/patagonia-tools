@@ -1,0 +1,13 @@
+Moveables_ES = {
+    WhiteBox = "White wooden box",
+    YellowBox = "Yellow wooden box",
+    RedBox = "Red wooden box",
+    PurpleBox = "Purple wooden box",
+    BlueBox = "Blue wooden box",
+    GreenBox = "Green wooden box",
+    BlackBox = "Black wooden box",
+    CyanBox = "Cyan wooden box",
+    GreyBox = "Gray wooden box",
+    PinkBox = "Pink wooden box",
+    OrangeBox = "Orange wooden box",
+}
