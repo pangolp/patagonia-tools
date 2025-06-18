@@ -1,5 +1,8 @@
 IGUI_EN = {
   IGUI_Mechanics = "Mechanic: %.2f",
   IGUI_MetalWelding = "Metalworking: %.2f",
-  IGUI_Electricity = "Electricity: %.2f"
+  IGUI_Electricity = "Electricity: %.2f",
+  IGUI_RepairEngineQuality = "Repair Engine Quality",
+  Tooltip_Vehicle_EngineQualityFull = "Engine quality is already at maximum",
+  Tooltip_vehicle_RepairEngineQualityWarning = "Requires advanced mechanical knowledge and more engine parts than normal repair",
 }

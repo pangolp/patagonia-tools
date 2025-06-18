@@ -1,0 +1,5 @@
+Tooltip_ES = {
+    Tooltip_Vehicle_EngineQualityFull = "La calidad del motor ya está al máximo",
+    Tooltip_vehicle_RepairEngineQualityWarning = "Requiere conocimientos mecánicos avanzados y más piezas de motor que una reparación normal.",
+    Tooltip_Engine_Condition = "La condicion del motor debe ser 100",
+}
