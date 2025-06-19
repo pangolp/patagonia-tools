@@ -1,13 +1,7 @@
 [*]
-end_of_line = lf
-insert_final_newline = true
+charset = utf-8
 indent_style = space
-indent_size = 2
-charset = UTF-8
-
-[{Recipe_ES.txt, Recipe_AR.txt}]
-charset = windows1252
-indent_style = space
-indent_size = 2
+indent_size = 4
+tab_width = 4
 insert_final_newline = true
-end_of_line = lf
+trim_trailing_whitespace = true
