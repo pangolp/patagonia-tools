@@ -3,3 +3,4 @@ id=PatagoniaTools
 description=Crafting and utilities for the Patagonia server
 pack=patagonia
 tiledef=patagonia 10000
+require=mod-translate
