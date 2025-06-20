@@ -1,8 +1,8 @@
-Tooltip_ES = {
+Tooltip_AR = {
     Tooltip_Vehicle_EngineQualityFull = "La calidad del motor ya está al máximo",
     Tooltip_vehicle_RepairEngineQualityWarning = "Requiere conocimientos mecánicos avanzados y más piezas de motor que una reparación normal.",
     Tooltip_Engine_Condition = "La condicion del motor debe ser 100",
     Tooltip_vehicle_RestoreTrunkWarning = "Restaura al 100% el maletero, sin considerar las reparaciones anteriores.",
-    Tooltip_part_full = "No requiere reparación",
+    Tooltip_part_full = "No requiere reparación.",
     Tooltip_blow_torch_fully_charged = "%1 completamente cargado.",
 }

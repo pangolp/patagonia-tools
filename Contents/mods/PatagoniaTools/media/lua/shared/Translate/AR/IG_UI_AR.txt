@@ -1,8 +1,7 @@
 IGUI_AR = {
-  IGUI_Mechanics = "Mecánica: %.2f",
-  IGUI_MetalWelding = "Metalistería: %.2f",
-  IGUI_Electricity = "Electrónica: %.2f",
-  IGUI_RepairEngineQuality = "Reparar calidad del motor",
-  Tooltip_Vehicle_EngineQualityFull = "La calidad del motor ya está al máximo",
-  Tooltip_vehicle_RepairEngineQualityWarning = "Requiere conocimientos mecánicos avanzados y más piezas de motor que una reparación normal.",
+    IGUI_Mechanics = "MecÃ¡nica: %.2f",
+    IGUI_MetalWelding = "MetalisterÃ­a: %.2f",
+    IGUI_Electricity = "ElectrÃ³nica: %.2f",
+    IGUI_RepairEngineQuality = "Reparar calidad del motor",
+    IGUI_RestoreTrunk = "Restaurar maletero",
 }

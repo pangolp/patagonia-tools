@@ -1,6 +1,7 @@
 IGUI_ES = {
-  IGUI_Mechanics = "Mec·nica: %.2f",
-  IGUI_MetalWelding = "MetalisterÌa: %.2f",
-  IGUI_Electricity = "ElectrÛnica: %.2f",
-  IGUI_RepairEngineQuality = "Reparar calidad del motor",
+    IGUI_Mechanics = "Mec√°nica: %.2f",
+    IGUI_MetalWelding = "Metalister√≠a: %.2f",
+    IGUI_Electricity = "Electr√≥nica: %.2f",
+    IGUI_RepairEngineQuality = "Reparar calidad del motor",
+    IGUI_RestoreTrunk = "Restaurar maletero",
 }
