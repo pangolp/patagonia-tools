@@ -5,4 +5,5 @@ Tooltip_EN = {
     Tooltip_vehicle_RestoreTrunkWarning = "Restores the trunk to 100%, regardless of previous repairs.",
     Tooltip_part_full = "No repair required.",
     Tooltip_blow_torch_fully_charged = "%1 Fully Charged.",
+    Tooltip_vehicle_RestoreHeaterWarning = "Restores the heater to 100%.",
 }
