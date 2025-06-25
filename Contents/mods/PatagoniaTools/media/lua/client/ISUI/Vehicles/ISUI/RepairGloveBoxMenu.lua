@@ -1,5 +1,3 @@
-local originalDoPartContextMenu = ISVehicleMechanics.doPartContextMenu
-
 local function predicateNeedle(item)
     return item:hasTag("Needle") or item:getType() == "Needle"
 end
@@ -16,10 +14,13 @@ local function getThreadWithMostUses(container)
     return container:getBestTypeEvalRecurse("Base.Thread", comparatorDrainableUsesInt)
 end
 
+local originalDoPartContextMenu = ISVehicleMechanics.doPartContextMenu
+
 function ISVehicleMechanics:doPartContextMenu(part, x, y)
     originalDoPartContextMenu(self, part, x, y)
 
     if (part:getId() == "GloveBox" and not VehicleUtils.RequiredKeyNotFound(part, self.chr)) then
+        self.context = ISContextMenu.get(self.playerNum, x + self:getAbsoluteX(), y + self:getAbsoluteY())
         local playerObj = getSpecificPlayer(self.playerNum)
         local vehicle = part:getVehicle()
 

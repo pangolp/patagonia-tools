@@ -1,13 +1,14 @@
-local originalDoPartContextMenu = ISVehicleMechanics.doPartContextMenu
-
 local function predicateScrewdriver(item)
     return item:hasTag("Screwdriver") or item:getType() == "Screwdriver"
 end
+
+local originalDoPartContextMenu = ISVehicleMechanics.doPartContextMenu
 
 function ISVehicleMechanics:doPartContextMenu(part, x, y)
     originalDoPartContextMenu(self, part, x, y)
 
     if (part:getId() == "Heater" and not VehicleUtils.RequiredKeyNotFound(part, self.chr)) then
+        self.context = ISContextMenu.get(self.playerNum, x + self:getAbsoluteX(), y + self:getAbsoluteY())
         local playerObj = getSpecificPlayer(self.playerNum)
         local vehicle = part:getVehicle()
 
