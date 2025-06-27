@@ -7,4 +7,5 @@ IGUI_AR = {
     IGUI_Restore_Heater = "Restaurar el climatizador",
     IGUI_Repair_Glove_Box = "Restaurar guantera",
     IGUI_Lightbar = "Restaurar luces de emergencia",
+    IGUI_CreateCarKey = "Crear llave del auto",
 }

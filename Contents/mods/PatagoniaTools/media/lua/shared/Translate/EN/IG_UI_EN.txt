@@ -7,4 +7,5 @@ IGUI_EN = {
     IGUI_Restore_Heater = "Restore heater",
     IGUI_Repair_Glove_Box = "Restore glove box",
     IGUI_Lightbar = "Restore Lightbar",
+    IGUI_CreateCarKey = "Create car key",
 }

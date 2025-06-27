@@ -8,4 +8,5 @@ Tooltip_EN = {
     Tooltip_vehicle_RestoreHeaterWarning = "Restores the heater to 100%.",
     Tooltip_vehicle_Repair_Glove_Box = "Restore the glove box to 100%.",
     Tooltip_vehicle_RestoreLightbarWarning = "Restore the emergency lights to 100%.",
+    Tooltip_vehicle_CreateCarKeyWarning = "Cut the wires (if any) and create the car key",
 }

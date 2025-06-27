@@ -8,4 +8,5 @@ Tooltip_AR = {
     Tooltip_vehicle_RestoreHeaterWarning = "Restaura el climatizador al 100%.",
     Tooltip_vehicle_Repair_Glove_Box = "Restaura la guantera al 100%",
     Tooltip_vehicle_RestoreLightbarWarning = "Restaura las luces de emergencia al 100%",
+    Tooltip_vehicle_CreateCarKeyWarning = "Corta los cables (si existe) y crea la llave del auto",
 }
