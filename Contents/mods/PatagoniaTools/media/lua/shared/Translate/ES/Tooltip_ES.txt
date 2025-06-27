@@ -7,4 +7,5 @@ Tooltip_ES = {
     Tooltip_blow_torch_fully_charged = "%1 completamente cargado.",
     Tooltip_vehicle_RestoreHeaterWarning = "Restaura el climatizador al 100%.",
     Tooltip_vehicle_Repair_Glove_Box = "Restaura la guantera al 100%",
+    Tooltip_vehicle_RestoreLightbarWarning = "Restaura las luces de emergencia al 100%",
 }
