@@ -7,7 +7,6 @@ local originalDoPartContextMenu = ISVehicleMechanics.doPartContextMenu
 function ISVehicleMechanics:doPartContextMenu(part, x, y)
     originalDoPartContextMenu(self, part, x, y)
     if part:getId() == "Engine" then
-        self.context = ISContextMenu.get(self.playerNum, x + self:getAbsoluteX(), y + self:getAbsoluteY())
         local playerObj = getSpecificPlayer(self.playerNum)
         local vehicle = part:getVehicle()
 
