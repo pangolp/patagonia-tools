@@ -1,0 +1,19 @@
+module CraftUnusableWood
+{
+    craftRecipe UnusableWoodCustom
+    {
+        time = 240,
+        category = Patagonia,
+        Tags = AnySurfaceCraft,
+        xpAward = Woodwork:5,
+        inputs
+        {
+            item 1 tags[base:hammer] mode:keep flags[MayDegradeLight],
+            item 3 [Base.UnusableWood],
+        }
+        outputs
+        {
+            item 1 Base.Plank,
+        }
+    }
+}

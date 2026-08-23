@@ -1,0 +1,59 @@
+module CraftRearWindowCustom
+{
+    craftRecipe RearWindow1Custom
+    {
+        time = 240,
+        category = Taller,
+        Tags = AnySurfaceCraft,
+        SkillRequired = Mechanics:2,
+        OnCreate = PatagoniaRecipe.giveMechanicsXP,
+        inputs
+        {
+            item 1 tags[base:screwdriver] mode:keep flags[MayDegradeLight],
+            item 4 [Base.SmashedBottle],
+            item 3 [Base.Glue],
+        }
+        outputs
+        {
+            item 1 Base.RearWindow1,
+        }
+    }
+
+    craftRecipe RearWindow2Custom
+    {
+        time = 240,
+        category = Taller,
+        Tags = AnySurfaceCraft,
+        SkillRequired = Mechanics:2,
+        OnCreate = PatagoniaRecipe.giveMechanicsXP,
+        inputs
+        {
+            item 1 tags[base:screwdriver] mode:keep flags[MayDegradeLight],
+            item 4 [Base.SmashedBottle],
+            item 3 [Base.Glue],
+        }
+        outputs
+        {
+            item 1 Base.RearWindow2,
+        }
+    }
+
+    craftRecipe RearWindow3Custom
+    {
+        time = 240,
+        category = Taller,
+        Tags = AnySurfaceCraft,
+        SkillRequired = Mechanics:2,
+        OnCreate = PatagoniaRecipe.giveMechanicsXP,
+        inputs
+        {
+            item 1 tags[base:screwdriver] mode:keep flags[MayDegradeLight],
+            item 4 [Base.SmashedBottle],
+            item 3 [Base.Glue],
+        }
+        outputs
+        {
+            item 1 Base.RearWindow3,
+        }
+    }
+}

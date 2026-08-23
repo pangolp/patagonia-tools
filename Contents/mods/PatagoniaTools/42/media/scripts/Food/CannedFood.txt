@@ -1,0 +1,59 @@
+module CannedFood
+{
+    craftRecipe CannedCarrotsCustom
+    {
+        time = 240,
+        category = Patagonia,
+        Tags = AnySurfaceCraft,
+        SkillRequired = Cooking:2;Farming:2,
+        xpAward = Cooking:5,
+        inputs
+        {
+            item 1 tags[base:hammer] mode:keep flags[MayDegradeLight],
+            item 10 [Base.Carrots],
+            item 2 [Base.TinCanEmpty],
+        }
+        outputs
+        {
+            item 1 Base.CannedCarrots2,
+        }
+    }
+
+    craftRecipe CannedPotatoCustom
+    {
+        time = 240,
+        category = Patagonia,
+        Tags = AnySurfaceCraft,
+        SkillRequired = Cooking:2;Farming:2,
+        xpAward = Cooking:5,
+        inputs
+        {
+            item 1 tags[base:hammer] mode:keep flags[MayDegradeLight],
+            item 10 [Base.Potato],
+            item 2 [Base.TinCanEmpty],
+        }
+        outputs
+        {
+            item 1 Base.CannedPotato2,
+        }
+    }
+
+    craftRecipe CannedTomatoCustom
+    {
+        time = 240,
+        category = Patagonia,
+        Tags = AnySurfaceCraft,
+        SkillRequired = Cooking:2;Farming:2,
+        xpAward = Cooking:5,
+        inputs
+        {
+            item 1 tags[base:hammer] mode:keep flags[MayDegradeLight],
+            item 10 [Base.Tomato],
+            item 2 [Base.TinCanEmpty],
+        }
+        outputs
+        {
+            item 1 Base.CannedTomato2,
+        }
+    }
+}

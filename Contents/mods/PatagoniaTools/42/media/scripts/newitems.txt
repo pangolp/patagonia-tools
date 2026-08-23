@@ -1,0 +1,882 @@
+module Base
+{
+        item EmptyPetrolCan
+        {
+            DisplayCategory = VehicleMaintenance,
+            Weight  =   1.6,
+            Type    =   Normal,
+            DisplayName =   Empty Gas Can,
+            Icon    =   Petrol,
+            StaticModel = GasCan,
+            SurvivalGear = TRUE,
+            ReplaceInSecondHand = Bag_GasCan_LHand holdingbagleft,
+            ReplaceInPrimaryHand = Bag_GasCan_RHand holdingbagright,
+            WorldStaticModel = GasCan_Ground,
+            Tags = EmptyPetrol,
+            ReplaceTypes = PetrolSource PetrolCan,
+        }
+
+        item Hairspray
+        {
+            DisplayCategory = Appearance,
+            Weight  =   0.2,
+            Type    =   Normal,
+            DisplayName =   Hairspray,
+            Icon    =   Hairspray,
+            Tooltip = Tooltip_ItemTraps,
+            WorldStaticModel = HairSpray,
+        }
+
+        item CleaningLiquid
+        {
+            DisplayCategory = Household,
+            Weight  =   0.3,
+            Type    =   Normal,
+            DisplayName =   Cleaning Liquid,
+            Icon    =   CleaningLiquid,
+            OBSOLETE = TRUE,
+        }
+
+        item Underwear1
+        {
+            DisplayCategory = Household,
+            Weight  =   0.1,
+            Type    =   Normal,
+            DisplayName =   Underwear,
+            Icon    =   Underwear1,
+            OBSOLETE = TRUE,
+        }
+
+        item Underwear2
+        {
+            DisplayCategory = Household,
+            Weight  =   0.1,
+            Type    =   Normal,
+            DisplayName =   Underwear,
+            Icon    =   Underwear2,
+            OBSOLETE = TRUE,
+        }
+
+        item TreeBranch
+        {
+            DisplayCategory = Material,
+            Weight  =   1.7,
+            Type    =   Normal,
+            DisplayName =   Tree Branch,
+            Icon    =   Branch,
+            WorldStaticModel = TreeBranch,
+        }
+
+        item Stone
+        {
+            DisplayCategory = Material,
+            Weight  =   0.3,
+            Type    =   Normal,
+            DisplayName =   Stone,
+            Icon    =   Rock,
+            WorldStaticModel = Stone,
+        }
+
+        item Earrings
+        {
+            DisplayCategory = Accessory,
+            Weight  =   0.1,
+            Type    =   Normal,
+            DisplayName =   Earrings,
+            Icon    =   Earrings,
+            MetalValue = 25,
+            OBSOLETE = TRUE,
+        }
+
+        item Necklacepearl
+        {
+            DisplayCategory = Accessory,
+            Weight  =   0.1,
+            Type    =   Normal,
+            DisplayName =   Pearl Necklace,
+            Icon    =   Necklacepearl,
+            MetalValue = 35,
+            OBSOLETE = TRUE,
+        }
+
+        item Ring
+        {
+            DisplayCategory = Accessory,
+            Weight  =   0.1,
+            Type    =   Normal,
+            DisplayName =   Ring,
+            Icon    =   Ring,
+            MetalValue = 15,
+            OBSOLETE = TRUE,
+        }
+
+        item Rubberducky2
+        {
+            DisplayCategory = Junk,
+            Weight  =   0.1,
+            Type    =   Drainable,
+            UseDelta    =   0.003,
+            DisplayName =   Rubber Duck,
+            Icon    =   Rubberducky,
+            WorldStaticModel = Rubberducky,
+            cantBeConsolided = TRUE,
+        }
+
+        item Soap
+        {
+            DisplayCategory = Household,
+            Weight  =   0.1,
+            Type    =   Normal,
+            DisplayName =   Soap,
+            Icon    =   Soap,
+            OBSOLETE = true,
+        }
+
+        item Umbrella
+        {
+            DisplayCategory = Household,
+            Type                =           Normal,
+            DisplayName         =           Umbrella,
+            Icon                =           Umbrella,
+            Weight              =           1.5,
+            OBSOLETE = TRUE,
+        }
+
+        item Disc
+        {
+            DisplayCategory = Entertainment,
+            Type                =           Normal,
+            DisplayName         =           CD,
+            Icon                =           Disc,
+            Weight              =           0.1,
+            WorldStaticModel = Disk,
+        }
+
+        item Cornflour
+        {
+            DisplayCategory = Food,
+            Weight  =   1,
+            Type    =   Drainable,
+            UseWhileEquipped    =   FALSE,
+            UseDelta    =   0.1,
+            DisplayName =   Corn Flour,
+            Icon    =   Cornflour,
+            WorldStaticModel = Cornflour_Ground,
+            Tags = Flour,
+        }
+
+        item DigitalWatch
+        {
+            DisplayCategory = Accessory,
+            Type                =           Normal,
+            DisplayName         =           Digital Watch,
+            Icon                =           DigitalWatch,
+            Weight              =           0.0,
+            MetalValue = 3,
+            Obsolete = TRUE,
+        }
+
+        item DigitalWatch2
+        {
+            DisplayCategory = Accessory,
+            Type                =           AlarmClock,
+            DisplayName         =           Digital Watch,
+            Icon                =           DigitalWatch,
+            Weight              =           0.0,
+            AlarmSound = WatchAlarmLoop,
+            SoundRadius = 7,
+            MetalValue = 3,
+            Obsolete = TRUE,
+        }
+
+        item Radio
+        {
+            DisplayCategory = Communications,
+            Weight  =   0.2,
+            Type    =   Normal,
+            DisplayName =   Radio,
+            Icon    =   Radio,
+            MetalValue = 10,
+            OBSOLETE = TRUE,
+        }
+
+        item Wallet2
+        {
+            DisplayCategory = Junk,
+            Weight  =   0.2,
+            Type    =   Normal,
+            DisplayName =   Wallet,
+            Icon    =   Wallet_02,
+            WorldStaticModel = Wallet2,
+        }
+
+        item Wallet3
+        {
+            DisplayCategory = Junk,
+            Weight  =   0.2,
+            Type    =   Normal,
+            DisplayName =   Wallet,
+            Icon    =   Wallet_03,
+            WorldStaticModel = Wallet3,
+        }
+
+        item Wallet4
+        {
+            DisplayCategory = Junk,
+            Weight  =   0.2,
+            Type    =   Normal,
+            DisplayName =   Wallet,
+            Icon    =   Wallet_04,
+            WorldStaticModel = Wallet4,
+        }
+
+        item WeddingRing_Man
+        {
+            DisplayCategory = Accessory,
+            Weight  =   0.2,
+            Type    =   Normal,
+            DisplayName =   Wedding Ring,
+            Icon    =   WeddingRing_Man,
+            MetalValue = 15,
+            OBSOLETE = TRUE,
+        }
+
+        item WeddingRing_Woman
+        {
+            DisplayCategory = Accessory,
+            Weight  =   0.2,
+            Type    =   Normal,
+            DisplayName =   Wedding Ring,
+            Icon    =   WeddingRing_Woman,
+            MetalValue = 15,
+            OBSOLETE = TRUE,
+        }
+
+        item Lamp
+        {
+            DisplayCategory = Household,
+            Weight  =   0.2,
+            Type    =   Normal,
+            DisplayName =   Lamp,
+            Icon    =   Lamp,
+            MetalValue = 12,
+            OBSOLETE = TRUE,
+        }
+
+        item BleachEmpty
+        {
+            DisplayCategory = WaterContainer,
+            Weight  =   0.2,
+            CanStoreWater   =   TRUE,
+            Type    =   Normal,
+            DisplayName =   Empty Bleach Bottle,
+            Icon    =   Bleach,
+            ReplaceOnUseOn  =   WaterSource-WaterBleachBottle,
+            StaticModel = BleachBottle,
+            WorldStaticModel = BleachBottle,
+            Tags = EmptyPetrol,
+            ReplaceTypes = PetrolSource PetrolBleachBottle;WaterSource WaterBleachBottle,
+            Tooltip = Tooltip_item_OnlyPurifyMicrowave,
+        }
+
+        item WildGarlic
+        {
+            DisplayCategory = FirstAid,
+            Weight  =   0.1,
+            Type    =   Normal,
+            DisplayName =   Wild Garlic,
+            Icon    =   WildGarlic,
+            Tooltip = Tooltip_Garlic,
+            WorldStaticModel = MedicinalHerbsLeafBundle,
+        }
+
+        item FishingTackle
+        {
+            DisplayCategory = Fishing,
+            Type                =           Normal,
+            DisplayName         =           Fishing Tackle,
+            Icon                =           FishingTackle,
+            Weight              =           0.1,
+            FishingLure         =           true,
+            Tooltip = Tooltip_FishingTackle,
+            SurvivalGear = TRUE,
+            WorldStaticModel = FishingTackle,
+        }
+
+        item FishingTackle2
+        {
+            DisplayCategory = Fishing,
+            Type                =           Normal,
+            DisplayName         =           Fishing Tackle,
+            Icon                =           FishingTackle2,
+            Weight              =           0.1,
+            FishingLure         =           true,
+            Tooltip = Tooltip_FishingTackle,
+            SurvivalGear = TRUE,
+            WorldStaticModel = FishingTackle2,
+        }
+
+        item WoodenStick
+        {
+            DisplayCategory = Material,
+            Type = Normal,
+            DisplayName = Sturdy Stick,
+            Icon = TZ_WoodenStick,
+            Weight = 1,
+            WorldStaticModel = WoodenStick,
+        }
+
+        item FireWoodKit
+        {
+            DisplayCategory = Camping,
+            Type = Normal,
+            DisplayName = Kindling,
+            Icon = TZ_AntiquatedLighter,
+            Weight = 0.5,
+            OBSOLETE = true
+        }
+
+        item IronSight
+        {
+            DisplayCategory = WeaponPart,
+            Type = WeaponPart,
+            DisplayName = Iron Sight,
+            Icon = ScopeIronSight,
+            Weight = 0.1,
+            WeightModifier = 0.1,
+            MaxRangeModifier = 3,
+            MountOn = HuntingRifle; VarmintRifle; Pistol; Pistol2; Pistol3; Revolver; Revolver_Long; AssaultRifle; AssaultRifle2,
+            PartType = Scope,
+            Tooltip = Tooltip_IronSight,
+            MetalValue = 15,
+            WorldStaticModel = Rifle_IronSights_Ground,
+        }
+
+        item Sling
+        {
+            DisplayCategory = WeaponPart,
+            Type = WeaponPart,
+            DisplayName = Sling,
+            Icon = GunSling,
+            Weight = 0.5,
+            WeightModifier = -0.3,
+            MountOn = HuntingRifle; VarmintRifle; Shotgun,
+            PartType = Sling,
+            Tooltip = Tooltip_Sling,
+        }
+
+        item FiberglassStock
+        {
+            DisplayCategory = WeaponPart,
+            Type = WeaponPart,
+            DisplayName = Fiberglass Stock,
+            Icon = RifleFibreglassStock,
+            Weight = 1,
+            WeightModifier = -0.5,
+            HitChanceModifier = 8,
+            MountOn = HuntingRifle; VarmintRifle,
+            PartType = Stock,
+            Tooltip = Tooltip_FiberglassStock,
+        }
+
+        item Bayonnet
+        {
+            DisplayCategory = WeaponPart,
+            Type = WeaponPart,
+            DisplayName = Bayonnet,
+            Icon = HuntingKnife,
+            Weight = 0.2,
+            WeightModifier = 0.2,
+            AimingTimeModifier = 5,
+            MountOn = VarmintRifle; HuntingRifle,
+            PartType = Canon,
+            StaticModel = Bayonnet,
+            MetalValue = 15,
+            WorldStaticModel = Rifle_Bayonet_Ground,
+        }
+
+        item Vinegar
+        {
+            DisplayCategory = Food,
+            Type                =           Drainable,
+            UseDelta            =           0.1,
+            UseWhileEquipped    =           FALSE,
+            DisplayName         =           Vinegar,
+            Icon                =           Vinegar,
+            Weight              =           0.3,
+            WorldStaticModel = Vinegar,
+        }
+
+        item Key2
+        {
+            DisplayCategory = Security,
+            Weight  =   0,
+            Type    =   Key,
+            DisplayName =   Key,
+            Icon    =   Key2,
+            MetalValue = 5,
+            WorldStaticModel = Key2,
+        }
+
+        item Key3
+        {
+            DisplayCategory = Security,
+            Weight  =   0,
+            Type    =   Key,
+            DisplayName =   Key,
+            Icon    =   Key3,
+            MetalValue = 5,
+            WorldStaticModel = Key3,
+        }
+
+        item Key4
+        {
+            DisplayCategory = Security,
+            Weight  =   0,
+            Type    =   Key,
+            DisplayName =   Key,
+            Icon    =   Key4,
+            MetalValue = 5,
+            WorldStaticModel = Key3,
+        }
+
+        item Key5
+        {
+            DisplayCategory = Security,
+            Weight  =   0,
+            Type    =   Key,
+            DisplayName =   Key,
+            Icon    =   Key5,
+            MetalValue = 5,
+            WorldStaticModel = Key2,
+        }
+
+        item Football2
+        {
+            DisplayCategory = Sports,
+            MaxRange    =   10,
+            Type    =   Weapon,
+            MinimumSwingTime    =   1.5,
+            SwingAnim   =   Throw,
+            WeaponSprite = Football,
+            UseSelf =   TRUE,
+            DisplayName =   Football,
+            SwingTime   =   1.5,
+            SwingAmountBeforeImpact =   0.1,
+            PhysicsObject   =   Ball,
+            MinDamage   =   0,
+            Weight  =   0.425,
+            MaxDamage   =   0,
+            MaxHitCount =   0,
+            Icon    =   Football,
+            TriggerExplosionTimer   =   40,
+            ExtraDamage  =   0.001,
+            ExplosionRange  =   2,
+            WorldStaticModel = Football,
+        }
+
+        item AlarmClock
+        {
+            DisplayCategory = Household,
+            MaxRange    =   10,
+            Type    =   Weapon,
+            MinimumSwingTime    =   1.5,
+            SwingAnim   =   Throw,
+            WeaponSprite = Molotov,
+            UseSelf =   TRUE,
+            DisplayName =   Alarm Clock,
+            SwingTime   =   1.5,
+            SwingAmountBeforeImpact =   0.1,
+            PhysicsObject   =   NoiseGenerator,
+            MinDamage   =   0,
+            Weight  =   0.5,
+            MaxDamage   =   0,
+            MaxHitCount =   0,
+            Icon    =   AlarmClock,
+            NoiseRange  =   10,
+            ExplosionTimer  =   10,
+            CanBePlaced = TRUE,
+            CanBeReused =   TRUE,
+            CountDownSound = ticking,
+            ExplosionSound  =   alarmClockNoTicking,
+            Tooltip = Tooltip_Trap,
+            MetalValue = 25,
+            OBSOLETE = true
+        }
+
+        item 9mmBulletsMold
+        {
+            DisplayCategory = Ammo,
+            Weight = 0.5,
+            Type = Normal,
+            DisplayName = 9mm Bullets Mold,
+            Icon = BulletMold,
+            MetalValue = 15,
+            WorldStaticModel = ShotGunShellsMold_Ground, 
+        }
+
+        item ShotgunShellsMold
+        {
+            DisplayCategory = Ammo,
+            Weight = 0.5,
+            Type = Normal,
+            DisplayName = Shotgun Shells Mold,
+            Icon = BulletMold,
+            MetalValue = 15,
+            WorldStaticModel = ShotGunShellsMold_Ground,
+        }
+
+        item 308BulletsMold
+        {
+            DisplayCategory = Ammo,
+            Weight = 0.5,
+            Type = Normal,
+            DisplayName = 308 Bullets Mold,
+            Icon = BulletMold,
+            MetalValue = 15,
+            WorldStaticModel = ShotGunShellsMold_Ground,
+        }
+
+        item 223BulletsMold
+        {
+            DisplayCategory = Ammo,
+            Weight = 0.5,
+            Type = Normal,
+            DisplayName = 223 Bullets Mold,
+            Icon = BulletMold,
+            MetalValue = 15,
+            WorldStaticModel = ShotGunShellsMold_Ground,
+        }
+
+        item WaterPaintbucket
+        {
+            DisplayCategory = Water,
+            Type = Drainable,
+            DisplayName = Paint Bucket With Water,
+            Icon = PaintbucketEmpty,
+            IsCookable = TRUE,
+            Weight = 4.0,
+            ReplaceOnDeplete = PaintbucketEmpty,
+            UseWhileEquipped = FALSE,
+            UseDelta = 0.04,
+            ReplaceOnUseOn = WaterSource-WaterPaintbucket,
+            IsWaterSource = TRUE,
+            CanStoreWater = TRUE,
+            FillFromDispenserSound = GetWaterFromDispenserMetalBig,
+            FillFromTapSound = GetWaterFromTapMetalBig,
+            RainFactor = 1,
+            EatType = Bucket,
+            WorldStaticModel = PaintTinEmpty_Ground,
+            Tags = HasMetal,
+        }
+
+        item HairDyeBlonde
+        {
+            DisplayCategory = Appearance,
+            Weight  =   1,
+            Type    =   Drainable,
+            UseWhileEquipped    =   FALSE,
+            UseDelta    =   0.5,
+            DisplayName =   Blonde Hair Dye,
+            Icon    =   HairDye,
+            HairDye = TRUE,
+            ColorRed = 212,
+            ColorGreen = 171,
+            ColorBlue = 69,
+            WorldStaticModel = HairDyeBlond,
+        }
+
+        item HairDyeBlack
+        {
+            DisplayCategory = Appearance,
+            Weight  =   1,
+            Type    =   Drainable,
+            UseWhileEquipped    =   FALSE,
+            UseDelta    =   0.5,
+            DisplayName =   Black Hair Dye,
+            Icon    =   HairDye,
+            HairDye = TRUE,
+            ColorRed = 27,
+            ColorGreen = 23,
+            ColorBlue = 22,
+            WorldStaticModel = HairDyeBlackDarkBrown,
+        }
+
+        item HairDyeWhite
+        {
+            DisplayCategory = Appearance,
+            Weight  =   1,
+            Type    =   Drainable,
+            UseWhileEquipped    =   FALSE,
+            UseDelta    =   0.5,
+            DisplayName =   White Hair Dye,
+            Icon    =   HairDye,
+            HairDye = TRUE,
+            ColorRed = 202,
+            ColorGreen = 200,
+            ColorBlue = 192,
+            WorldStaticModel = HairDyeBlackWhite,
+        }
+
+        item HairDyePink
+        {
+            DisplayCategory = Appearance,
+            Weight  =   1,
+            Type    =   Drainable,
+            UseWhileEquipped    =   FALSE,
+            UseDelta    =   0.5,
+            DisplayName =   Pink Hair Dye,
+            Icon    =   HairDye,
+            HairDye = TRUE,
+            ColorRed = 246,
+            ColorGreen = 83,
+            ColorBlue = 150,
+            WorldStaticModel = HairDyePink,
+        }
+
+        item HairDyeYellow
+        {
+            DisplayCategory = Appearance,
+            Weight  =   1,
+            Type    =   Drainable,
+            UseWhileEquipped    =   FALSE,
+            UseDelta    =   0.5,
+            DisplayName =   Yellow Hair Dye,
+            Icon    =   HairDye,
+            HairDye = TRUE,
+            ColorRed = 252,
+            ColorGreen = 223,
+            ColorBlue = 0,
+            WorldStaticModel = HairDyeYellowBlond,
+        }
+
+        item HairDyeRed
+        {
+            DisplayCategory = Appearance,
+            Weight  =   1,
+            Type    =   Drainable,
+            UseWhileEquipped    =   FALSE,
+            UseDelta    =   0.5,
+            DisplayName =   Red Hair Dye,
+            Icon    =   HairDye,
+            HairDye = TRUE,
+            ColorRed = 210,
+            ColorGreen = 38,
+            ColorBlue = 18,
+            WorldStaticModel = HairDyeRedStrawberryBlond,
+        }
+
+        item HairDyeGinger
+        {
+            DisplayCategory = Appearance,
+            Weight  =   1,
+            Type    =   Drainable,
+            UseWhileEquipped    =   FALSE,
+            UseDelta    =   0.5,
+            DisplayName =   Strawberry Blonde Hair Dye,
+            Icon    =   HairDye,
+            HairDye = TRUE,
+            ColorRed = 190,
+            ColorGreen = 89,
+            ColorBlue = 34,
+            WorldStaticModel = HairDyeRedStrawberryBlond,
+        }
+
+        item HairDyeLightBrown
+        {
+            DisplayCategory = Appearance,
+            Weight  =   1,
+            Type    =   Drainable,
+            UseWhileEquipped    =   FALSE,
+            UseDelta    =   0.5,
+            DisplayName =   Light Brown Hair Dye,
+            Icon    =   HairDye,
+            HairDye = TRUE,
+            ColorRed = 159,
+            ColorGreen = 108,
+            ColorBlue = 43,
+            WorldStaticModel = HairDyeBrown,
+        }
+
+        item HairDyeGreen
+        {
+            DisplayCategory = Appearance,
+            Weight  =   1,
+            Type    =   Drainable,
+            UseWhileEquipped    =   FALSE,
+            UseDelta    =   0.5,
+            DisplayName =   Green Hair Dye,
+            Icon    =   HairDye,
+            HairDye = TRUE,
+            ColorRed = 55,
+            ColorGreen = 152,
+            ColorBlue = 77,
+            WorldStaticModel = HairDyeGreen,
+        }
+
+        item HairDyeBlue
+        {
+            DisplayCategory = Appearance,
+            Weight  =   1,
+            Type    =   Drainable,
+            UseWhileEquipped    =   FALSE,
+            UseDelta    =   0.5,
+            DisplayName =   Blue Hair Dye,
+            Icon    =   HairDye,
+            HairDye = TRUE,
+            ColorRed = 66,
+            ColorGreen = 155,
+            ColorBlue = 207,
+            WorldStaticModel = HairDyeBlue,
+        }
+
+        item VHS
+        {
+            DisplayCategory = Entertainment,
+            Type                = Normal,
+            DisplayName         = VHS,
+            Icon                = Cassette3,
+            Weight              = 0.1,
+            WorldStaticModel = VHSBox,
+        }
+
+        item PlateBlue
+        {
+            DisplayCategory = Junk,
+            Type                = Normal,
+            DisplayName         = Blue Plate,
+            Icon                = Plate,
+            Weight              = 0.2,
+            WorldStaticModel = Plate_Blue_Ground,
+        }
+
+        item PlateOrange
+        {
+            DisplayCategory = Junk,
+            Type                = Normal,
+            DisplayName         = Orange Plate,
+            Icon                = Plate,
+            Weight              = 0.2,
+            WorldStaticModel = Plate_Orange_Ground,
+        }
+
+        item PlateFancy
+        {
+            DisplayCategory = Junk,
+            Type                = Normal,
+            DisplayName         = Fancy Plate,
+            Icon                = Plate,
+            Weight              = 0.2,
+            WorldStaticModel = Plate_Fancy_Ground,
+        }
+
+        item CarvingFork
+        {
+            DisplayCategory = Cooking,
+            Weight  =   0.1,
+            Type    =   Normal,
+            DisplayName =   Carving Fork,
+            Icon    =   CarvingFork,
+            MetalValue = 20,
+            WorldStaticModel = CarvingFork_Ground,
+        }
+
+        item PaperNapkins
+        {
+            DisplayCategory = Junk,
+            Weight  =   0.1,
+            Type    =   Normal,
+            DisplayName =   Paper Napkins,
+            Icon    =   PaperNapkins,
+            WorldStaticModel = PaperNapkins_Ground,
+        }
+
+        item Straw
+        {
+            DisplayCategory = Junk,
+            Weight  =   0.1,
+            Type    =   Normal,
+            DisplayName =   Straw,
+            Icon    =   Straw,
+            WorldStaticModel = Straw_Ground,
+        }
+
+        item PetrolBleachBottle
+        {
+            DisplayName = Bleach Bottle of Gasoline,
+            DisplayCategory = VehicleMaintenance,
+            Type = Drainable,
+            Weight = 1.6,
+            Icon = Bleach,
+            FillFromDispenserSound = GetWaterFromDispenserPlasticBig,
+            FillFromTapSound = GetWaterFromTapPlasticBig,
+            ReplaceOnDeplete = BleachEmpty,
+            ReplaceOnUseOn = WaterSource-WaterBleachBottle,
+            UseDelta = 0.5,
+            UseWhileEquipped = FALSE,
+            StaticModel = BleachBottle,
+            WorldStaticModel = BleachBottle,
+            Tags = Petrol,
+        }
+
+        item PetrolPopBottle
+        {
+            DisplayName = Bottle of Gasoline,
+            DisplayCategory = VehicleMaintenance,
+            Type = Drainable,
+            Weight = 0.8,
+            Icon = BottlePopGas,
+            ReplaceOnDeplete = PopBottleEmpty,
+            UseDelta = 1,
+            UseWhileEquipped = FALSE,
+            StaticModel = PopBottleGasoline,
+            WorldStaticModel = PopBottleFullGasoline,
+            Tags = Petrol,
+        }
+
+        item WaterBottlePetrol
+        {
+            DisplayCategory = VehicleMaintenance,
+            DisplayName = Bottle of Gasoline,
+            Type = Drainable,
+            Weight = 0.8,
+            Icon = BottleWithGas,
+            ReplaceOnDeplete = WaterBottleEmpty,
+            UseDelta = 1,
+            UseWhileEquipped = FALSE,
+            StaticModel = WaterBottleGasoline,
+            WorldStaticModel = WaterBottleFullGasoline,
+            Tags = Petrol,
+        }   
+
+        item WhiskeyPetrol
+        {
+            DisplayCategory = VehicleMaintenance,
+            Weight  =   0.7,
+            Type    =   Drainable,
+            UseWhileEquipped    =   FALSE,
+            UseDelta    =   1,
+            DisplayName =   Bottle of Gasoline,
+            Icon    =   WhiskeyBottleGas,
+            ReplaceOnDeplete    =   WhiskeyEmpty,
+            StaticModel = WhiskeyBottleGasoline,
+            WorldStaticModel = WhiskeyBottleGroundGasoline,
+            Tags = Petrol,
+        }   
+
+        item WinePetrol
+        {
+            DisplayName =   Bottle of Gasoline,
+            DisplayCategory = VehicleMaintenance,
+            Type = Drainable,
+            Weight = 1,
+            Icon = WineEmpty,
+            ReplaceOnDeplete = WineEmpty,
+            UseDelta = 1,
+            UseWhileEquipped = FALSE,
+            StaticModel = WhiteWineBottle,
+            WorldStaticModel = WineWhiteGround,
+            Tags = Petrol,
+        }
+
+}

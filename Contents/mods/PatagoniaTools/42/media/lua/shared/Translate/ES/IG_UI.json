@@ -1,0 +1,11 @@
+{
+    "IGUI_Mechanics": "Mecánica: %.2f",
+    "IGUI_MetalWelding": "Metalistería: %.2f",
+    "IGUI_Electricity": "Electrónica: %.2f",
+    "IGUI_RepairEngineQuality": "Reparar calidad del motor",
+    "IGUI_RestoreTrunk": "Restaurar maletero",
+    "IGUI_Restore_Heater": "Restaurar el climatizador",
+    "IGUI_Repair_Glove_Box": "Restaurar guantera",
+    "IGUI_Lightbar": "Restaurar luces de emergencia",
+    "IGUI_CreateCarKey": "Crear llave del auto"
+}

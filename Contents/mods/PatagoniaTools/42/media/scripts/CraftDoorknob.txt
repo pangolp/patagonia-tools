@@ -1,0 +1,24 @@
+module CraftDoorknob
+{
+    craftRecipe DoorknobCustom
+    {
+        time = 240,
+        category = Patagonia,
+        Tags = AnySurfaceCraft,
+        SkillRequired = MetalWelding:2,
+        inputs
+        {
+            item 1 tags[base:hammer] mode:keep flags[MayDegradeLight],
+            item 1 tags[base:screwdriver] mode:keep flags[MayDegradeLight],
+            item 1 tags[base:saw] mode:keep flags[MayDegradeLight],
+            item 1 [Base.SheetMetal],
+            item 4 [Base.Screws],
+            item 1 [Base.Aluminum],
+            item 1 [Base.TinCanEmpty],
+        }
+        outputs
+        {
+            item 1 Base.Doorknob,
+        }
+    }
+}

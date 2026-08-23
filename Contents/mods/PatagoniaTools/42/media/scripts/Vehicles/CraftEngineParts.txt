@@ -1,0 +1,32 @@
+module CraftEngineParts
+{
+    craftRecipe MakeEnginePartCustom
+    {
+        time = 120,
+        category = Taller,
+        Tags = AnySurfaceCraft,
+        timedAction = Welding,
+        SkillRequired = Mechanics:1,
+        OnCreate = PatagoniaRecipe.giveMechanicsXP,
+        inputs
+        {
+            item 1 tags[base:weldingmask] mode:keep,
+            item 1 tags[base:hammer] mode:keep flags[MayDegradeLight],
+            item 1 tags[base:screwdriver] mode:keep flags[MayDegradeLight],
+            item 1 tags[base:saw] mode:keep flags[MayDegradeLight],
+            item 1 tags[base:wrench] mode:keep flags[MayDegradeLight],
+            item 1 [Base.PipeWrench] mode:keep flags[MayDegradeLight],
+            item 1 [Base.BlowTorch] flags[Prop1],
+            item 1 [Base.ScrapMetal],
+            item 1 [Base.MetalPipe],
+            item 1 [Base.SmallSheetMetal],
+            item 1 [Base.MetalBar],
+            item 1 [Base.Screws],
+            item 2 [Base.WeldingRods],
+        }
+        outputs
+        {
+            item 1 Base.EngineParts,
+        }
+    }
+}
