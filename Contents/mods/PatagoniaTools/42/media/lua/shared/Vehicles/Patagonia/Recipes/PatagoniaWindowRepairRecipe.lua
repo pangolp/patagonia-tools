@@ -66,6 +66,7 @@ PatagoniaRepair.register({
     time       = 1200,
 })
 
+-- Repair = base "unit" cost. Leaves the windshield at 100%, so it is not cheap.
 PatagoniaRepair.register({
     id             = "repairWindshield",
     partIds        = windshieldParts,
@@ -75,21 +76,24 @@ PatagoniaRepair.register({
     warningKey     = "Tooltip_vehicle_RepairGlassWarning",
 
     professions = {
-        { perk = "Mechanics", level = 4 },
+        { perk = "Mechanics",   level = 3 },
+        { perk = "Glassmaking", level = 2 },
     },
 
     handTool = screwdriverHandTool,
 
     materials = {
-        { fullType = "Base.DuctTape",    count = 4 },
-        { fullType = "Base.BrokenGlass", count = 3 },
         { fullType = "Base.GlassPanel",  count = 1 },
+        { fullType = "Base.DuctTape",    count = 3 },
+        { fullType = "Base.BrokenGlass", count = 2 },
     },
 
     actionAnim = "VehicleWorkOnMid",
-    time       = 1000,
+    time       = 900,
 })
 
+-- Build from scratch = exactly double the repair (materials + time). Guaranteed
+-- path to 100% when no part exists, using only vanilla skills/materials.
 PatagoniaRepair.register({
     id             = "buildWindshield",
     partIds        = windshieldParts,
@@ -99,17 +103,18 @@ PatagoniaRepair.register({
     warningKey     = "Tooltip_vehicle_BuildGlassWarning",
 
     professions = {
-        { perk = "Glassmaking", level = 5 },
         { perk = "Mechanics",   level = 5 },
+        { perk = "Glassmaking", level = 4 },
     },
 
     handTool = screwdriverHandTool,
 
     materials = {
         { fullType = "Base.GlassPanel",  count = 2 },
-        { fullType = "Base.BrokenGlass", count = 5 },
+        { fullType = "Base.DuctTape",    count = 6 },
+        { fullType = "Base.BrokenGlass", count = 4 },
     },
 
     actionAnim = "VehicleWorkOnMid",
-    time       = 1500,
+    time       = 1800,
 })
