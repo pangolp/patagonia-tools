@@ -12,7 +12,7 @@ function Commands.repairHeater(player, args)
 
         PatagoniaVehicleCommandUtil.removeItems(player, 'Base.Aluminum', 5)
         PatagoniaVehicleCommandUtil.removeItems(player, 'Base.ElectronicsScrap', 10)
-        PatagoniaVehicleCommandUtil.removeItems(player, 'Radio.ElectricWire', 3)
+        PatagoniaVehicleCommandUtil.removeItems(player, 'Base.ElectricWire', 3)
 
         part:repair()
 

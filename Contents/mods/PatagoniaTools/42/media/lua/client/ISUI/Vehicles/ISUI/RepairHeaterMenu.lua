@@ -112,7 +112,7 @@ function ISVehicleMechanics:doMenuTooltip(part, option, lua, name)
 
         tooltip.description = tooltip.description .. " " .. rgb .. getItemNameFromFullType("Base.ElectronicsScrap") .. " " .. _electronicsScrapInInventory .. "/" .. _electronicsScrapRequired .. " <LINE>"
 
-        local _electricWireInInventory = self.chr:getInventory():getNumberOfItem("Radio.ElectricWire", false, true)
+        local _electricWireInInventory = self.chr:getInventory():getNumberOfItem("Base.ElectricWire", false, true)
         local _electricWireRequired = 3
 
         if _electricWireInInventory >= _electricWireRequired then
@@ -122,7 +122,7 @@ function ISVehicleMechanics:doMenuTooltip(part, option, lua, name)
             option.notAvailable = true
         end
 
-        tooltip.description = tooltip.description .. " " .. rgb .. getItemNameFromFullType("Radio.ElectricWire") .. " " .. _electricWireInInventory .. "/" .. _electricWireRequired .. " <LINE>"
+        tooltip.description = tooltip.description .. " " .. rgb .. getItemNameFromFullType("Base.ElectricWire") .. " " .. _electricWireInInventory .. "/" .. _electricWireRequired .. " <LINE>"
 
         tooltip.description = string.format("%s <RGB:0,1,1> %s <LINE>", tooltip.description, getText("Tooltip_vehicle_RestoreHeaterWarning"))
         tooltip.description = string.format("%s <RGB:1,1,1>Mod: Patagonia tools.", tooltip.description)
