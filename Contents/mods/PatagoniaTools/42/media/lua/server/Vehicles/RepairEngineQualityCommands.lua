@@ -19,14 +19,18 @@ function Commands.repairEngineQuality(player, args)
         if done > 0 then
             local newQuality = math.min(100, currentQuality + (done * 2))
 
-            -- Recalcular la potencia del motor según la nueva calidad,
-            -- igual que Vehicles.Create.Engine (vanilla).
+            -- Recalcular potencia y ruido según la nueva calidad, igual que
+            -- Vehicles.Create.Engine (vanilla). setFeatures ESCALA el ruido, así
+            -- que hay que pasar el ruido BASE del script; getEngineLoudness ya
+            -- viene escalado y se re-escalaría en cada reparación.
             local qualityBoosted = math.min(100, newQuality * 1.6)
             local qualityModifier = math.max(0.6, qualityBoosted / 100)
             local enginePower = vehicle:getScript():getEngineForce() * qualityModifier
-            local engineLoudness = vehicle:getEngineLoudness()
+            local engineLoudness = (vehicle:getScript():getEngineLoudness() or 100) * (SandboxVars.ZombieAttractionMultiplier or 1)
 
             vehicle:setEngineFeature(newQuality, engineLoudness, enginePower)
+            -- setEngineFeature no transmite: sincronizar el motor a los clientes.
+            vehicle:transmitEngine()
 
             PatagoniaVehicleCommandUtil.removeItems(player, 'Base.EngineParts', done)
             part:repair()

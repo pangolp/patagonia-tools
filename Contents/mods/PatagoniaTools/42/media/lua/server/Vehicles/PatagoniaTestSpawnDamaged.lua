@@ -44,8 +44,11 @@ local function onSpawnVehicleEnd(vehicle)
     local qualityBoosted = math.min(100, ENGINE_QUALITY * 1.6)
     local qualityModifier = math.max(0.6, qualityBoosted / 100)
     local enginePower = vehicle:getScript():getEngineForce() * qualityModifier
-    local engineLoudness = vehicle:getEngineLoudness()
+    -- ruido BASE del script (setFeatures lo escala; getEngineLoudness ya viene escalado)
+    local engineLoudness = (vehicle:getScript():getEngineLoudness() or 100) * (SandboxVars.ZombieAttractionMultiplier or 1)
     vehicle:setEngineFeature(ENGINE_QUALITY, engineLoudness, enginePower)
+    -- setEngineFeature no transmite: sincronizar el motor a los clientes.
+    vehicle:transmitEngine()
 end
 
 Events.OnSpawnVehicleEnd.Add(onSpawnVehicleEnd)
