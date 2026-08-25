@@ -65,13 +65,22 @@ function ISVehicleMechanics:doMenuTooltip(part, option, lua, name)
         local tooltip = ISToolTip:new()
         tooltip:initialise()
         tooltip:setVisible(false)
-        tooltip.description = getText("Tooltip_craft_Needs") .. " : <LINE>"
+        tooltip.description = ""
         option.toolTip = tooltip
 
-        local rgb = ISVehicleMechanics.ghs
+        -- Calidad del motor al máximo: mostrar "nada que reparar" y salir,
+        -- igual que baúl/guantera/climatizador.
         if vehicle:getEngineQuality() >= 100 then
-            tooltip.description = tooltip.description .. " " .. ISVehicleMechanics.bhs .. " " .. getText("Tooltip_Vehicle_EngineQualityFull") .. " <LINE>"
+            tooltip.description = string.format("%s %s <LINE>", tooltip.description, getText("Tooltip_Vehicle_EngineQualityFull"))
+            tooltip.description = string.format("%s <RGB:0,1,1> %s <LINE>", tooltip.description, getText("Tooltip_vehicle_RepairEngineQualityWarning"))
+            tooltip.description = string.format("%s <RGB:1,1,1>Mod: Patagonia tools", tooltip.description)
+            option.notAvailable = true
+            return
         end
+
+        tooltip.description = getText("Tooltip_craft_Needs") .. " : <LINE>"
+
+        local rgb = ISVehicleMechanics.ghs
 
         local requiredLevel = vehicle:getScript():getEngineRepairLevel()
         if self.chr:getPerkLevel(Perks.Mechanics) < requiredLevel then
