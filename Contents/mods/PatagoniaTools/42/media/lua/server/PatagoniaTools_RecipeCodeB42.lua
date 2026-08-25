@@ -45,3 +45,12 @@ end
 function PatagoniaRecipe.giveElectricityXP(craftRecipeData, character)
     giveScaledXP(character, Perks.Electricity, "IGUI_Electricity")
 end
+
+-- The popsicle freezer is a two-tile object: the craftRecipe output gives the bottom
+-- tile (Base.Mov_PopsicleFreezer / sprite appliances_refrigeration_01_20) and this
+-- OnCreate hook adds the top tile (Base.mov_appliances_refrigeration_01_21, defined in
+-- scripts/Items/patagonia_items.txt). Ported from the old B41 Recipe.OnCreate.FreezerIceCreamCustom.
+function PatagoniaRecipe.addFreezerSecondPart(craftRecipeData, character)
+    if not character then return end
+    character:getInventory():AddItem("Base.mov_appliances_refrigeration_01_21")
+end

@@ -1,0 +1,152 @@
+module Base
+{
+    /* Moveable items crafted by PatagoniaTools recipes.
+       Build 42 needs a real Type=Moveable item (ItemType = base:moveable) that
+       points at a world sprite via WorldObjectSprite; the old B41 "Result: Moveables.<sprite>"
+       output does not resolve as a craftRecipe output. Every sprite below was verified to
+       exist in B42 newtiledefinitions.tiles. */
+
+    /* --- Chrome sink (CraftChromeSinkCustom) --- */
+    item mov_fixtures_sinks_01_8
+    {
+        DisplayCategory = Furniture,
+        ItemType = base:moveable,
+        Icon = default,
+        Weight = 8.0,
+        DisplayName = Chrome Sink,
+        WorldObjectSprite = fixtures_sinks_01_8,
+    }
+
+    /* --- Window (CraftWindows) --- */
+    item mov_fixtures_windows_01_0
+    {
+        DisplayCategory = Furniture,
+        ItemType = base:moveable,
+        Icon = default,
+        Weight = 3.0,
+        DisplayName = Window,
+        WorldObjectSprite = fixtures_windows_01_0,
+    }
+
+    /* --- Plain wooden crate used as input for the painted boxes (CraftBox) --- */
+    item mov_carpentry_01_16
+    {
+        DisplayCategory = Furniture,
+        ItemType = base:moveable,
+        Icon = default,
+        Weight = 8.0,
+        DisplayName = Wooden Crate,
+        WorldObjectSprite = carpentry_01_16,
+    }
+
+    /* --- Painted wooden boxes (CraftBox outputs) --- */
+    item mov_carpentry_03_0
+    {
+        DisplayCategory = Furniture,
+        ItemType = base:moveable,
+        Icon = default,
+        Weight = 8.0,
+        DisplayName = White wooden box,
+        WorldObjectSprite = carpentry_03_0,
+    }
+
+    item mov_carpentry_03_1
+    {
+        DisplayCategory = Furniture,
+        ItemType = base:moveable,
+        Icon = default,
+        Weight = 8.0,
+        DisplayName = Yellow wooden box,
+        WorldObjectSprite = carpentry_03_1,
+    }
+
+    item mov_carpentry_03_2
+    {
+        DisplayCategory = Furniture,
+        ItemType = base:moveable,
+        Icon = default,
+        Weight = 8.0,
+        DisplayName = Red wooden box,
+        WorldObjectSprite = carpentry_03_2,
+    }
+
+    item mov_carpentry_03_3
+    {
+        DisplayCategory = Furniture,
+        ItemType = base:moveable,
+        Icon = default,
+        Weight = 8.0,
+        DisplayName = Purple wooden box,
+        WorldObjectSprite = carpentry_03_3,
+    }
+
+    item mov_carpentry_03_4
+    {
+        DisplayCategory = Furniture,
+        ItemType = base:moveable,
+        Icon = default,
+        Weight = 8.0,
+        DisplayName = Blue wooden box,
+        WorldObjectSprite = carpentry_03_4,
+    }
+
+    item mov_carpentry_03_5
+    {
+        DisplayCategory = Furniture,
+        ItemType = base:moveable,
+        Icon = default,
+        Weight = 8.0,
+        DisplayName = Green wooden box,
+        WorldObjectSprite = carpentry_03_5,
+    }
+
+    item mov_carpentry_03_6
+    {
+        DisplayCategory = Furniture,
+        ItemType = base:moveable,
+        Icon = default,
+        Weight = 8.0,
+        DisplayName = Black wooden box,
+        WorldObjectSprite = carpentry_03_6,
+    }
+
+    item mov_carpentry_03_7
+    {
+        DisplayCategory = Furniture,
+        ItemType = base:moveable,
+        Icon = default,
+        Weight = 8.0,
+        DisplayName = Cyan wooden box,
+        WorldObjectSprite = carpentry_03_7,
+    }
+
+    item mov_carpentry_03_8
+    {
+        DisplayCategory = Furniture,
+        ItemType = base:moveable,
+        Icon = default,
+        Weight = 8.0,
+        DisplayName = Gray wooden box,
+        WorldObjectSprite = carpentry_03_8,
+    }
+
+    item mov_carpentry_03_9
+    {
+        DisplayCategory = Furniture,
+        ItemType = base:moveable,
+        Icon = default,
+        Weight = 8.0,
+        DisplayName = Pink wooden box,
+        WorldObjectSprite = carpentry_03_9,
+    }
+
+    item mov_carpentry_03_10
+    {
+        DisplayCategory = Furniture,
+        ItemType = base:moveable,
+        Icon = default,
+        Weight = 8.0,
+        DisplayName = Orange wooden box,
+        WorldObjectSprite = carpentry_03_10,
+    }
+}
