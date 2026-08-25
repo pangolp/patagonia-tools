@@ -3,7 +3,7 @@ module Base
     item mov_appliances_refrigeration_01_21
     {
         DisplayCategory = Furniture,
-        Type            = Moveable,
+        ItemType        = base:moveable,
         Icon            = default,
         Weight          = 0.5,
         DisplayName     = Popsicle_Fridge,
