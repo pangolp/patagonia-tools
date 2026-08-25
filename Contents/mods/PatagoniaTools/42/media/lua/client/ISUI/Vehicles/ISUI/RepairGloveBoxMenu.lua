@@ -1,13 +1,13 @@
 local function predicateNeedle(item)
-    return item:hasTag("Needle") or item:getType() == "Needle"
+    return item:hasTag(ItemTag.SEWING_NEEDLE) or item:getType() == "Needle"
 end
 
 local function predicateDrainableUsesInt(item, count)
-    return item:getDrainableUsesInt() >= count
+    return item:getCurrentUses() >= count
 end
 
 local function comparatorDrainableUsesInt(item1, item2)
-    return item1:getDrainableUsesInt() - item2:getDrainableUsesInt()
+    return item1:getCurrentUses() - item2:getCurrentUses()
 end
 
 local function getThreadWithMostUses(container)
@@ -103,7 +103,7 @@ function ISVehicleMechanics:doMenuTooltip(part, option, lua, name)
         local thread = getThreadWithMostUses(self.chr:getInventory())
 
         if thread then
-            local threadUseLeft = thread:getDrainableUsesInt()
+            local threadUseLeft = thread:getCurrentUses()
             if threadUseLeft >= 10 then
                 tooltip.description = tooltip.description .. "<RGB:0,1,0> " .. getItemNameFromFullType("Base.Thread") .. " " .. getText("ContextMenu_Uses") .. " " .. threadUseLeft .. " / " .. 10 .. " <LINE>"
             else

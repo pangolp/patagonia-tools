@@ -1,15 +1,19 @@
 local originalDoPartContextMenu = ISVehicleMechanics.doPartContextMenu
 
 local function predicateDrainableUsesInt(item, count)
-    return item:getDrainableUsesInt() >= count
+    return item:getCurrentUses() >= count
+end
+
+local function comparatorDrainableUsesInt(item1, item2)
+    return item1:getCurrentUses() - item2:getCurrentUses()
 end
 
 local function predicateBlowTorch(item)
-    return (item:hasTag("BlowTorch") or item:getType() == "BlowTorch") and item:getDrainableUsesInt() >= 10
+    return (item:hasTag(ItemTag.BLOW_TORCH) or item:getType() == "BlowTorch") and item:getCurrentUses() >= 10
 end
 
 local function predicateWeldingMask(item)
-    return item:hasTag("WeldingMask") or item:getType() == "WeldingMask"
+    return item:hasTag(ItemTag.WELDING_MASK) or item:getType() == "WeldingMask"
 end
 
 function ISVehicleMechanics:doPartContextMenu(part, x, y)
@@ -107,10 +111,10 @@ function ISVehicleMechanics:doMenuTooltip(part, option, lua, name)
             option.notAvailable = true
         end
 
-        local blowTorch = ISBlacksmithMenu.getBlowTorchWithMostUses(self.chr:getInventory())
+        local blowTorch = self.chr:getInventory():getBestTypeEvalRecurse("Base.BlowTorch", comparatorDrainableUsesInt)
 
         if blowTorch then
-            local blowTorchUseLeft = blowTorch:getDrainableUsesInt()
+            local blowTorchUseLeft = blowTorch:getCurrentUses()
             if blowTorchUseLeft >= 10 then
                 tooltip.description = tooltip.description .. "<RGB:0,1,0> " .. getItemNameFromFullType("Base.BlowTorch") .. " " .. getText("ContextMenu_Uses") .. " " .. blowTorchUseLeft .. " / " .. 10 .. " <LINE>"
             else

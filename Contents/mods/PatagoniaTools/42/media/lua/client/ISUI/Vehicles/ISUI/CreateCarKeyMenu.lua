@@ -1,5 +1,5 @@
 local function predicateScrewdriver(item)
-    return item:hasTag("Screwdriver") or item:getType() == "Screwdriver"
+    return item:hasTag(ItemTag.SCREWDRIVER) or item:getType() == "Screwdriver"
 end
 
 local originalDoPartContextMenu = ISVehicleMechanics.doPartContextMenu
