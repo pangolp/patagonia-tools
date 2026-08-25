@@ -1,6 +1,4 @@
 name=Patagonia Tools
 id=PatagoniaTools
-description=Crafting and utilities for the Patagonia server
-pack=patagonia
-tiledef=patagonia 8000
+description=Vehicle repair utilities for the Patagonia server
 versionMin=42.0.0
