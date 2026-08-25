@@ -139,16 +139,17 @@ local originalDoPartContextMenu = ISVehicleMechanics.doPartContextMenu
 function ISVehicleMechanics:doPartContextMenu(part, x, y)
     originalDoPartContextMenu(self, part, x, y)
 
-    local recipe = PatagoniaRepair.getForPart(part:getId())
-    if not recipe then return end
+    local recipes = PatagoniaRepair.getApplicableForPart(part)
+    if #recipes == 0 then return end
     if VehicleUtils.RequiredKeyNotFound(part, self.chr) then return end
-    if part:getCondition() >= 100 then return end
 
     local playerObj = getSpecificPlayer(self.playerNum)
-    local option = self.context:addOption(getText(recipe.displayNameKey), playerObj, ISVehicleMechanics.onPatagoniaRepair, part, recipe)
-    self:doMenuTooltip(part, option, tooltipTag(recipe))
-    if not meetsRequirements(self.chr, recipe) then
-        option.notAvailable = true
+    for _, recipe in ipairs(recipes) do
+        local option = self.context:addOption(getText(recipe.displayNameKey), playerObj, ISVehicleMechanics.onPatagoniaRepair, part, recipe)
+        self:doMenuTooltip(part, option, tooltipTag(recipe))
+        if not meetsRequirements(self.chr, recipe) then
+            option.notAvailable = true
+        end
     end
 end
 

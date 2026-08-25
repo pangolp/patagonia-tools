@@ -21,7 +21,7 @@ function Commands.patagoniaRepair(player, args)
         return
     end
 
-    if PatagoniaRepair.getForPart(part:getId()) ~= recipe then
+    if not PatagoniaRepair.recipeCoversPart(recipe, part:getId()) or not PatagoniaRepair.appliesTo(recipe, part) then
         noise('patagoniaRepair: part ' .. tostring(args.partId) .. ' not valid for ' .. tostring(args.recipeId))
         return
     end
@@ -30,13 +30,33 @@ function Commands.patagoniaRepair(player, args)
         PatagoniaVehicleCommandUtil.removeItems(player, mat.fullType, mat.count)
     end
 
-    part:repair()
+    local installedItemId = -1
+    if recipe.mode == "install" then
+        local item
+        if recipe.installItem then
+            item = instanceItem(recipe.installItem)
+            if item then part:setInventoryItem(item, player:getPerkLevel(Perks.Mechanics)) end
+        else
+            item = VehicleUtils.createPartInventoryItem(part)
+        end
+        if not item then
+            noise('patagoniaRepair: could not create seat item for part ' .. tostring(args.partId))
+            return
+        end
+        item:setConditionNoSound(item:getConditionMax())
+        part:setCondition(100)
+        vehicle:transmitPartItem(part)
+        vehicle:transmitPartCondition(part)
+        installedItemId = item:getID()
+    else
+        part:repair()
+    end
 
     player:sendObjectChange(IsoObjectChange.MECHANIC_ACTION_DONE, {
         success = true,
         vehicleId = vehicle:getId(),
         partId = part:getId(),
-        itemId = -1,
+        itemId = installedItemId,
         installing = true
     })
 end

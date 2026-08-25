@@ -8,15 +8,28 @@ function PatagoniaRepair.register(def)
     return def
 end
 
-function PatagoniaRepair.getForPart(partId)
-    for _, def in pairs(PatagoniaRepair.recipes) do
-        for _, id in ipairs(def.partIds) do
-            if id == partId then
-                return def
-            end
+function PatagoniaRepair.recipeCoversPart(recipe, partId)
+    for _, id in ipairs(recipe.partIds) do
+        if id == partId then
+            return true
         end
     end
-    return nil
+    return false
+end
+
+function PatagoniaRepair.appliesTo(recipe, part)
+    return recipe.appliesTo == nil or recipe.appliesTo(part)
+end
+
+function PatagoniaRepair.getApplicableForPart(part)
+    local partId = part:getId()
+    local matches = {}
+    for _, recipe in pairs(PatagoniaRepair.recipes) do
+        if PatagoniaRepair.recipeCoversPart(recipe, partId) and PatagoniaRepair.appliesTo(recipe, part) then
+            table.insert(matches, recipe)
+        end
+    end
+    return matches
 end
 
 return PatagoniaRepair

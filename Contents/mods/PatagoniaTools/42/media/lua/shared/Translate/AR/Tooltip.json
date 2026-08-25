@@ -9,5 +9,6 @@
     "Tooltip_vehicle_Repair_Glove_Box": "Restaura la guantera al 100%",
     "Tooltip_vehicle_RestoreLightbarWarning": "Restaura las luces de emergencia al 100%",
     "Tooltip_vehicle_CreateCarKeyWarning": "Corta los cables (si existe) y crea la llave del auto",
-    "Tooltip_vehicle_RepairSeatsWarning": "Retapiza el asiento y lo restaura al 100%."
+    "Tooltip_vehicle_RepairSeatsWarning": "Retapiza el asiento y lo restaura al 100%.",
+    "Tooltip_vehicle_BuildSeatsWarning": "Fabrica un asiento nuevo donde no hay ninguno instalado."
 }
