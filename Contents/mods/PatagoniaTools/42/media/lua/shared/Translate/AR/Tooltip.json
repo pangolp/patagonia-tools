@@ -12,5 +12,7 @@
     "Tooltip_vehicle_RepairSeatsWarning": "Retapiza el asiento y lo restaura al 100%.",
     "Tooltip_vehicle_BuildSeatsWarning": "Fabrica un asiento nuevo donde no hay ninguno instalado.",
     "Tooltip_vehicle_RepairGlassWarning": "Repara el cristal rajado y lo restaura al 100%.",
-    "Tooltip_vehicle_BuildGlassWarning": "Fabrica un cristal nuevo donde el vidrio fue destrozado."
+    "Tooltip_vehicle_BuildGlassWarning": "Fabrica un cristal nuevo donde el vidrio fue destrozado.",
+    "Tooltip_vehicle_RepairDoorWarning": "Suelda y endereza la puerta abollada y la restaura al 100%.",
+    "Tooltip_vehicle_BuildDoorWarning": "Fabrica una puerta nueva donde no hay ninguna instalada."
 }

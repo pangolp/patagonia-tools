@@ -118,7 +118,10 @@ function ISVehicleMechanics.onPatagoniaRepair(playerObj, part, recipe)
 
     local door = nil
     local doorPart = vehicle:getPartById((part:getId():gsub("Seat", "Door")))
-    if doorPart and doorPart:getDoor() and not doorPart:getDoor():isOpen() then
+    -- Only auto-open a DIFFERENT door (e.g. a seat's door). Never the part being
+    -- worked on itself — a door recipe must not try to open the door it is
+    -- repairing/building (the missing-door case has no panel to open).
+    if doorPart and doorPart ~= part and doorPart:getDoor() and not doorPart:getDoor():isOpen() then
         door = doorPart
     end
 

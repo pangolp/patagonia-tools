@@ -10,5 +10,9 @@
     "IGUI_Patagonia_RepairWindow": "Repair window",
     "IGUI_Patagonia_BuildWindow": "Build window",
     "IGUI_Patagonia_RepairWindshield": "Repair windshield",
-    "IGUI_Patagonia_BuildWindshield": "Build windshield"
+    "IGUI_Patagonia_BuildWindshield": "Build windshield",
+    "IGUI_Patagonia_RepairDoor": "Repair door",
+    "IGUI_Patagonia_BuildDoor": "Build door",
+    "IGUI_Patagonia_RepairDoorDouble": "Repair double door",
+    "IGUI_Patagonia_BuildDoorDouble": "Build double door"
 }

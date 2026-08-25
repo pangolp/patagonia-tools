@@ -10,5 +10,9 @@
     "IGUI_Patagonia_RepairWindow": "Reparar ventanilla",
     "IGUI_Patagonia_BuildWindow": "Fabricar ventanilla",
     "IGUI_Patagonia_RepairWindshield": "Reparar parabrisas",
-    "IGUI_Patagonia_BuildWindshield": "Fabricar parabrisas"
+    "IGUI_Patagonia_BuildWindshield": "Fabricar parabrisas",
+    "IGUI_Patagonia_RepairDoor": "Reparar puerta",
+    "IGUI_Patagonia_BuildDoor": "Fabricar puerta",
+    "IGUI_Patagonia_RepairDoorDouble": "Reparar puerta doble",
+    "IGUI_Patagonia_BuildDoorDouble": "Fabricar puerta doble"
 }
