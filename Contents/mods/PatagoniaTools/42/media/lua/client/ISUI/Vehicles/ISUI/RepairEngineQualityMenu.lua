@@ -8,9 +8,9 @@ function ISVehicleMechanics:doPartContextMenu(part, x, y)
         local vehicle = part:getVehicle()
 
         local _engineCondition = (part:getCondition() == 100)
-        local _mechanicPerkLevel = (playerObj:getPerkLevel(Perks.Mechanics) <= 10)
+        local _mechanicPerkLevel = (playerObj:getPerkLevel(Perks.Mechanics) >= vehicle:getScript():getEngineRepairLevel())
         local _hasWrench = (playerObj:getInventory():getNumberOfItem("Base.Wrench", false, true) >= 1)
-        local _needEngineParts = (playerObj:getInventory():getNumberOfItem("EngineParts", false, true) >= ((math.floor(((100 - vehicle:getEngineQuality()) / 2))) + 1))
+        local _needEngineParts = (playerObj:getInventory():getNumberOfItem("Base.EngineParts", false, true) >= ((math.floor(((100 - vehicle:getEngineQuality()) / 2))) + 1))
         local _engineQuality = (vehicle:getEngineQuality() < 100)
 
         if _engineCondition and _mechanicPerkLevel and _hasWrench and _needEngineParts and _engineQuality then
@@ -73,7 +73,7 @@ function ISVehicleMechanics:doMenuTooltip(part, option, lua, name)
             tooltip.description = tooltip.description .. " " .. ISVehicleMechanics.bhs .. " " .. getText("Tooltip_Vehicle_EngineQualityFull") .. " <LINE>"
         end
 
-        local requiredLevel = 10
+        local requiredLevel = vehicle:getScript():getEngineRepairLevel()
         if self.chr:getPerkLevel(Perks.Mechanics) < requiredLevel then
             rgb = ISVehicleMechanics.bhs
         end
@@ -100,7 +100,7 @@ function ISVehicleMechanics:doMenuTooltip(part, option, lua, name)
         if _enginePartsInInventory >= _partsCount then
             tooltip.description = tooltip.description .. " " .. ISVehicleMechanics.ghs .. _engineParts:getDisplayName() .. " " .. _enginePartsInInventory .. "/" ..  _partsCount .." <LINE>"
         else
-            tooltip.description = tooltip.description .. " " .. ISVehicleMechanics.bhs .. _engineParts:getDisplayName() .. " " .. _partsCount .. "/" ..  _enginePartsInInventory .." <LINE>"
+            tooltip.description = tooltip.description .. " " .. ISVehicleMechanics.bhs .. _engineParts:getDisplayName() .. " " .. _enginePartsInInventory .. "/" ..  _partsCount .." <LINE>"
         end
         tooltip.description = tooltip.description .. " " .. "<RGB:0,1,1>" .. " " .. getText("Tooltip_vehicle_RepairEngineQualityWarning")
     end

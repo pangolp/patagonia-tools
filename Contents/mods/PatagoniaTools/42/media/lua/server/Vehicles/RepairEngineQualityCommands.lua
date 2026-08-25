@@ -9,22 +9,25 @@ function Commands.repairEngineQuality(player, args)
             return
         end
 
-        -- Usar mínimo 2 piezas, máximo según disponibilidad
-        local partsToUse = args.numberOfParts
-        local done = 0
         local currentQuality = vehicle:getEngineQuality()
-        local newQuality = currentQuality
-
-        for i=1, partsToUse do
-            newQuality = newQuality
-            done = done + 1
-            if newQuality >= 100 then
-                newQuality = 100
-                break
-            end
-        end
+        local available = player:getInventory():getNumberOfItem("Base.EngineParts", false, true)
+        -- La cuenta: cada pieza de motor restaura 2 puntos de calidad
+        -- (mismo cálculo que el menú y el tooltip).
+        local partsNeeded = math.floor((100 - currentQuality) / 2) + 1
+        local done = math.min(args.numberOfParts or partsNeeded, partsNeeded, available)
 
         if done > 0 then
+            local newQuality = math.min(100, currentQuality + (done * 2))
+
+            -- Recalcular la potencia del motor según la nueva calidad,
+            -- igual que Vehicles.Create.Engine (vanilla).
+            local qualityBoosted = math.min(100, newQuality * 1.6)
+            local qualityModifier = math.max(0.6, qualityBoosted / 100)
+            local enginePower = vehicle:getScript():getEngineForce() * qualityModifier
+            local engineLoudness = vehicle:getEngineLoudness()
+
+            vehicle:setEngineFeature(newQuality, engineLoudness, enginePower)
+
             player:sendObjectChange('removeItemType', { type = 'Base.EngineParts', count = done })
             part:repair()
         end
