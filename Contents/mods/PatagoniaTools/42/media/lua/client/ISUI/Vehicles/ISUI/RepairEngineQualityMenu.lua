@@ -80,11 +80,11 @@ function ISVehicleMechanics:doMenuTooltip(part, option, lua, name)
 
         tooltip.description = tooltip.description .. " " .. rgb .. getText("IGUI_perks_Mechanics") .. " " .. self.chr:getPerkLevel(Perks.Mechanics) .. "/" .. requiredLevel .. " <LINE>"
 
-        local item = InventoryItemFactory.CreateItem("Base.Wrench")
+        local wrenchName = getItemNameFromFullType("Base.Wrench")
         if not self.chr:getInventory():contains("Wrench") then
-            tooltip.description = tooltip.description .. " " .. ISVehicleMechanics.bhs .. item:getDisplayName() .. " 0/1 <LINE>"
+            tooltip.description = tooltip.description .. " " .. ISVehicleMechanics.bhs .. wrenchName .. " 0/1 <LINE>"
         else
-            tooltip.description = tooltip.description .. " " .. ISVehicleMechanics.ghs .. item:getDisplayName() .. " 1/1 <LINE>"
+            tooltip.description = tooltip.description .. " " .. ISVehicleMechanics.ghs .. wrenchName .. " 1/1 <LINE>"
         end
 
         if part:getCondition() < 100 then
@@ -95,12 +95,12 @@ function ISVehicleMechanics:doMenuTooltip(part, option, lua, name)
 
         local _enginePartsInInventory = self.chr:getInventory():getNumberOfItem("Base.EngineParts", false, true)
         local _partsCount = (math.floor(((100 - vehicle:getEngineQuality()) / 2)) + 1)
-        local _engineParts = InventoryItemFactory.CreateItem("Base.EngineParts")
+        local _enginePartsName = getItemNameFromFullType("Base.EngineParts")
 
         if _enginePartsInInventory >= _partsCount then
-            tooltip.description = tooltip.description .. " " .. ISVehicleMechanics.ghs .. _engineParts:getDisplayName() .. " " .. _enginePartsInInventory .. "/" ..  _partsCount .." <LINE>"
+            tooltip.description = tooltip.description .. " " .. ISVehicleMechanics.ghs .. _enginePartsName .. " " .. _enginePartsInInventory .. "/" ..  _partsCount .." <LINE>"
         else
-            tooltip.description = tooltip.description .. " " .. ISVehicleMechanics.bhs .. _engineParts:getDisplayName() .. " " .. _enginePartsInInventory .. "/" ..  _partsCount .." <LINE>"
+            tooltip.description = tooltip.description .. " " .. ISVehicleMechanics.bhs .. _enginePartsName .. " " .. _enginePartsInInventory .. "/" ..  _partsCount .." <LINE>"
         end
         tooltip.description = tooltip.description .. " " .. "<RGB:0,1,1>" .. " " .. getText("Tooltip_vehicle_RepairEngineQualityWarning")
     end
