@@ -10,13 +10,13 @@ function Commands.repairHeater(player, args)
             return
         end
 
-        player:sendObjectChange('removeItemType', { type = 'Base.Aluminum', count = 5 })
-        player:sendObjectChange('removeItemType', { type = 'Base.ElectronicsScrap', count = 10 })
-        player:sendObjectChange('removeItemType', { type = 'Radio.ElectricWire', count = 3 })
+        PatagoniaVehicleCommandUtil.removeItems(player, 'Base.Aluminum', 5)
+        PatagoniaVehicleCommandUtil.removeItems(player, 'Base.ElectronicsScrap', 10)
+        PatagoniaVehicleCommandUtil.removeItems(player, 'Radio.ElectricWire', 3)
 
         part:repair()
 
-        player:sendObjectChange('mechanicActionDone', {
+        player:sendObjectChange(IsoObjectChange.MECHANIC_ACTION_DONE, {
             success = true,
             vehicleId = vehicle:getId(),
             partId = part:getId(),

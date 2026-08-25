@@ -9,11 +9,11 @@ function Commands.restoreTrunk(player, args)
             return
         end
 
-        player:sendObjectChange('removeItemType', { type = 'Base.SheetMetal', count = args.numberOfParts })
+        PatagoniaVehicleCommandUtil.removeItems(player, 'Base.SheetMetal', args.numberOfParts)
 
         part:repair()
 
-        player:sendObjectChange('mechanicActionDone', {
+        player:sendObjectChange(IsoObjectChange.MECHANIC_ACTION_DONE, {
             success = true,
             vehicleId = vehicle:getId(),
             partId = part:getId(),

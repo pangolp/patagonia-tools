@@ -10,11 +10,11 @@ function Commands.repairLightbar(player, args)
             return
         end
 
-        player:sendObjectChange('removeItemType', { type = 'Base.LightBulb', count = 20 })
+        PatagoniaVehicleCommandUtil.removeItems(player, 'Base.LightBulb', 20)
 
         part:repair()
 
-        player:sendObjectChange('mechanicActionDone', {
+        player:sendObjectChange(IsoObjectChange.MECHANIC_ACTION_DONE, {
             success = true,
             vehicleId = vehicle:getId(),
             partId = part:getId(),

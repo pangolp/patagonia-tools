@@ -9,7 +9,7 @@ function Commands.createCarKey(player, args)
             return
         end
 
-        player:sendObjectChange('removeItemType', { type = 'Base.CarKey', count = 1 })
+        PatagoniaVehicleCommandUtil.removeItems(player, 'Base.CarKey', 1)
 
         if vehicle:isHotwired() then
             vehicle:setHotwired(false)
@@ -17,10 +17,10 @@ function Commands.createCarKey(player, args)
 
         local item = vehicle:createVehicleKey()
         if item then
-            player:sendObjectChange("addItem", { item = item })
+            PatagoniaVehicleCommandUtil.addItem(player, item)
         end
 
-        player:sendObjectChange('mechanicActionDone', {
+        player:sendObjectChange(IsoObjectChange.MECHANIC_ACTION_DONE, {
             success = true,
             vehicleId = vehicle:getId(),
             partId = part:getId(),

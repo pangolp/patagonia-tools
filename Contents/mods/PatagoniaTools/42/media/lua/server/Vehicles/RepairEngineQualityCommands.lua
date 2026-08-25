@@ -28,11 +28,11 @@ function Commands.repairEngineQuality(player, args)
 
             vehicle:setEngineFeature(newQuality, engineLoudness, enginePower)
 
-            player:sendObjectChange('removeItemType', { type = 'Base.EngineParts', count = done })
+            PatagoniaVehicleCommandUtil.removeItems(player, 'Base.EngineParts', done)
             part:repair()
         end
 
-        player:sendObjectChange('mechanicActionDone', {
+        player:sendObjectChange(IsoObjectChange.MECHANIC_ACTION_DONE, {
             success = (done > 0),
             vehicleId = vehicle:getId(),
             partId = part:getId(),
