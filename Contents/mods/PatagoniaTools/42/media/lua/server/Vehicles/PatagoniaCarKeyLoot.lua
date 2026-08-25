@@ -15,6 +15,13 @@ local CARKEY_WEIGHTS = {
     -- House garages
     GarageMechanics      = 10,
     GarageTools          = 6,
+    -- Gas stations
+    GasStoreSpecial      = 8,
+    GasStorageMechanics  = 8,
+    -- Car dealerships / auto stores (dealers keep lots of keys)
+    CarDealerDesk        = 20,
+    CarDealerFilingCabinet = 20,
+    CarSupplyTools       = 6,
 }
 
 local added = false
