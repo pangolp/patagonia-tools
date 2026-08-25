@@ -11,8 +11,11 @@ function Commands.createCarKey(player, args)
 
         PatagoniaVehicleCommandUtil.removeItems(player, 'Base.CarKey', 1)
 
-        if vehicle:isHotwired() then
-            vehicle:setHotwired(false)
+        -- Si el vehículo tiene puente (activo o roto), quitarlo; si no, no hace
+        -- nada. cheatHotwire sincroniza al cliente (marca updateFlags);
+        -- setHotwired solo cambia el campo en el servidor y no se transmite.
+        if vehicle:isHotwired() or vehicle:isHotwiredBroken() then
+            vehicle:cheatHotwire(false, false)
         end
 
         local item = vehicle:createVehicleKey()
