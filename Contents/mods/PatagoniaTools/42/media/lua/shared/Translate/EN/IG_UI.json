@@ -6,5 +6,9 @@
     "IGUI_Lightbar": "Restore Lightbar",
     "IGUI_CreateCarKey": "Create car key",
     "IGUI_Patagonia_RepairSeats": "Reupholster seat",
-    "IGUI_Patagonia_BuildSeats": "Build seat"
+    "IGUI_Patagonia_BuildSeats": "Build seat",
+    "IGUI_Patagonia_RepairWindow": "Repair window",
+    "IGUI_Patagonia_BuildWindow": "Build window",
+    "IGUI_Patagonia_RepairWindshield": "Repair windshield",
+    "IGUI_Patagonia_BuildWindshield": "Build windshield"
 }

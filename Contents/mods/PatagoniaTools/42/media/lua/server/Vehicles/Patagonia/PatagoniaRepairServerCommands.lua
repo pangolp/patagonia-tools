@@ -40,7 +40,7 @@ function Commands.patagoniaRepair(player, args)
             item = VehicleUtils.createPartInventoryItem(part)
         end
         if not item then
-            noise('patagoniaRepair: could not create seat item for part ' .. tostring(args.partId))
+            noise('patagoniaRepair: could not create item for part ' .. tostring(args.partId))
             return
         end
         item:setConditionNoSound(item:getConditionMax())
@@ -50,6 +50,11 @@ function Commands.patagoniaRepair(player, args)
         installedItemId = item:getID()
     else
         part:repair()
+    end
+
+    local installTable = part:getTable("install")
+    if installTable and installTable.complete then
+        VehicleUtils.callLua(installTable.complete, vehicle, part)
     end
 
     player:sendObjectChange(IsoObjectChange.MECHANIC_ACTION_DONE, {

@@ -6,5 +6,9 @@
     "IGUI_Lightbar": "Restaurar luces de emergencia",
     "IGUI_CreateCarKey": "Crear llave del auto",
     "IGUI_Patagonia_RepairSeats": "Retapizar asiento",
-    "IGUI_Patagonia_BuildSeats": "Fabricar asiento"
+    "IGUI_Patagonia_BuildSeats": "Fabricar asiento",
+    "IGUI_Patagonia_RepairWindow": "Reparar ventanilla",
+    "IGUI_Patagonia_BuildWindow": "Fabricar ventanilla",
+    "IGUI_Patagonia_RepairWindshield": "Reparar parabrisas",
+    "IGUI_Patagonia_BuildWindshield": "Fabricar parabrisas"
 }

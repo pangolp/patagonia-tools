@@ -10,5 +10,7 @@
     "Tooltip_vehicle_RestoreLightbarWarning": "Restore the emergency lights to 100%.",
     "Tooltip_vehicle_CreateCarKeyWarning": "Cut the wires (if any) and create the car key",
     "Tooltip_vehicle_RepairSeatsWarning": "Re-stitches the seat back to 100%.",
-    "Tooltip_vehicle_BuildSeatsWarning": "Builds a brand-new seat where none is installed."
+    "Tooltip_vehicle_BuildSeatsWarning": "Builds a brand-new seat where none is installed.",
+    "Tooltip_vehicle_RepairGlassWarning": "Patches the cracked glass back to 100%.",
+    "Tooltip_vehicle_BuildGlassWarning": "Fabricates a new pane where the glass has been smashed out."
 }
