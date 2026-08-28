@@ -1,0 +1,4 @@
+# Temporary / dev-only files — never commit or ship
+*.TEMP.lua
+*.tmp
+*.bak
