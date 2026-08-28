@@ -6,6 +6,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Added
+- Hood (engine cover) repair and build from the vehicle mechanics menu, welded
+  with a blow torch and welding mask like the other metal panels. Materials
+  mirror the old hood recipe (sheet metal + welding rods).
+
 ### Fixed
 - Restored the welding loadout on metal-panel repairs (car doors and trunk):
   they again require a welding mask, equip the blow torch in hand, and play the

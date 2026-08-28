@@ -15,5 +15,7 @@
     "IGUI_Patagonia_RepairDoor": "Repair door",
     "IGUI_Patagonia_BuildDoor": "Build door",
     "IGUI_Patagonia_RepairDoorDouble": "Repair double door",
-    "IGUI_Patagonia_BuildDoorDouble": "Build double door"
+    "IGUI_Patagonia_BuildDoorDouble": "Build double door",
+    "IGUI_Patagonia_RepairHood": "Repair hood",
+    "IGUI_Patagonia_BuildHood": "Build hood"
 }

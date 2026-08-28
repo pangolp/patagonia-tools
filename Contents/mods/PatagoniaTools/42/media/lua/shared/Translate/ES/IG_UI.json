@@ -15,5 +15,7 @@
     "IGUI_Patagonia_RepairDoor": "Reparar puerta",
     "IGUI_Patagonia_BuildDoor": "Fabricar puerta",
     "IGUI_Patagonia_RepairDoorDouble": "Reparar puerta doble",
-    "IGUI_Patagonia_BuildDoorDouble": "Fabricar puerta doble"
+    "IGUI_Patagonia_BuildDoorDouble": "Fabricar puerta doble",
+    "IGUI_Patagonia_RepairHood": "Reparar capot",
+    "IGUI_Patagonia_BuildHood": "Fabricar capot"
 }
