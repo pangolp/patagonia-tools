@@ -19,6 +19,8 @@ local function isMissing(part)
     return part:getInventoryItem() == nil
 end
 
+-- Door windows are small: no full glass panel (unlike the windshield), just tape +
+-- cullet. Repair = base "unit"; build below is exactly double it.
 PatagoniaRepair.register({
     id             = "repairWindowsDoor",
     partIds        = doorWindowParts,
@@ -28,18 +30,19 @@ PatagoniaRepair.register({
     warningKey     = "Tooltip_vehicle_RepairGlassWarning",
 
     professions = {
-        { perk = "Mechanics", level = 2 },
+        { perk = "Mechanics",   level = 2 },
+        { perk = "Glassmaking", level = 1 },
     },
 
     handTool = screwdriverHandTool,
 
     materials = {
         { fullType = "Base.DuctTape",    count = 2 },
-        { fullType = "Base.BrokenGlass", count = 2 },
+        { fullType = "Base.BrokenGlass", count = 3 },
     },
 
     actionAnim = "VehicleWorkOnMid",
-    time       = 800,
+    time       = 700,
 })
 
 PatagoniaRepair.register({
@@ -51,19 +54,19 @@ PatagoniaRepair.register({
     warningKey     = "Tooltip_vehicle_BuildGlassWarning",
 
     professions = {
+        { perk = "Mechanics",   level = 4 },
         { perk = "Glassmaking", level = 3 },
-        { perk = "Mechanics",   level = 3 },
     },
 
     handTool = screwdriverHandTool,
 
     materials = {
-        { fullType = "Base.GlassPanel",  count = 1 },
-        { fullType = "Base.BrokenGlass", count = 3 },
+        { fullType = "Base.DuctTape",    count = 4 },
+        { fullType = "Base.BrokenGlass", count = 6 },
     },
 
     actionAnim = "VehicleWorkOnMid",
-    time       = 1200,
+    time       = 1400,
 })
 
 -- Repair = base "unit" cost. Leaves the windshield at 100%, so it is not cheap.

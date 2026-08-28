@@ -9,6 +9,8 @@ local needleHandTool = {
     nameFullType = "Base.Needle",
 }
 
+-- Repair = base "unit" cost. Build below is exactly double it (materials, thread
+-- uses, time), sharing the same material families so the doubling is clean.
 PatagoniaRepair.register({
     id             = "repairSeats",
     partIds        = seatParts,
@@ -17,7 +19,11 @@ PatagoniaRepair.register({
     displayNameKey = "IGUI_Patagonia_RepairSeats",
     warningKey     = "Tooltip_vehicle_RepairSeatsWarning",
 
+    -- Seat area is inside the vehicle; walk beside it instead of climbing in.
+    pathAdjacent   = true,
+
     professions = {
+        { perk = "Mechanics", level = 2 },
         { perk = "Tailoring", level = 4 },
     },
 
@@ -30,13 +36,17 @@ PatagoniaRepair.register({
     },
 
     materials = {
-        { fullType = "Base.LeatherStrips", count = 4 },
+        { fullType = "Base.LeatherStrips", count = 5 },
+        { fullType = "Base.SheetMetal",    count = 1 },
+        { fullType = "Base.MetalBar",      count = 1 },
     },
 
     actionAnim = "VehicleWorkOnMid",
     time       = 1000,
 })
 
+-- Build from scratch = exactly double the repair (materials, thread, time). Skills a
+-- bit higher than repair, but not doubled.
 PatagoniaRepair.register({
     id             = "buildSeats",
     partIds        = seatParts,
@@ -45,25 +55,28 @@ PatagoniaRepair.register({
     displayNameKey = "IGUI_Patagonia_BuildSeats",
     warningKey     = "Tooltip_vehicle_BuildSeatsWarning",
 
+    -- Seat area is inside the vehicle; walk beside it instead of climbing in.
+    pathAdjacent   = true,
+
     professions = {
-        { perk = "Tailoring", level = 7 },
-        { perk = "Mechanics", level = 3 },
+        { perk = "Mechanics", level = 4 },
+        { perk = "Tailoring", level = 6 },
     },
 
     handTool = needleHandTool,
 
     drainable = {
         fullType     = "Base.Thread",
-        uses         = 20,
+        uses         = 16,
         nameFullType = "Base.Thread",
     },
 
     materials = {
         { fullType = "Base.LeatherStrips", count = 10 },
-        { fullType = "Base.SheetMetal",    count = 3 },
+        { fullType = "Base.SheetMetal",    count = 2 },
         { fullType = "Base.MetalBar",      count = 2 },
     },
 
     actionAnim = "VehicleWorkOnMid",
-    time       = 1500,
+    time       = 2000,
 })
