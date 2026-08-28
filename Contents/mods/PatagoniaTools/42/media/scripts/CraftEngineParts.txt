@@ -1,0 +1,31 @@
+module Base
+{
+    /* Restored from the old B41 CraftEngineParts.MakeEnginePartCustom recipe and
+       rewritten in Build 42 craftRecipe syntax. Fabricates a vehicle Engine Parts
+       item from scrap metal by welding. Blow torch + welding rods are consumed by
+       use (DontRecordInput); the wrench and hammer are kept tools. */
+    craftRecipe MakeEngineParts
+    {
+        time = 240,
+        category = Patagonia,
+        Tags = AnySurfaceCraft,
+        SkillRequired = Mechanics:4;MetalWelding:3,
+        xpAward = Mechanics:15;MetalWelding:15,
+        inputs
+        {
+            item 1 tags[base:hammer] mode:keep flags[MayDegradeLight],
+            item 1 tags[base:wrench] mode:keep flags[MayDegradeLight],
+            item 4 [Base.BlowTorch] flags[DontRecordInput],
+            item 4 [Base.WeldingRods] flags[DontRecordInput],
+            item 2 [Base.ScrapMetal],
+            item 1 [Base.MetalPipe],
+            item 1 [Base.SmallSheetMetal],
+            item 1 [Base.MetalBar],
+            item 2 [Base.Screws],
+        }
+        outputs
+        {
+            item 1 Base.EngineParts,
+        }
+    }
+}
