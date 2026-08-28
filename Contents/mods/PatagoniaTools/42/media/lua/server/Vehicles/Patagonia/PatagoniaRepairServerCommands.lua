@@ -26,10 +26,6 @@ function Commands.patagoniaRepair(player, args)
         return
     end
 
-    for _, mat in ipairs(recipe.materials or {}) do
-        PatagoniaVehicleCommandUtil.removeItems(player, mat.fullType, mat.count)
-    end
-
     local installedItemId = -1
     if recipe.mode == "install" then
         local item
@@ -40,7 +36,9 @@ function Commands.patagoniaRepair(player, args)
             item = VehicleUtils.createPartInventoryItem(part)
         end
         if not item then
-            noise('patagoniaRepair: could not create item for part ' .. tostring(args.partId))
+            -- Bail out BEFORE consuming anything, so a failed install never leaves
+            -- the player short of materials with the part still unfixed.
+            noise('patagoniaRepair: could not create item for part ' .. tostring(args.partId) .. ' — materials NOT consumed')
             return
         end
         item:setConditionNoSound(item:getConditionMax())
@@ -50,6 +48,12 @@ function Commands.patagoniaRepair(player, args)
         installedItemId = item:getID()
     else
         part:repair()
+    end
+
+    -- Only now that the repair/install has actually succeeded do we consume the
+    -- materials.
+    for _, mat in ipairs(recipe.materials or {}) do
+        PatagoniaVehicleCommandUtil.removeItems(player, mat.fullType, mat.count)
     end
 
     local installTable = part:getTable("install")

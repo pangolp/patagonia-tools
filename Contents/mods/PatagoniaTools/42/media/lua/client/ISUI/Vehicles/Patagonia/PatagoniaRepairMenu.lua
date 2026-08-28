@@ -114,15 +114,34 @@ function ISVehicleMechanics.onPatagoniaRepair(playerObj, part, recipe)
     end
 
     local vehicle = part:getVehicle()
-    ISTimedActionQueue.add(ISPathFindAction:pathToVehicleArea(playerObj, vehicle, part:getArea()))
 
+    -- WALK. recipe.pathAdjacent (seats) walks to a tile BESIDE the vehicle: their part
+    -- area is inside the cabin, and pathing there made the player climb in and sit,
+    -- which cleared the mechanic queue so the repair never ran. Everyone else walks to
+    -- their part area, with a timeout so a non-resolving path can't freeze the queue
+    -- (recipe.pathArea sends under-hood parts to "Engine" instead of their interior area).
+    if recipe.pathAdjacent then
+        ISTimedActionQueue.add(ISPathFindAction:pathToVehicleAdjacent(playerObj, vehicle))
+    else
+        ISTimedActionQueue.add(ISPatagoniaPathToArea:toArea(playerObj, vehicle, recipe.pathArea or part:getArea()))
+    end
+
+    -- Open the associated door if it is closed, then work, then close it — matches the
+    -- original seat behaviour (walk over, open the door, repair without sitting). A seat
+    -- (SeatFrontLeft) maps to its door (DoorFrontLeft); recipe.openDoorId can name one
+    -- explicitly. Only a real, installed, closed door is opened.
+    local doorId = recipe.openDoorId
+    if not doorId then
+        local mapped = part:getId():gsub("Seat", "Door")
+        if mapped ~= part:getId() then doorId = mapped end
+    end
     local door = nil
-    local doorPart = vehicle:getPartById((part:getId():gsub("Seat", "Door")))
-    -- Only auto-open a DIFFERENT door (e.g. a seat's door). Never the part being
-    -- worked on itself — a door recipe must not try to open the door it is
-    -- repairing/building (the missing-door case has no panel to open).
-    if doorPart and doorPart ~= part and doorPart:getDoor() and not doorPart:getDoor():isOpen() then
-        door = doorPart
+    if doorId then
+        local doorPart = vehicle:getPartById(doorId)
+        if doorPart and doorPart ~= part and doorPart:getDoor()
+                and doorPart:getInventoryItem() and not doorPart:getDoor():isOpen() then
+            door = doorPart
+        end
     end
 
     if door then
@@ -145,6 +164,15 @@ function ISVehicleMechanics:doPartContextMenu(part, x, y)
     local recipes = PatagoniaRepair.getApplicableForPart(part)
     if #recipes == 0 then return end
     if VehicleUtils.RequiredKeyNotFound(part, self.chr) then return end
+
+    -- The base menu calls setVisible(false) on the context when it added no options
+    -- of its own (parts with no stock mechanic actions: glove box, heater, lightbar).
+    -- Our options would then be added to a hidden menu and never appear. Re-create a
+    -- fresh visible context in that case. Only when hidden, so parts that DO have
+    -- base options (doors, windows...) keep them.
+    if not self.context:getIsVisible() then
+        self.context = ISContextMenu.get(self.playerNum, x + self:getAbsoluteX(), y + self:getAbsoluteY())
+    end
 
     local playerObj = getSpecificPlayer(self.playerNum)
     for _, recipe in ipairs(recipes) do
