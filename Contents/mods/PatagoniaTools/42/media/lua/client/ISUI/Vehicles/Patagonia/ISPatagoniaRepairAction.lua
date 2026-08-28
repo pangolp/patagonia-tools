@@ -16,6 +16,10 @@ function ISPatagoniaRepairAction:update()
     if self.item then
         self.item:setJobDelta(self:getJobDelta())
     end
+    if self.recipe.welding and self.sound and self.sound ~= 0
+            and not self.character:getEmitter():isPlaying(self.sound) then
+        self.sound = self.character:playSound("BlowTorch")
+    end
     self.character:setMetabolicTarget(Metabolics.HeavyWork)
 end
 
@@ -23,15 +27,26 @@ function ISPatagoniaRepairAction:start()
     if self.item then
         self.item:setJobType(self.jobType)
     end
-    -- Do NOT setOverrideHandModels: vanilla vehicle-work actions leave it alone so the
-    -- equipped tool shows and the animation plays normally (overriding it with the
-    -- drainable broke the anim).
-    self:setActionAnim(self.recipe.actionAnim or "VehicleWorkOnMid")
+    if self.recipe.welding then
+        -- Blow-torch welding (metal parts): torch animation, show the torch in hand and
+        -- loop the torch sound, like vanilla metal welding and the old RestoreTrunk action.
+        self:setActionAnim(self.recipe.actionAnim or "BlowTorch")
+        if self.item then self:setOverrideHandModels(self.item, nil) end
+        self.sound = self.character:playSound("BlowTorch")
+    else
+        -- Do NOT setOverrideHandModels: vanilla vehicle-work actions leave it alone so the
+        -- equipped tool shows and the animation plays normally (overriding it with the
+        -- drainable broke the anim).
+        self:setActionAnim(self.recipe.actionAnim or "VehicleWorkOnMid")
+    end
 end
 
 function ISPatagoniaRepairAction:stop()
     if self.item then
         self.item:setJobDelta(0)
+    end
+    if self.sound and self.sound ~= 0 then
+        self.character:getEmitter():stopSound(self.sound)
     end
     ISBaseTimedAction.stop(self)
 end
@@ -39,6 +54,9 @@ end
 function ISPatagoniaRepairAction:perform()
     if self.item then
         self.item:setJobDelta(0)
+    end
+    if self.sound and self.sound ~= 0 then
+        self.character:getEmitter():stopSound(self.sound)
     end
     ISBaseTimedAction.perform(self)
 

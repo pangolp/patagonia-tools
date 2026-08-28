@@ -29,6 +29,7 @@ PatagoniaRepair.register({
         { fullType = "Base.SheetMetal", count = 5 },
     },
 
-    actionAnim = "VehicleWorkOnMid",
+    welding    = true,
+    actionAnim = "BlowTorch",
     time       = 1000,
 })

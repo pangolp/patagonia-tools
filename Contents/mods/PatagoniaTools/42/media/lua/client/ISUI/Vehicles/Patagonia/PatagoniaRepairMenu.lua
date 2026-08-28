@@ -18,6 +18,10 @@ local function findDrainable(inv, recipe)
     return inv:getBestTypeEvalRecurse(recipe.drainable.fullType, drainableUsesComparator)
 end
 
+local function isWeldingMask(item)
+    return item:hasTag(ItemTag.WELDING_MASK) or item:getType() == "WeldingMask"
+end
+
 local function meetsRequirements(chr, recipe)
     local inv = chr:getInventory()
 
@@ -36,6 +40,10 @@ local function meetsRequirements(chr, recipe)
         if not best or best:getCurrentUses() < recipe.drainable.uses then
             return false
         end
+    end
+
+    if recipe.welding and not inv:containsEvalRecurse(isWeldingMask) then
+        return false
     end
 
     for _, mat in ipairs(recipe.materials or {}) do
@@ -77,6 +85,12 @@ local function buildTooltip(chr, recipe, option)
             getItemNameFromFullType(recipe.handTool.nameFullType) .. " " .. (has and 1 or 0) .. " / 1")
     end
 
+    if recipe.welding then
+        local has = inv:containsEvalRecurse(isWeldingMask)
+        tooltip.description = line(tooltip.description, has and "<RGB:0,1,0>" or "<RGB:1,0,0>",
+            getItemNameFromFullType("Base.WeldingMask") .. " " .. (has and 1 or 0) .. " / 1")
+    end
+
     if recipe.drainable then
         local best = findDrainable(inv, recipe)
         local uses = best and best:getCurrentUses() or 0
@@ -109,7 +123,20 @@ function ISVehicleMechanics.onPatagoniaRepair(playerObj, part, recipe)
         item = playerObj:getInventory():getFirstTypeEvalArgRecurse(recipe.drainable.fullType, drainableHasUses, recipe.drainable.uses)
         if item then ISVehiclePartMenu.toPlayerInventory(playerObj, item) end
     end
-    if recipe.handTool then
+    if recipe.welding then
+        -- Welding loadout (metal parts): equip the blow torch in the primary hand and put
+        -- the welding mask on, so the torch shows in-hand, the blow-torch animation plays
+        -- and the eyes are protected -- same as vanilla vehicle welding
+        -- (ISVehicleMenu.onRemoveBurntVehicle).
+        if item then
+            ISWorldObjectContextMenu.equip(playerObj, playerObj:getPrimaryHandItem(),
+                function(candidate) return candidate == item end, true)
+        end
+        local mask = playerObj:getInventory():getFirstEvalRecurse(isWeldingMask)
+        if mask then
+            ISInventoryPaneContextMenu.wearItem(mask, playerObj:getPlayerNum())
+        end
+    elseif recipe.handTool then
         ISWorldObjectContextMenu.equip(playerObj, playerObj:getPrimaryHandItem(), recipe.handTool.matches, true)
     end
 

@@ -54,7 +54,8 @@ PatagoniaRepair.register({
         { fullType = "Base.MetalBar",   count = 1 },
     },
 
-    actionAnim = "VehicleWorkOnMid",
+    welding    = true,
+    actionAnim = "BlowTorch",
     time       = 900,
 })
 
@@ -81,7 +82,8 @@ PatagoniaRepair.register({
         { fullType = "Base.MetalBar",   count = 2 },
     },
 
-    actionAnim = "VehicleWorkOnMid",
+    welding    = true,
+    actionAnim = "BlowTorch",
     time       = 1800,
 })
 
@@ -110,7 +112,8 @@ PatagoniaRepair.register({
         { fullType = "Base.MetalBar",   count = 2 },
     },
 
-    actionAnim = "VehicleWorkOnMid",
+    welding    = true,
+    actionAnim = "BlowTorch",
     time       = 1200,
 })
 
@@ -135,6 +138,7 @@ PatagoniaRepair.register({
         { fullType = "Base.MetalBar",   count = 4 },
     },
 
-    actionAnim = "VehicleWorkOnMid",
+    welding    = true,
+    actionAnim = "BlowTorch",
     time       = 2400,
 })
