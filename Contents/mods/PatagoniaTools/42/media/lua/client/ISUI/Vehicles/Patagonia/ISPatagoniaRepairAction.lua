@@ -61,9 +61,27 @@ function ISPatagoniaRepairAction:perform()
     ISBaseTimedAction.perform(self)
 
     local drainable = self.recipe.drainable
-    if self.item and drainable and drainable.uses then
-        for _ = 1, drainable.uses do
-            self.item:Use()
+    if drainable and drainable.uses then
+        -- Spend the required uses across every matching drainable (blow torch),
+        -- starting with the equipped one, so several partly-used torches add up.
+        local remaining = drainable.uses
+        if self.item then
+            while remaining > 0 and self.item:getCurrentUses() > 0 do
+                self.item:Use()
+                remaining = remaining - 1
+            end
+        end
+        if remaining > 0 then
+            local list = self.character:getInventory():getAllEvalRecurse(
+                function(it) return it:getFullType() == drainable.fullType end)
+            for i = 0, list:size() - 1 do
+                local torch = list:get(i)
+                while remaining > 0 and torch:getCurrentUses() > 0 do
+                    torch:Use()
+                    remaining = remaining - 1
+                end
+                if remaining <= 0 then break end
+            end
         end
     end
 

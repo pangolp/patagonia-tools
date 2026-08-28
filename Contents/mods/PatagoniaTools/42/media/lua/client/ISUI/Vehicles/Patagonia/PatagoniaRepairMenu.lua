@@ -5,10 +5,6 @@ local function tooltipTag(recipe)
     return "patagonia_repair_" .. recipe.id
 end
 
-local function drainableHasUses(item, count)
-    return item:getCurrentUses() >= count
-end
-
 local function drainableUsesComparator(item1, item2)
     return item1:getCurrentUses() - item2:getCurrentUses()
 end
@@ -16,6 +12,20 @@ end
 local function findDrainable(inv, recipe)
     if not recipe.drainable then return nil end
     return inv:getBestTypeEvalRecurse(recipe.drainable.fullType, drainableUsesComparator)
+end
+
+-- Total remaining uses across ALL matching drainables (e.g. every blow torch the
+-- player carries), so several partly-used torches add up to the required uses. A
+-- full blow torch only holds 10 uses (UseDelta 0.1), so a 12-use recipe needs more
+-- than one torch anyway.
+local function totalDrainableUses(inv, recipe)
+    if not recipe.drainable then return 0 end
+    local list = inv:getAllEvalRecurse(function(it) return it:getFullType() == recipe.drainable.fullType end)
+    local total = 0
+    for i = 0, list:size() - 1 do
+        total = total + list:get(i):getCurrentUses()
+    end
+    return total
 end
 
 local function isWeldingMask(item)
@@ -35,11 +45,8 @@ local function meetsRequirements(chr, recipe)
         return false
     end
 
-    if recipe.drainable then
-        local best = findDrainable(inv, recipe)
-        if not best or best:getCurrentUses() < recipe.drainable.uses then
-            return false
-        end
+    if recipe.drainable and totalDrainableUses(inv, recipe) < recipe.drainable.uses then
+        return false
     end
 
     if recipe.welding and not inv:containsEvalRecurse(isWeldingMask) then
@@ -92,8 +99,7 @@ local function buildTooltip(chr, recipe, option)
     end
 
     if recipe.drainable then
-        local best = findDrainable(inv, recipe)
-        local uses = best and best:getCurrentUses() or 0
+        local uses = totalDrainableUses(inv, recipe)
         local ok = uses >= recipe.drainable.uses
         tooltip.description = line(tooltip.description, ok and "<RGB:0,1,0>" or "<RGB:1,0,0>",
             getItemNameFromFullType(recipe.drainable.nameFullType) .. " " .. getText("ContextMenu_Uses")
@@ -120,7 +126,9 @@ function ISVehicleMechanics.onPatagoniaRepair(playerObj, part, recipe)
 
     local item = nil
     if recipe.drainable then
-        item = playerObj:getInventory():getFirstTypeEvalArgRecurse(recipe.drainable.fullType, drainableHasUses, recipe.drainable.uses)
+        -- Equip/animate with the best-charged torch; the required uses can be spread
+        -- across several torches when the action runs (ISPatagoniaRepairAction:perform).
+        item = findDrainable(playerObj:getInventory(), recipe)
         if item then ISVehiclePartMenu.toPlayerInventory(playerObj, item) end
     end
     if recipe.welding then

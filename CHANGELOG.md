@@ -12,6 +12,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
   mirror the old hood recipe (sheet metal + welding rods).
 
 ### Fixed
+- Blow-torch uses now count across every torch carried (and are consumed from
+  several), so recipes needing more than a full torch's 10 uses -- like building a
+  hood or a double door -- no longer demand a single, impossible torch.
 - Restored the welding loadout on metal-panel repairs (car doors and trunk):
   they again require a welding mask, equip the blow torch in hand, and play the
   blow-torch welding animation and sound. Moving the repairs into the
